@@ -15,7 +15,6 @@ Rails.application.routes.draw do
       get 'top' => 'top'
     	resources :orders
     	resources :order_details
-    	resources :top
     	resources :genres
     	resources :members
     	resources :products
