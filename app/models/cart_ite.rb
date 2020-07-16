@@ -1,0 +1,2 @@
+class CartIte < ApplicationRecord
+end
