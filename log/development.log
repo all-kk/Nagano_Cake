@@ -532,6 +532,7 @@ ActionView::Template::Error (The asset "nagano.jpg" is not present in the asset 
     10: </p>
   
 app/views/homes/about.html.erb:9:in `_app_views_homes_about_html_erb__3850313258758664697_70258923398460'
+<<<<<<< HEAD
 >>>>>>> 73f2c3fac9eb78e83bed4b896d9b4843ba3cbe0f
 Started GET "/admins/genres" for 10.0.2.2 at 2020-07-18 08:07:14 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
@@ -591,6 +592,15 @@ ActionController::RoutingError (uninitialized constant ProductsController):
   
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `block in load_missing_constant'
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:9:in `without_bootsnap_cache'
+=======
+Completed 200 OK in 167ms (Views: 163.4ms | ActiveRecord: 0.0ms)
+
+
+:1, 127.0.0.0/127.255.255.255
+e_record/log_subscriber.rb:98
+" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+e_support.rb:9:in `without_bootsnap_cache'
+>>>>>>> origin/develop
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `rescue in load_missing_constant'
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
 activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `const_get'
@@ -629,6 +639,16 @@ web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
 actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
 railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+<<<<<<< HEAD
+=======
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:on_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+>>>>>>> origin/develop
 railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
 activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
 activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
@@ -649,6 +669,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/home/about" for 10.0.2.2 at 2020-07-18 08:08:10 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by HomesController#about as HTML
@@ -740,18 +761,183 @@ Processing by Devise::SessionsController#destroy as HTML
   [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
   [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
-  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
-  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
-  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
-Redirected to http://localhost:3000/
-Completed 302 Found in 26ms (ActiveRecord: 1.3ms)
-
-
-Started GET "/" for 10.0.2.2 at 2020-07-18 08:17:57 +0000
+=======
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:36:13 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by HomesController#top as HTML
   Rendering homes/top.html.erb within layouts/application
   Rendered homes/top.html.erb within layouts/application (0.3ms)
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:36:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 1936ms (Views: 1932.2ms | ActiveRecord: 0.0ms)
+
+
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 5406ms (Views: 5401.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:36:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 150ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:36:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 106ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:37:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 128ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-18 07:37:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 191ms (Views: 166.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:37:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 187ms (Views: 184.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-18 07:37:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:37:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:38:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.5ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 109ms (Views: 105.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:38:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:38:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 107ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-18 07:39:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 10.0.2.2 at 2020-07-18 07:40:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xOcIZ24L9v/WNoBkh1fWdzGnt4oogiQn06Bd6/0C77JONdwn/gEM+andaCvjroJac9ZKhNYvmFoPbC4Ur4YZuw==", "member"=>{"first_name"=>"山田", "last_name"=>"太郎", "first_name_phonetic"=>"ヤマダ", "last_name_phonetic"=>"タロウ", "email"=>"aaa@aaaaaa", "postcode"=>"5000004", "address"=>"東京都新宿区1-1", "telephone_number"=>"09088789009", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+Unpermitted parameters: :first_name, :last_name, :first_name_phonetic, :last_name_phonetic, :postcode, :address, :telephone_number
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "aaa@aaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Create (1.8ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "aaa@aaaaaa"], ["encrypted_password", "$2a$12$3gFHbFic24CgiMEGnKolmulds13viwneDOILlVwgZLx80.tGn922W"], ["created_at", "2020-07-18 07:40:48.882050"], ["updated_at", "2020-07-18 07:40:48.882050"]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 282ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:40:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.6ms)
+Completed 200 OK in 181ms (Views: 176.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-18 07:41:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xAKb8xpuU6gSkm+T+k56/IYbpNXIDHZcmH5EDyL5up5Mlajs7wV2XnVt03JOAwl4J/7ji8KP5G7Pz6F/QWRysQ=="}
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+>>>>>>> origin/develop
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+<<<<<<< HEAD
+Completed 302 Found in 26ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 08:17:57 +0000
+=======
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:41:00 +0000
+>>>>>>> origin/develop
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+<<<<<<< HEAD
   Rendered share/_gest-header.html.erb (0.7ms)
 Completed 200 OK in 131ms (Views: 127.9ms | ActiveRecord: 0.0ms)
 
@@ -791,12 +977,54 @@ Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0
 Processing by Devise::SessionsController#destroy as HTML
   Parameters: {"authenticity_token"=>"tPQKXWkcmUC6LnEXl5tdxl/ZsZEwgd424ZpxDBYpCdrrUsEWwCLRLVQgpQDXNVPdl0aCM3VP3QiRbZPXeHKQiw=="}
   [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+=======
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 124ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:41:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:41:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NVr4hIR2qKWWYHzhUcK7pjgcU9TUXyD4JE5O+KSdfGSAZktq1+ndjTWUIJ0gjdmJGmPV9ZDiWCn1ThEvYsY8PA==", "member"=>{"email"=>"aaa@aaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 242ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:41:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 115ms (Views: 110.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-18 07:42:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OV0Yfl0vAzUCXl8Zhrk/umhGxm4WGUVOyJxX5wbCJZ4gQcpWCSIif3zJayAK0K2w8K0noEOJF8q+Ssse01Z96Q=="}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+>>>>>>> origin/develop
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
   [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
 Redirected to http://localhost:3000/
+<<<<<<< HEAD
 Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
 
 
@@ -813,6 +1041,158 @@ Started GET "/products" for 10.0.2.2 at 2020-07-18 08:18:14 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant ProductsController):
+=======
+Completed 302 Found in 7ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:42:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 127ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:42:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 112ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:42:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 123ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:42:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DIHnHZJVZ7vTd5AdqLo9D5Loj0pIQBkHfA9qdtuk5ke6r0PIk2Y/XjeWrIjT9HsiR7tDUkCShyyMoAXCOqT+Mg==", "member"=>{"email"=>"aaa@aaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 247ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:42:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 140.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:42:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-18 07:42:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RqdCIt2GrKkEsMVkD9pgU6H+N0oDAEk/VsT8AMaPMKcbiV1STHwHHJOLgYQVZpwkjqxV49nCyTEU8UAOS05LTA=="}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:42:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 119ms (Views: 114.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:43:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-18 07:43:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H4xJcnu2+mZCKqvdHGbgEgyGi1fyO1oKB9x6DQ211Odry20nUHybHxaKhcCmiul9w4k56Ivg9z6yxse+m5Ax/w==", "member"=>{"email"=>"aaa@aaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 248ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:43:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 112.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/mnbars/show" for 10.0.2.2 at 2020-07-18 07:43:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/mnbars/show"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "//members/1" for 10.0.2.2 at 2020-07-18 07:43:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MembersController):
+>>>>>>> origin/develop
   
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `block in load_missing_constant'
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:9:in `without_bootsnap_cache'
@@ -874,6 +1254,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/" for 10.0.2.2 at 2020-07-18 11:46:52 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -995,6 +1376,12 @@ Started GET "/members" for 10.0.2.2 at 2020-07-18 11:47:25 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant MembersController):
+=======
+Started GET "/members/1" for 10.0.2.2 at 2020-07-18 07:43:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant MembersController):
+>>>>>>> origin/develop
   
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `block in load_missing_constant'
 bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:9:in `without_bootsnap_cache'
@@ -1056,6 +1443,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-18 11:48:13 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by Devise::RegistrationsController#new as HTML
@@ -1107,6 +1495,9 @@ Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
 
 
 Started GET "/members/1" for 10.0.2.2 at 2020-07-18 11:50:44 +0000
+=======
+Started GET "/members/:id(" for 10.0.2.2 at 2020-07-18 07:44:03 +0000
+>>>>>>> origin/develop
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant MembersController):
@@ -1171,7 +1562,11 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/members/2" for 10.0.2.2 at 2020-07-18 11:50:51 +0000
+=======
+Started GET "/members/:id" for 10.0.2.2 at 2020-07-18 07:44:06 +0000
+>>>>>>> origin/develop
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant MembersController):
@@ -1236,7 +1631,11 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/members/3" for 10.0.2.2 at 2020-07-18 11:50:57 +0000
+=======
+Started GET "/members/1:id" for 10.0.2.2 at 2020-07-18 07:44:14 +0000
+>>>>>>> origin/develop
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant MembersController):
@@ -1301,7 +1700,11 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/members/1" for 10.0.2.2 at 2020-07-18 11:51:01 +0000
+=======
+Started GET "//members" for 10.0.2.2 at 2020-07-18 07:44:40 +0000
+>>>>>>> origin/develop
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant MembersController):
@@ -1366,6 +1769,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/member/1" for 10.0.2.2 at 2020-07-18 11:54:21 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
@@ -1431,6 +1835,9 @@ puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
 Started GET "/members/1" for 10.0.2.2 at 2020-07-18 11:56:24 +0000
+=======
+Started GET "/members" for 10.0.2.2 at 2020-07-18 07:44:43 +0000
+>>>>>>> origin/develop
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActionController::RoutingError (uninitialized constant MembersController):
@@ -1495,6 +1902,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/members/3" for 10.0.2.2 at 2020-07-18 11:58:54 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
@@ -3016,6 +3424,544 @@ Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0
   ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
   
 ActionController::RoutingError (No route matches [GET] "/member/members/1"):
+=======
+Started GET "/members/edit" for 10.0.2.2 at 2020-07-18 07:45:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (20.2ms)
+  Rendered share/_member-header.html.erb (0.6ms)
+Completed 200 OK in 187ms (Views: 182.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-18 07:45:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B2SNsUOmaMvnJebevA/D64DknnILl74sKyxth1lOQJed5oOo0tvjSR7si1kh6SK71dCreI64U0natvWHVsYKmw=="}
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 07:45:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 151ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:45:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 08:57:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (4.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 167ms (Views: 163.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 09:11:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (325.8ms)
+  Rendered share/_gest-header.html.erb (1.2ms)
+Completed 200 OK in 541ms (Views: 532.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:11:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial share/_sidebar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vagrant/work/Nagano_Cake/app/views"
+  * "/home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.2/app/views"
+):
+    1: <%= render "share/sidebar", genres: @genres %>
+    2: 
+    3: 
+    4: 
+  
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___2081615675830782850_70110039590160'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:14:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (uninitialized constant HomesController::Item):
+  
+app/controllers/homes_controller.rb:4:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:15:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomesController::Item):
+  
+app/controllers/homes_controller.rb:4:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:15:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomesController::Item):
+  
+app/controllers/homes_controller.rb:4:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:15:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomesController::Item):
+  
+app/controllers/homes_controller.rb:4:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:15:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomesController::Item):
+  
+app/controllers/homes_controller.rb:4:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:15:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HomesController::Item):
+  
+app/controllers/homes_controller.rb:4:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:26:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial share/_sidebar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vagrant/work/Nagano_Cake/app/views"
+  * "/home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.2/app/views"
+):
+    1: <%= render "share/sidebar", genres: @genres %>
+    2: 
+    3: 
+    4: 
+  
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___3955439199550690120_50482920'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:26:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial share/_sidebar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vagrant/work/Nagano_Cake/app/views"
+  * "/home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.2/app/views"
+):
+    1: <%= render "share/sidebar"%>
+    2: 
+    3: 
+    4: 
+  
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___3955439199550690120_33759320'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:26:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial share/_sidebar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/vagrant/work/Nagano_Cake/app/views"
+  * "/home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.2/app/views"
+):
+    1: <%= render "share/sidebar"%>
+    2: 
+    3: 
+    4: 
+  
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___3955439199550690120_50391640'
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:27:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.3ms)
+  Rendered homes/top.html.erb within layouts/application (5.8ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 544ms (Views: 539.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 09:28:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 136ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 09:29:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.3ms)
+  Rendered homes/top.html.erb within layouts/application (5.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 1471ms (Views: 1466.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 09:29:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.2ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 156ms (Views: 148.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 09:29:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 177ms (Views: 169.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 11:01:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.1ms)
+  Rendered homes/top.html.erb within layouts/application (4.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 610ms (Views: 597.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 11:01:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.3ms)
+  Rendered homes/top.html.erb within layouts/application (5.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 131ms (Views: 125.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 11:02:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  Rendered share/_sidebar.html.erb (239.4ms)
+  Rendered homes/top.html.erb within layouts/application (245.3ms)
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genres' for #<#<Class:0x000000000625a7f0>:0x00007f5d2002b230>
+Did you mean?  @genres):
+     6:         </tr>
+     7:       </thead>
+     8:       <tbody>
+     9:         <% genres.each do |genre| %>
+    10:         <% end %>
+    11:           </tr>
+    12:       </tbody>
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb___1302524355927134600_70018972885360'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__1777315174785279275_70018972868080'
+Started GET "/" for 10.0.2.2 at 2020-07-18 11:03:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  Rendered share/_sidebar.html.erb (262.1ms)
+  Rendered homes/top.html.erb within layouts/application (267.1ms)
+Completed 500 Internal Server Error in 294ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genres' for #<#<Class:0x0000000006926048>:0x00007f20b45ae3e0>
+Did you mean?  @genres):
+     6:         </tr>
+     7:       </thead>
+     8:       <tbody>
+     9:         <% genres.each do |genre| %>
+    10:         <% end %>
+    11:           </tr>
+    12:       </tbody>
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb___470234009880261604_69889220858980'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___1495600382579474209_55129880'
+Started GET "/" for 10.0.2.2 at 2020-07-18 11:04:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  Rendered share/_sidebar.html.erb (8.9ms)
+  Rendered homes/top.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<ActiveRecord::QueryMethods::WhereChain:0x0000000003d290a8>):
+     6:         </tr>
+     7:       </thead>
+     8:       <tbody>
+     9:         <% @genres.each do |genre| %>
+    10:         <% end %>
+    11:           </tr>
+    12:       </tbody>
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb___470234009880261604_25236720'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___1495600382579474209_31506560'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:16:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/views/homes/top.html.erb:1
+  Rendered share/_sidebar.html.erb (6.4ms)
+  Rendered homes/top.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<ActiveRecord::QueryMethods::WhereChain:0x00007f20b484cf98>):
+    3:   <img src="/assets/tart1" alt="非表示", class="eyecatch">
+    4:     <h1>PRODUCTS</h1>
+    5:     <span ><strong>ジャンルで検索</strong></span>
+    6:       <% @genres.each do |genre| %>
+    7: 
+    8:           <%= link_to root_path(genre: genre.id) do %>
+    9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+  
+app/views/share/_sidebar.html.erb:6:in `_app_views_share__sidebar_html_erb___470234009880261604_69889222738180'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___1495600382579474209_69889222074100'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:16:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (5.4ms)
+  Rendered homes/top.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <img src="/assets/tart1" alt="非表示", class="eyecatch">
+    4:     <h1>PRODUCTS</h1>
+    5:     <span ><strong>ジャンルで検索</strong></span>
+    6:       <% @genres.each do |genre| %>
+    7: 
+    8:           <%= link_to root_path(genre: genre.id) do %>
+    9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+  
+app/views/share/_sidebar.html.erb:6:in `_app_views_share__sidebar_html_erb__502892938548619066_69954752623400'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_46273980'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:16:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (5.4ms)
+  Rendered homes/top.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <img src="/assets/tart1" alt="非表示", class="eyecatch">
+    4:     <h1>PRODUCTS</h1>
+    5:     <span ><strong>ジャンルで検索</strong></span>
+    6:       <% @genres.each do |genre| %>
+    7: 
+    8:           <%= link_to root_path(genre: genre.id) do %>
+    9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+  
+app/views/share/_sidebar.html.erb:6:in `_app_views_share__sidebar_html_erb__502892938548619066_69954756286580'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_69954756327060'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:16:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (5.8ms)
+  Rendered homes/top.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:   <img src="/assets/tart1" alt="非表示", class="eyecatch">
+    4:     <h1>PRODUCTS</h1>
+    5:     <span ><strong>ジャンルで検索</strong></span>
+    6:       <% @genres.each do |genre| %>
+    7: 
+    8:           <%= link_to root_path(genre: genre.id) do %>
+    9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+  
+app/views/share/_sidebar.html.erb:6:in `_app_views_share__sidebar_html_erb__502892938548619066_36355360'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_36431500'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:16:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (257.8ms)
+  Rendered homes/top.html.erb within layouts/application (263.4ms)
+Completed 500 Internal Server Error in 284ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genres' for #<#<Class:0x0000000005841d90>:0x000000000583bcd8>):
+    3:   <img src="/assets/tart1" alt="非表示", class="eyecatch">
+    4:     <h1>PRODUCTS</h1>
+    5:     <span ><strong>ジャンルで検索</strong></span>
+    6:       <% genres.each do |genre| %>
+    7: 
+    8:           <%= link_to root_path(genre: genre.id) do %>
+    9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+  
+app/views/share/_sidebar.html.erb:6:in `_app_views_share__sidebar_html_erb__502892938548619066_46243860'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_46261760'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:17:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (284.1ms)
+  Rendered homes/top.html.erb within layouts/application (290.2ms)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genre' for #<#<Class:0x0000000005841d90>:0x0000000004397138>):
+     5:     <span ><strong>ジャンルで検索</strong></span>
+     6:       
+     7: 
+     8:           <%= link_to root_path(genre: genre.id) do %>
+     9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+    10:           <% end %>
+    11:          
+  
+app/views/share/_sidebar.html.erb:8:in `_app_views_share__sidebar_html_erb__502892938548619066_35260460'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_35463900'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:17:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (246.3ms)
+  Rendered homes/top.html.erb within layouts/application (251.4ms)
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genre' for #<#<Class:0x0000000005841d90>:0x00007f3f38c46958>):
+     6:       
+     7: 
+     8:         
+     9:             <span style = "background-color: #2D714C" class="badge"><%= genre.name %></span>
+    10:        
+    11:          
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb__502892938548619066_69954756090580'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_69954756032880'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:17:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.2ms)
+  Rendered homes/top.html.erb within layouts/application (5.1ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 522ms (Views: 516.5ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/tart1"):
+>>>>>>> origin/develop
   
 actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
@@ -3029,7 +3975,16 @@ activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tag
 activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
 activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
 railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+<<<<<<< HEAD
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+=======
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.3) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.3) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.3) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+>>>>>>> origin/develop
 actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
 actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
 rack (2.2.3) lib/rack/method_override.rb:24:in `call'
@@ -3044,6 +3999,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/member/members/1" for 10.0.2.2 at 2020-07-18 13:01:39 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -3166,6 +4122,370 @@ activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
 actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
 actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
 actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+=======
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:19:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (298.6ms)
+  Rendered homes/top.html.erb within layouts/application (304.6ms)
+Completed 500 Internal Server Error in 325ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genres' for #<#<Class:0x0000000005841d90>:0x00007f3f2c70d9c0>):
+     6:         </tr>
+     7:       </thead>
+     8:       <tbody>
+     9:         <% genres.each do |genre| %>
+    10:         <% end %>
+    11:           </tr>
+    12:       </tbody>
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb__502892938548619066_69954651183040'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_69954652631460'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:20:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.4ms)
+  Rendered homes/top.html.erb within layouts/application (5.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 130ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:39:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (291.3ms)
+  Rendered homes/top.html.erb within layouts/application (296.8ms)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `genres' for #<#<Class:0x0000000005841d90>:0x0000000001e74338>):
+     6:         </tr>
+     7:       </thead>
+     8:       <tbody>
+     9:         <% genres.each do |genre| %>
+    10:         <td><%= link_to genre.name, products_top_path(genre_id: genre.id) %></td>
+    11:         <% end %>
+    12:           </tr>
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb__502892938548619066_12196960'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_15969580'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:40:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (6.3ms)
+  Rendered homes/top.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6:         </tr>
+     7:       </thead>
+     8:       <tbody>
+     9:         <% @genres.each do |genre| %>
+    10:         <td><%= link_to genre.name, products_top_path(genre_id: genre.id) %></td>
+    11:         <% end %>
+    12:           </tr>
+  
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb__502892938548619066_69954897262560'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb__2734791015709401214_69954897197360'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:42:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (134.2ms)
+  Rendered homes/top.html.erb within layouts/application (139.2ms)
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `products_top_path' for #<#<Class:0x0000000004f0cbf8>:0x00007f2d6c5a8f70>
+Did you mean?  products_path
+               product_path):
+     7:       </thead>
+     8:       <tbody>
+     9:         <% @genres.each do |genre| %>
+    10:         <td><%= link_to genre.name, products_top_path(genre_id: genre.id) %></td>
+    11:         <% end %>
+    12:           </tr>
+    13:       </tbody>
+  
+app/views/share/_sidebar.html.erb:10:in `block in _app_views_share__sidebar_html_erb___100040407884432946_69916534123040'
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb___100040407884432946_69916534123040'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___3519356593798295247_41446640'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:42:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (1.6ms)
+  Rendered homes/top.html.erb within layouts/application (6.5ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 496ms (Views: 490.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:43:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.9ms)
+  Rendered homes/top.html.erb within layouts/application (8.0ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 148ms (Views: 141.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:43:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.1ms)
+  Rendered homes/top.html.erb within layouts/application (7.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 167ms (Views: 161.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:43:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  Rendered homes/top.html.erb within layouts/application (9.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 160ms (Views: 152.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 12:44:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.6ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 134ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 12:45:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 148ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:45:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (8.1ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 132ms (Views: 124.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:45:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  Rendered homes/top.html.erb within layouts/application (7.8ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 138ms (Views: 130.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:47:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  Rendered homes/top.html.erb within layouts/application (7.9ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 124ms (Views: 117.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:47:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  Rendered homes/top.html.erb within layouts/application (8.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 149ms (Views: 143.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:49:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/controllers/homes_controller.rb:15: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/homes_controller.rb:15: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:49:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `search' for #<Class:0x00007f62f8146ad8>):
+  
+app/controllers/homes_controller.rb:11:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:50:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+Completed 404 Not Found in 14ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Genre without an ID):
+  
+app/controllers/homes_controller.rb:5:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:51:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Genre Load (0.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+NameError (undefined local variable or method `genre' for #<HomesController:0x0000000006261618>
+Did you mean?  @genres):
+  
+app/controllers/homes_controller.rb:6:in `top'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:51:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (138.8ms)
+  Rendered homes/top.html.erb within layouts/application (144.4ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `products_top_path' for #<#<Class:0x0000000004e177c0>:0x00007fa3285abb30>
+Did you mean?  products_path
+               product_path):
+     7:       </thead>
+     8:       <tbody>
+     9:         <% @genres.each do |genre| %>
+    10:         <td><%= link_to genre.name, products_top_path(genre_id: genre.id) %></td> %></td>
+    11:         <% end %>
+    12:           </tr>
+    13:       </tbody>
+  
+app/views/share/_sidebar.html.erb:10:in `block in _app_views_share__sidebar_html_erb__1135167172984049839_40919100'
+app/views/share/_sidebar.html.erb:9:in `_app_views_share__sidebar_html_erb__1135167172984049839_40919100'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___1525211712504621596_70169366700800'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:52:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered share/_sidebar.html.erb (0.7ms)
+  Rendered homes/top.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/share/_sidebar.html.erb:10: syntax error, unexpected ')'
+....append=( link_to genre.name, );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/share/_sidebar.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;         end 
+                  ^~~
+/home/vagrant/work/Nagano_Cake/app/views/share/_sidebar.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/share/_sidebar.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/share/_sidebar.html.erb:10: syntax error, unexpected ')'
+app/views/share/_sidebar.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+app/views/share/_sidebar.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/share/_sidebar.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+app/views/homes/top.html.erb:1:in `_app_views_homes_top_html_erb___1525211712504621596_70169377260440'
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:52:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.1ms)
+  Rendered homes/top.html.erb within layouts/application (9.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 469ms (Views: 463.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:56:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.2ms)
+  Rendered homes/top.html.erb within layouts/application (8.1ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 146ms (Views: 140.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 12:56:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (7.9ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 184ms (Views: 175.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/adimin/genres" for 10.0.2.2 at 2020-07-18 13:10:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/adimin/genres"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+>>>>>>> origin/develop
 web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
 web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
@@ -3192,6 +4512,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/member/products" for 10.0.2.2 at 2020-07-18 13:26:49 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
@@ -3214,6 +4535,456 @@ actionpack (5.2.4.3) lib/action_dispatch/http/parameters.rb:101:in `binary_param
 actionpack (5.2.4.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
 actionpack (5.2.4.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
 actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+=======
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  Rendered homes/top.html.erb within layouts/application (8.2ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 156ms (Views: 150.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (9.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 176ms (Views: 167.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  Rendered homes/top.html.erb within layouts/application (8.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 167ms (Views: 159.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (1.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.5ms)
+  Rendered homes/top.html.erb within layouts/application (11.0ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 171ms (Views: 163.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.0ms)
+  Rendered homes/top.html.erb within layouts/application (7.3ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 156ms (Views: 148.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.7ms)
+  Rendered homes/top.html.erb within layouts/application (10.4ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 178ms (Views: 168.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.2ms)
+  Rendered homes/top.html.erb within layouts/application (9.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 161ms (Views: 152.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (8.6ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 160ms (Views: 152.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  Rendered homes/top.html.erb within layouts/application (8.4ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 157ms (Views: 149.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  Rendered homes/top.html.erb within layouts/application (8.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 172ms (Views: 164.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:11:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (4.6ms)
+  Rendered homes/top.html.erb within layouts/application (11.9ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 165ms (Views: 157.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (4.5ms)
+  Rendered homes/top.html.erb within layouts/application (10.4ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 172ms (Views: 163.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (8.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 161ms (Views: 153.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.9ms)
+  Rendered homes/top.html.erb within layouts/application (9.1ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 166ms (Views: 157.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.2ms)
+  Rendered homes/top.html.erb within layouts/application (9.6ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 159ms (Views: 151.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.2ms)
+  Rendered homes/top.html.erb within layouts/application (9.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 179ms (Views: 170.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  Rendered homes/top.html.erb within layouts/application (8.8ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 170ms (Views: 161.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:12:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  Rendered homes/top.html.erb within layouts/application (9.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 177ms (Views: 170.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:13:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.3ms)
+  Rendered homes/top.html.erb within layouts/application (10.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 165ms (Views: 158.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:13:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.1ms)
+  Rendered homes/top.html.erb within layouts/application (9.1ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 169ms (Views: 160.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:13:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.3ms)
+  Rendered homes/top.html.erb within layouts/application (9.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 148ms (Views: 140.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:13:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  Rendered homes/top.html.erb within layouts/application (10.8ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 182ms (Views: 175.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:14:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.1ms)
+  Rendered homes/top.html.erb within layouts/application (7.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 156.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:14:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (9.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 163ms (Views: 156.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:14:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.2ms)
+  Rendered homes/top.html.erb within layouts/application (9.1ms)
+  Rendered share/_gest-header.html.erb (1.2ms)
+Completed 200 OK in 175ms (Views: 168.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:32:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (7.5ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 150ms (Views: 143.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:34:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.0ms)
+  Rendered homes/top.html.erb within layouts/application (7.3ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 152ms (Views: 145.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:34:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (7.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 134ms (Views: 127.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:35:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.2ms)
+  Rendered homes/top.html.erb within layouts/application (7.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 161ms (Views: 154.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:35:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  Rendered homes/top.html.erb within layouts/application (8.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 171ms (Views: 165.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:35:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (8.5ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 180ms (Views: 172.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:35:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (8.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 138ms (Views: 131.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:38:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  Rendered homes/top.html.erb within layouts/application (8.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 3458ms (Views: 3450.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:38:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.1ms)
+  Rendered homes/top.html.erb within layouts/application (7.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 127.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:38:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (8.2ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 135ms (Views: 127.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 13:38:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (18.1ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 152ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 10.0.2.2 at 2020-07-18 13:38:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant ProductsController):
+  
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `block in load_missing_constant'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:9:in `without_bootsnap_cache'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `rescue in load_missing_constant'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+>>>>>>> origin/develop
 actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
 actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
 actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
@@ -3260,3 +5031,18 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+<<<<<<< HEAD
+=======
+Started GET "/" for 10.0.2.2 at 2020-07-18 13:39:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  Rendered homes/top.html.erb within layouts/application (7.9ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 162ms (Views: 155.5ms | ActiveRecord: 0.6ms)
+
+
+>>>>>>> origin/develop
