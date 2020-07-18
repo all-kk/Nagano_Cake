@@ -1,15 +1,21 @@
-<div class="container takasa">
+<div class="container">
  <h2>商品一覧</h2>
  <table class="table table-hover">
  	<thead>
  		<tr class="active">
+ 			 <th>商品id</th>
  			 <th>商品名</th>
+ 			 <th>税抜き価格</th>
+ 			 <th>ジャンル</th>
  		</tr>
  	</thead>
  	<tbody>
  		<% @products.each do |product| %>
  		<tr>
- 			 <td><%= product.product_name %></td>
+ 			 <td><%= product.id %></td>
+ 			 <td><%= link_to product.name, admins_product_path(product) %></td>
+ 			 <td><%= product.price %></td>
+ 			 <td><%= product.genre_id %></td>
  		</tr>
  		<% end %>
  	</tbody>
