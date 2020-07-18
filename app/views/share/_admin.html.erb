@@ -9,7 +9,7 @@
     			<il>会員一覧</il>
     			<il><%= link_to '注文履歴一覧', admins_orders_path, class: 'glyphicon glyphicon-link about' %></il>
     			<il><%= link_to 'ジャンル一覧', admins_genres_path, class: 'glyphicon glyphicon-log-in sign_in' %></il>
-					<il><%= link_to 'ログアウト', destroy_member_admin_path, method: :delete %></il>
+					<il><%= link_to 'ログアウト', destroy_admin_session_path, method: :delete %></il>
 			</ul>
 		</nav>
 	</div>
