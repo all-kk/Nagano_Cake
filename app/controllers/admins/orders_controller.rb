@@ -6,6 +6,4 @@ class Admins::OrdersController < ApplicationController
 	def update
 	end
 	private
-	def
-	end
 end
