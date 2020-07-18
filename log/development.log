@@ -411,6 +411,7 @@ puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
 
 
 
+<<<<<<< HEAD
 Started GET "/admins/orders" for 10.0.2.2 at 2020-07-18 05:36:24 +0000
 Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -475,3 +476,24 @@ Processing by Admins::OrdersController#index as HTML
 Completed 200 OK in 238ms (Views: 231.5ms | ActiveRecord: 0.0ms)
 
 
+=======
+Started GET "/home/about" for 10.0.2.2 at 2020-07-18 07:00:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (202.8ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "nagano.jpg" is not present in the asset pipeline.):
+     6: また、全国へ発送可能ですので「いつ」でも「どこ」でもご注文いただけます。<br>
+     7: ぜひご注文ください。</h3>
+     8: <p class="img_center">
+     9: <%= image_tag'nagano.jpg',  size: '900x500' %>
+    10: </p>
+  
+app/views/homes/about.html.erb:9:in `_app_views_homes_about_html_erb__3850313258758664697_70258923398460'
+>>>>>>> origin/develop
