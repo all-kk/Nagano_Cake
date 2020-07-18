@@ -10,6 +10,20 @@
   </head>
 
   <body>
+    <!-- menberログイン時 -->
+    <% if member_signed_in? %>
+      <%= render 'share/member-header' %>
+    <!-- adminログイン時 -->
+    <% elsif admin_signed_in? %>
+      <%= render 'share/admin-header' %>
+    <!-- ゲストログイン時 -->
+    <% else %>
+      <%= render'share/gest-header' %>
+    <% end %>
+
     <%= yield %>
   </body>
+  <footer class="navbar navbar-fixed-bottom navbar-inverse">
+
+  </footer>
 </html>
