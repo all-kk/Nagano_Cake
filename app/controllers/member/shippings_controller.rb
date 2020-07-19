@@ -6,9 +6,9 @@ class Member::ShippingsController < ApplicationController
 
 	def create
 		@shipping = Shipping.new(shipping_params)
-		@shipping.member_id = current_member.member_id
+		@shipping.member_id = current_member.id
 		@shipping.save
-		redirect_to shippings_path
+		redirect_to member_shippings_path
 	end
 
 	def edit
@@ -18,13 +18,13 @@ class Member::ShippingsController < ApplicationController
 	def update
 		@shipping = Shipping.find(params[:id])
 		@shipping.update(shipping_params)
-		redirect_to shippings_path
+		redirect_to member_shippings_path
 	end
 
 	def destroy
-		shipping = Shipping.find(params[:id])
-		shipping.destroy(shipping_params)
-		redirect_to shippings_path
+		@shipping = Shipping.find(params[:id])
+		@shipping.destroy(shipping_params)
+		redirect_to member_shippings_path
 	end
 
 	private

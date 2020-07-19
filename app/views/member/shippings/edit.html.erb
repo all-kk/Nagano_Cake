@@ -1,0 +1,17 @@
+<div class="shipping_edit_area" style="margin-top: 100px;">
+<h2>配送先編集</h2>
+
+  <%= form_for @shipping, url:member_shipping_path(@shipping), method: :patch do |f| %>
+  	<h4>郵便番号(ハイフンなし)</h4>
+  	<%= f.label :郵便番号 %>
+    <%= f.text_field :postcode, autofocus: true, autocomplete: "postcode" %>
+    <h4>住所</h4>
+    <%= f.label :住所 %>
+    <%= f.text_field :address, autofocus: true, autocomplete: "address" %>
+    <h4>宛名</h4>
+    <%= f.label :宛名 %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+
+    <%= f.submit '編集する' %>
+ <% end %>
+</div>
