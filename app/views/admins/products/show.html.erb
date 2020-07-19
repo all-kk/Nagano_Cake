@@ -1,22 +1,25 @@
 <div class="container">
 	<h2>商品詳細</h2>
 	<div class="row">
+	<div class="col-xs-4">
+	</div>
+	<div class="col-xs-8">
 		<dix>
-		<p>商品名</p>
-		<p><%= @product.name %></p>
+		<h3>商品名：<%= @product.name %></h3>
 		</dix>
 		<dix>
-		<p>商品説明</p>
-		<p><%= @product.explanatory %></p>
+		<h3>商品説明：<%= @product.explanatory %></h3>
 		</dix>
 		<dix>
-		<p>ジャンル</p>
-		<p><%= @product.genre.name %></p>
+		<h3>ジャンル：<%= @product.genre.name %></h3>
 		</dix>
 		<dix>
-		<p>税抜き価格</p>
-		<p><%= @product.price %></p>
+		<h3>税抜き価格：<%= @product.price %></h3>
 		</dix>
+		<div>
+		<h3>販売ステータス：<%= @product.is_capable %></h3>
+		</div>
 	</div>
 	<%= link_to "編集する", edit_admins_product_path(@product) %>
+	</div>
 </div>
