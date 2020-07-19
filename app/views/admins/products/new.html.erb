@@ -19,6 +19,10 @@
 				<%= f.text_field :price %>
 				</div>
 				<div>
+				<%= f.label :販売ステータス %>
+				<%= f.select :is_capable ,["販売中","販売停止中"] %>
+				</div>
+				<div>
 				<%= f.submit "商品登録" %>
 				</div>
 			<% end %>
