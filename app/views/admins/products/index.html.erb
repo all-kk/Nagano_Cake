@@ -7,6 +7,7 @@
  			 <th>商品名</th>
  			 <th>税抜き価格</th>
  			 <th>ジャンル</th>
+ 			 <th>ステータス</th>
  		</tr>
  	</thead>
  	<tbody>
@@ -16,6 +17,7 @@
  			 <td><%= link_to product.name, admins_product_path(product) %></td>
  			 <td><%= product.price %></td>
  			 <td><%= product.genre_id %></td>
+ 			 <td><%= product.is_capable %></td>
  		</tr>
  		<% end %>
  	</tbody>
