@@ -20,8 +20,8 @@
      </tr>
         <% @shippings.each do |shipping| %>
      <tr>
-         <td><%= shipping.postal_code %></td>
-         <td><%= shipping.shipping_address %></td>
+         <td><%= shipping.postcode %></td>
+         <td><%= shipping.address %></td>
          <td><%= shipping.name %></td>
          <td>
           <%= link_to "編集する", edit_member_shipping_path(shipping), method: :get %>
@@ -30,8 +30,5 @@
      </tr>
         <% end %>
  </table>
-<<<<<<< HEAD
 </div>
-=======
-</div>
->>>>>>> 9927ed0646d309e6c1ee8139c5b806332843ed87
+

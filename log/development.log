@@ -12390,3 +12390,949 @@ NoMethodError (undefined method `member_id' for #<Member:0x00007fab94101d68>):
   
 app/controllers/member/shippings_controller.rb:9:in `create'
 >>>>>>> 9927ed0646d309e6c1ee8139c5b806332843ed87
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20200719083217)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "member_id" integer, "number" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719083217"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 08:51:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.4ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (18.8ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 900ms (Views: 877.0ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 08:51:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPdBlfErANltQl3OuUb2bxz13lpvkh9RQA+fVcUmKjNhXAGKRb5fhHjWUJ9VWSdzyQ+Fqkjy6qf5IXp/HWQDwA==", "shipping"=>{"postcode"=>"444", "address"=>"222", "name"=>"dee"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `member_id' for nil:NilClass):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 08:53:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPdBlfErANltQl3OuUb2bxz13lpvkh9RQA+fVcUmKjNhXAGKRb5fhHjWUJ9VWSdzyQ+Fqkjy6qf5IXp/HWQDwA==", "shipping"=>{"postcode"=>"444", "address"=>"22255", "name"=>"dee"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `member_id' for nil:NilClass):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:03:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RPdBlfErANltQl3OuUb2bxz13lpvkh9RQA+fVcUmKjNhXAGKRb5fhHjWUJ9VWSdzyQ+Fqkjy6qf5IXp/HWQDwA==", "shipping"=>{"postcode"=>"444", "address"=>"22255", "name"=>"dee"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.2ms)
+
+
+  
+NoMethodError (undefined method `member_id' for nil:NilClass):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:03:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.6ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (15.7ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 915ms (Views: 910.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-19 09:04:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 359ms (Views: 345.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-19 09:04:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"olmCYZMKNrE2giPaORGnHMNH7C+qpaWIyi3GWyJS02yzIucwF3uWCmzFbdtebD1alJ9Ujt3iuHwKGJVWc9r8TQ==", "member"=>{"email"=>"ddd@ddd", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "ddd@ddd"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 300ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-19 09:04:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (8.7ms)
+  Rendered homes/top.html.erb within layouts/application (13.3ms)
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 554ms (Views: 542.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:05:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.7ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (4.8ms)
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 140ms (Views: 134.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:05:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.4ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (3.8ms)
+  [1m[36mMember Load (2.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 144ms (Views: 136.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:05:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.4ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (4.3ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.7ms)
+Completed 200 OK in 117ms (Views: 111.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-19 09:05:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+LoadError (Unable to autoload constant Member::ProductsController, expected /home/vagrant/work/Nagano_Cake/app/controllers/member/products_controller.rb to define it):
+  
+activesupport (5.2.4.3) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:61:in `block in load_missing_constant'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:17:in `allow_bootsnap_retry'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `load_missing_constant'
+activesupport (5.2.4.3) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.4.3) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.4.3) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.3) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.4.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.4.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:05:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.6ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (5.0ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.1ms)
+Completed 200 OK in 130ms (Views: 125.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/member/cart_items" for 10.0.2.2 at 2020-07-19 09:05:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::CartItemsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:05:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.4ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (3.9ms)
+  [1m[36mMember Load (2.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 142ms (Views: 135.2ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:05:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQhEdMKSFsLKdbd0mQRwNxELVPCiX7wPQemBD+O7Oex1eOF1PPBT20cuW6dARYoh9XQd20d6hHq/Q0YRpyz4aQ==", "shipping"=>{"postcode"=>"ttt", "address"=>"eee", "name"=>"ddd"}, "commit"=>"登録する"}
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:9
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `member_id' for #<Member:0x00007f8fbc47d850>):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:12:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQhEdMKSFsLKdbd0mQRwNxELVPCiX7wPQemBD+O7Oex1eOF1PPBT20cuW6dARYoh9XQd20d6hHq/Q0YRpyz4aQ==", "shipping"=>{"postcode"=>"ttt", "address"=>"eee", "name"=>"ddd"}, "commit"=>"登録する"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:9
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 3.6ms)
+
+
+  
+NoMethodError (undefined method `member_id' for #<Member:0x00007fad1c8b7df8>):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddColumsToCartItems (20200719091941)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "product_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateMembers (20200715133857)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "members" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "first_name" varchar, "last_name" varchar, "first_name_phonetic" varchar, "last_name_phonetic" varchar, "telephone_number" varchar, "postcode" varchar, "string" varchar, "address" varchar, "is_deleted" boolean, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200715133857_devise_create_members.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")[0m
+  ↳ db/migrate/20200715133857_devise_create_members.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")[0m
+  ↳ db/migrate/20200715133857_devise_create_members.rb:47
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200715133857"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20200715133931)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200715133931_devise_create_admins.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20200715133931_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20200715133931_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200715133931"]]
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateShippings (20200716031145)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "shippings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "member_id" integer, "name" varchar, "postcode" varchar, "address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200716031145_create_shippings.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200716031145"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrderDetails (20200716031648)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "order_details" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "order_id" integer, "product_id" integer, "work_status" integer, "number" integer, "tax_price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200716031648_create_order_details.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200716031648"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20200716032022)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "genre_id" integer, "name" varchar, "explanatory" text, "image_id" varchar, "is_capable" boolean, "price" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200716032022_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200716032022"]]
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateGenres (20200716032140)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "is_enabled" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200716032140_create_genres.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200716032140"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsCapableOfProducts (20200719043136)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aproducts" ("id" integer NOT NULL PRIMARY KEY, "genre_id" integer DEFAULT NULL, "name" varchar DEFAULT NULL, "explanatory" text DEFAULT NULL, "image_id" varchar DEFAULT NULL, "is_capable" boolean DEFAULT NULL, "price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aproducts" ("id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at")
+                     SELECT "id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at" FROM "products"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE "products"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer NOT NULL PRIMARY KEY, "genre_id" integer DEFAULT NULL, "name" varchar DEFAULT NULL, "explanatory" text DEFAULT NULL, "image_id" varchar DEFAULT NULL, "is_capable" boolean DEFAULT 1, "price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "products" ("id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at")
+                     SELECT "id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at" FROM "aproducts"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aproducts"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719043136"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20200719083217)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719083217"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddColumsToCartItems (20200719091941)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "product_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "member_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "number" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719091941"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-19 09:20:39.729263"], ["updated_at", "2020-07-19 09:20:39.729263"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:23:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQhEdMKSFsLKdbd0mQRwNxELVPCiX7wPQemBD+O7Oex1eOF1PPBT20cuW6dARYoh9XQd20d6hHq/Q0YRpyz4aQ==", "shipping"=>{"postcode"=>"ttt", "address"=>"eee", "name"=>"ddd"}, "commit"=>"登録する"}
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:9
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 10.8ms)
+
+
+  
+NoMethodError (undefined method `member_id' for nil:NilClass):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:23:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.6ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (17.3ms)
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_gest-header.html.erb (3.3ms)
+Completed 200 OK in 1726ms (Views: 1720.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:23:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"12MFYWbek7+H6XluBOw/qjPODhuS9L6DvmxKvyiPv2nHE6BgmLzWpgqylb3drcW817FHMHfRhvZAxo2hbBh+7A==", "shipping"=>{"postcode"=>"222", "address"=>"444", "name"=>"ffff"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `member_id' for nil:NilClass):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:23:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"12MFYWbek7+H6XluBOw/qjPODhuS9L6DvmxKvyiPv2nHE6BgmLzWpgqylb3drcW817FHMHfRhvZAxo2hbBh+7A==", "shipping"=>{"postcode"=>"222", "address"=>"444", "name"=>"ffff"}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `member_id' for nil:NilClass):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:23:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.5ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (5.6ms)
+  Rendered share/_gest-header.html.erb (2.1ms)
+Completed 200 OK in 330ms (Views: 326.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-19 09:24:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+  Rendered share/_gest-header.html.erb (1.5ms)
+Completed 200 OK in 571ms (Views: 549.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-19 09:24:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.7ms)
+  Rendered share/_gest-header.html.erb (1.3ms)
+Completed 200 OK in 281ms (Views: 278.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 10.0.2.2 at 2020-07-19 09:24:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nKsYTqI6hAd9NS30KJhVbWHA7/WZK46EU5ZqE6jbrE5hPr4MKhSrWhvEY6tg3yJKpQGJZ6o+8jWDTxL74BeSZw==", "member"=>{"first_name"=>"ttt", "last_name"=>"sws", "first_name_phonetic"=>"dd", "last_name_phonetic"=>"aa", "email"=>"ttt@ttt", "postcode"=>"aa", "address"=>"sds", "telephone_number"=>"a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Exists (2.5ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "ttt@ttt"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Create (2.7ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "first_name", "last_name", "first_name_phonetic", "last_name_phonetic", "telephone_number", "postcode", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ttt@ttt"], ["encrypted_password", "$2a$12$r39nRokHQ0m5WuZdCGnEhuZDIshQNj8oleJLGHW.7sz0palMxBeIy"], ["first_name", "ttt"], ["last_name", "sws"], ["first_name_phonetic", "dd"], ["last_name_phonetic", "aa"], ["telephone_number", "a"], ["postcode", "aa"], ["address", "sds"], ["created_at", "2020-07-19 09:24:47.146917"], ["updated_at", "2020-07-19 09:24:47.146917"]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 430ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-19 09:24:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (1.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (7.2ms)
+  Rendered homes/top.html.erb within layouts/application (12.9ms)
+  [1m[36mMember Load (1.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (2.3ms)
+Completed 200 OK in 892ms (Views: 879.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:24:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.7ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (4.6ms)
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.1ms)
+Completed 200 OK in 233ms (Views: 226.6ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:25:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fn7VSA5HhnClQpU6z4xAjgll8CQfEhlGKD1KTxpzhWkGDnBJ8CXDaSgZeekWzbqY7Rq5D/o3ITPWl41RXuRE7A==", "shipping"=>{"postcode"=>"444", "address"=>"ddd", "name"=>"sss"}, "commit"=>"登録する"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:9
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `member_id' for #<Member:0x00007f738c1739f8>):
+  
+app/controllers/member/shippings_controller.rb:9:in `create'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:28:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fn7VSA5HhnClQpU6z4xAjgll8CQfEhlGKD1KTxpzhWkGDnBJ8CXDaSgZeekWzbqY7Rq5D/o3ITPWl41RXuRE7A==", "shipping"=>{"postcode"=>"444", "address"=>"ddd", "name"=>"sss"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+Completed 500 Internal Server Error in 464ms (ActiveRecord: 5.5ms)
+
+
+  
+NameError (undefined local variable or method `shippings_path' for #<Member::ShippingsController:0x00007f8250648488>
+Did you mean?  shipping_params):
+  
+app/controllers/member/shippings_controller.rb:10:in `create'
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:29:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fn7VSA5HhnClQpU6z4xAjgll8CQfEhlGKD1KTxpzhWkGDnBJ8CXDaSgZeekWzbqY7Rq5D/o3ITPWl41RXuRE7A==", "shipping"=>{"postcode"=>"444", "address"=>"ddd", "name"=>"sss"}, "commit"=>"登録する"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+Redirected to http://localhost:3000/member/shippings
+Completed 302 Found in 89ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:29:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (1.2ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (29.8ms)
+  [1m[36mMember Load (2.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (5.8ms)
+Completed 200 OK in 2247ms (Views: 2208.6ms | ActiveRecord: 10.3ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 09:29:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KgWKMWgvZgsDw9K8d0M2GTxlDls3zQqbZhCeg1viOjk6dS8wlk0jEo6YPm+uAswP2BpHcNLoMu6YulmdH3X7vA==", "shipping"=>{"postcode"=>"ee", "address"=>"ww", "name"=>"ss"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+Redirected to http://localhost:3000/member/shippings
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:29:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.5ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (8.5ms)
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.8ms)
+Completed 200 OK in 328ms (Views: 321.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 09:32:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.6ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (6.0ms)
+  [1m[36mMember Load (1.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.2ms)
+Completed 200 OK in 278ms (Views: 271.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 11:37:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (1.1ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (33.1ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (4.7ms)
+Completed 200 OK in 1437ms (Views: 1396.8ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 11:38:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9jjS5gmmq3Hq9Iw8ZvzmMZtmsuO2dsc4j8CESrT8r7fmSHfn98TuaGevYO+/vRwnfxn7yFNT/01xakNU8GtuMg==", "shipping"=>{"postcode"=>"333", "address"=>"222", "name"=>"gggg"}, "commit"=>"登録する"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:9
+Redirected to http://localhost:3000/member/shippings
+Completed 302 Found in 13ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 11:38:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (1.2ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (28.2ms)
+  [1m[36mMember Load (1.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (2.9ms)
+Completed 200 OK in 363ms (Views: 353.5ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 12:02:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (1.7ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (37.7ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (4.4ms)
+Completed 200 OK in 1869ms (Views: 1808.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 12:02:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (0.8ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (30.1ms)
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (2.9ms)
+Completed 200 OK in 1639ms (Views: 1561.8ms | ActiveRecord: 12.6ms)
+
+
+Started POST "/member/shippings" for 10.0.2.2 at 2020-07-19 12:02:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vEqh65GV06ilCFhyfaObOz7zXEzc6gzqYOcqkqXY632sOgTqb/eWsShTtKGk4mEt2owVZznPNJ+eTe2M4U8q+A==", "shipping"=>{"postcode"=>"www", "address"=>"ss", "name"=>"ss"}, "commit"=>"登録する"}
+  [1m[36mMember Load (1.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:10
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:10
+  [1m[36mShipping Create (4.5ms)[0m  [1m[32mINSERT INTO "shippings" ("member_id", "name", "postcode", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["member_id", 1], ["name", "ss"], ["postcode", "www"], ["address", "ss"], ["created_at", "2020-07-19 12:02:35.973632"], ["updated_at", "2020-07-19 12:02:35.973632"]]
+  ↳ app/controllers/member/shippings_controller.rb:10
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:10
+Redirected to http://localhost:3000/member/shippings
+Completed 302 Found in 65ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 12:02:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (1.2ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (21.1ms)
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.5ms)
+Completed 200 OK in 474ms (Views: 459.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/member/shippings/1/edit" for 10.0.2.2 at 2020-07-19 12:03:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#edit as HTML
+  Parameters: {"authenticity_token"=>"ywoKYhcsTiAEpcusBpf9B8+gLjl9l2Owso0t+853mXDbeq9j6U4LOYn+J3/f1gcRK99nEpiyW8VMJ+rliuBY9Q==", "id"=>"1"}
+  [1m[36mShipping Load (1.0ms)[0m  [1m[34mSELECT  "shippings".* FROM "shippings" WHERE "shippings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:15
+  Rendering member/shippings/edit.html.erb within layouts/application
+  Rendered member/shippings/edit.html.erb within layouts/application (351.3ms)
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `shipping_path' for #<#<Class:0x00007fd79068b108>:0x0000000005c0a3c8>):
+    1: <h2>配送先編集</h2>
+    2: 
+    3:   <%= form_for(@shipping) do |f| %>
+    4:   	<h4>郵便番号(ハイフンなし)</h4>
+    5:   	<%= f.label :郵便番号 %>
+    6:     <%= f.text_field :postcode, autofocus: true, autocomplete: "postcode" %>
+  
+app/views/member/shippings/edit.html.erb:3:in `_app_views_member_shippings_edit_html_erb___4001055463211559816_48256700'
+Started GET "/member/shippings/1/edit" for 10.0.2.2 at 2020-07-19 12:06:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#edit as HTML
+  Parameters: {"authenticity_token"=>"ywoKYhcsTiAEpcusBpf9B8+gLjl9l2Owso0t+853mXDbeq9j6U4LOYn+J3/f1gcRK99nEpiyW8VMJ+rliuBY9Q==", "id"=>"1"}
+  [1m[36mShipping Load (1.5ms)[0m  [1m[34mSELECT  "shippings".* FROM "shippings" WHERE "shippings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:15
+  Rendering member/shippings/edit.html.erb within layouts/application
+  Rendered member/shippings/edit.html.erb within layouts/application (6.1ms)
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.9ms)
+Completed 200 OK in 377ms (Views: 364.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/member/shippings/1/edit" for 10.0.2.2 at 2020-07-19 12:07:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShipping Load (0.9ms)[0m  [1m[34mSELECT  "shippings".* FROM "shippings" WHERE "shippings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:15
+  Rendering member/shippings/edit.html.erb within layouts/application
+  Rendered member/shippings/edit.html.erb within layouts/application (3.2ms)
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.5ms)
+Completed 200 OK in 324ms (Views: 308.8ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/member/shippings/1" for 10.0.2.2 at 2020-07-19 12:07:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wZJ+TCY7Kja+blUle6PySwIkMcPYgVdITWC2SWFTxGzR4ttN2FlvLzM1ufai4ghd5lt46D2kbz2zynFXJcQF6Q==", "shipping"=>{"postcode"=>"555", "address"=>"ss", "name"=>"ss"}, "commit"=>"編集する", "id"=>"1"}
+  [1m[36mShipping Load (0.6ms)[0m  [1m[34mSELECT  "shippings".* FROM "shippings" WHERE "shippings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:20
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:20
+  [1m[36mShipping Update (4.3ms)[0m  [1m[33mUPDATE "shippings" SET "postcode" = ?, "updated_at" = ? WHERE "shippings"."id" = ?[0m  [["postcode", "555"], ["updated_at", "2020-07-19 12:07:23.348544"], ["id", 1]]
+  ↳ app/controllers/member/shippings_controller.rb:20
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/member/shippings_controller.rb:20
+Redirected to http://localhost:3000/member/shippings
+Completed 302 Found in 23ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/member/shippings" for 10.0.2.2 at 2020-07-19 12:07:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ShippingsController#index as HTML
+  Rendering member/shippings/index.html.erb within layouts/application
+  [1m[36mShipping Load (1.2ms)[0m  [1m[34mSELECT "shippings".* FROM "shippings"[0m
+  ↳ app/views/member/shippings/index.html.erb:21
+  Rendered member/shippings/index.html.erb within layouts/application (8.7ms)
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (5.2ms)
+Completed 200 OK in 436ms (Views: 428.6ms | ActiveRecord: 2.3ms)
+
+
