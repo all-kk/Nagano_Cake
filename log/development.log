@@ -2574,3 +2574,451 @@ Processing by HomesController#top as HTML
 Completed 200 OK in 129ms (Views: 126.0ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:08:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_capable_i18n' for #<Product:0x00007f52447cd970>
+Did you mean?  is_capable_was):
+    17:  			 <td><%= link_to product.name, admins_product_path(product) %></td>
+    18:  			 <td><%= product.price %></td>
+    19:  			 <td><%= product.genre_id %></td>
+    20:  			 <td><%= product.is_capable_i18n %></td>
+    21:  		</tr>
+    22:  		<% end %>
+    23:  	</tbody>
+  
+app/views/admins/products/index.html.erb:20:in `block in _app_views_admins_products_index_html_erb___3083155171426873636_69995656058480'
+app/views/admins/products/index.html.erb:14:in `_app_views_admins_products_index_html_erb___3083155171426873636_69995656058480'
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:09:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ppend=( product.is_capable_|18n );@output_buffer.safe_append...
+...                              ^):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:22:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...e],['販売停止中',false]] );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; 		 end 
+          		 ^~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:30:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (70.0ms)
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:30:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (2.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (10.4ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 2379ms (Views: 2371.9ms | ActiveRecord: 2.7ms)
+
+
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 6392ms (Views: 6386.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:44:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    20: 				</div>
+    21: 				<div>
+    22: 				<%= f.label :販売ステータス %>
+    23: 				<%= f.select :is_capable %>
+    24: 				</div>
+    25: 				<div>
+    26: 				<%= f.submit "商品登録" %>
+  
+app/views/admins/products/new.html.erb:23:in `block in _app_views_admins_products_new_html_erb___3957764636298937247_70335831009840'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb___3957764636298937247_70335831009840'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:45:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (3.5ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 634ms (Views: 631.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:45:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (22.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 656ms (Views: 633.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:46:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (21.0ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 630ms (Views: 608.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 05:46:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FSpKSheRISmf0nCxZDub9RK9iCIYMiXlnUie4BQdXC138K1yFHRyrFoK9gOcnutxsFCOKVHjeaNliCt30f/rTQ==", "product"=>{"name"=>"aac", "explanatory"=>"as", "genre_id"=>"1", "price"=>"100", "is_capable"=>"false"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (2.1ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "is_capable", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "aac"], ["explanatory", "as"], ["is_capable", "販売停止中"], ["price", 100], ["created_at", "2020-07-19 05:46:22.505008"], ["updated_at", "2020-07-19 05:46:22.505008"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 17ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:46:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...e],['販売停止中',false]] );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; 		 end 
+          		 ^~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:47:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (24.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 693ms (Views: 669.8ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 05:47:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1I1q3kTGwPdn2zSMwcB6mXKHDF6za1IuCHLw/x5mZ8ZiNKTevZIhhhH6mDLonFuxycaOjMc8Q5A4X5UOZsu/w==", "product"=>{"name"=>"as", "explanatory"=>"as", "genre_id"=>"1", "price"=>"as", "is_capable"=>"true"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (2.6ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "is_capable", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "as"], ["explanatory", "as"], ["is_capable", "販売中"], ["price", 0], ["created_at", "2020-07-19 05:47:46.212975"], ["updated_at", "2020-07-19 05:47:46.212975"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 18ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:47:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...e],['販売停止中',false]] );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; 		 end 
+          		 ^~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 05:49:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (4.1ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 136ms (Views: 133.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 05:49:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"46NHonjWV+qYR2Vm+7OTtcRS08J/kmF3OwK20atyzzeBeaCaezMEb12f49QDFuMxZr/VyTZDPTHDwgNGbpB4Vw==", "product"=>{"name"=>"as", "explanatory"=>"as", "genre_id"=>"1", "price"=>"as", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (2.5ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "is_capable", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "as"], ["explanatory", "as"], ["is_capable", "販売中"], ["price", 0], ["created_at", "2020-07-19 05:49:41.878108"], ["updated_at", "2020-07-19 05:49:41.878108"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 12ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:49:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...e],['販売停止中',false]] );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; 		 end 
+          		 ^~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 05:50:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"46NHonjWV+qYR2Vm+7OTtcRS08J/kmF3OwK20atyzzeBeaCaezMEb12f49QDFuMxZr/VyTZDPTHDwgNGbpB4Vw==", "product"=>{"name"=>"as", "explanatory"=>"as", "genre_id"=>"1", "price"=>"as", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (1.7ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "as"], ["explanatory", "as"], ["price", 0], ["created_at", "2020-07-19 05:50:40.125037"], ["updated_at", "2020-07-19 05:50:40.125037"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 38ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 05:50:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...e],['販売停止中',false]] );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; 		 end 
+          		 ^~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 06:03:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (21.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 657ms (Views: 635.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 06:03:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hwuqrGkfOTBrbgyPIML83AHK5gFo+yeLwaQ5n++1WCPl0U2Uavpqta62ij3YZ4xYoyfgCiEqe805ZIwIKlfvQw==", "product"=>{"name"=>"ass", "explanatory"=>"as", "genre_id"=>"1", "price"=>"123", "is_capable"=>"true"}, "commit"=>"商品登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('true' is not a valid is_capable):
+  
+app/controllers/admins/products_controller.rb:6:in `create'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 06:12:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:15
+  Rendered admins/products/new.html.erb within layouts/application (20.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 652ms (Views: 632.8ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 06:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MctMbRT4bpORDxn0uBZ+rwqued4wvl6Dw9hSTPwjN1JTEatVFx09FlTXn0ZAsw4rqEN/1XlvAsU7GOfbOcGAMg==", "product"=>{"name"=>"as", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"122", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (2.4ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "as"], ["explanatory", "asd"], ["price", 122], ["created_at", "2020-07-19 06:12:13.616395"], ["updated_at", "2020-07-19 06:12:13.616395"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 16ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 06:12:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  Rendered admins/products/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...e],['販売停止中',false]] );@output_buffer.safe_append='...
+...                              ^
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; 		 end 
+          		 ^~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/vagrant/work/Nagano_Cake/app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/admins/products/index.html.erb:20: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/admins/products/index.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+app/views/admins/products/index.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admins/products/index.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 06:12:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MctMbRT4bpORDxn0uBZ+rwqued4wvl6Dw9hSTPwjN1JTEatVFx09FlTXn0ZAsw4rqEN/1XlvAsU7GOfbOcGAMg==", "product"=>{"name"=>"as", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"122", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (2.7ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "as"], ["explanatory", "asd"], ["price", 122], ["created_at", "2020-07-19 06:12:35.229113"], ["updated_at", "2020-07-19 06:12:35.229113"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 21ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 06:12:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (3.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 122.6ms | ActiveRecord: 0.5ms)
+
+
