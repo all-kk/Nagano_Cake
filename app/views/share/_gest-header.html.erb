@@ -1,15 +1,15 @@
 <header class="navbar navbar-inverse">
-   <div class="container">
-    <nav class='nav navbar-nav navbar-left' >
-      <h2><span　class="title is-4" style="font-family: cursive;">Nagano Cake</span></h2>
-    </nav>
-    <nav style="margin-top: 50px;">
-       <ul class="nav navbar-nav navbar-right">
-    <il><%= link_to 'about', home_about_path, class: 'glyphicon glyphicon-link about' %></il>
-    <il><%= link_to '商品一覧', member_products_path, class: 'glyphicon glyphicon-link about' %></il>
-    <il><%= link_to '新規登録', new_member_registration_path, class: 'glyphicon glyphicon-edit sign_up' %></il>
-    <il><%= link_to 'ログイン', member_session_path, class: 'glyphicon glyphicon-log-in sign_in' %></il>
-     </ul>
-     </nav>
-   </div>
- </header>
+ <div class="container">
+  <nav class='nav navbar-nav navbar-left' >
+    <h2><span　class="title is-4" style="font-family: cursive;">Nagano Cake</span></h2>
+  </nav>
+  <nav style="margin-top: 50px;">
+   <ul class="nav navbar-nav navbar-right">
+    <span class="glyphicon glyphicon-tags" aria-hidden="true"></span><il><%= link_to ' about', home_about_path %></il>
+    <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧', member_products_path %></il>
+    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span><il><%= link_to '新規登録', new_member_registration_path %></il>
+    <span class="glyphicon glyphicon-share" aria-hidden="true"></span><il><%= link_to 'ログイン', member_session_path %></il>
+  </ul>
+</nav>
+</div>
+</header>
