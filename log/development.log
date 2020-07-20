@@ -33885,6 +33885,973 @@ Completed 200 OK in 170ms (Views: 161.0ms | ActiveRecord: 1.7ms)
 >>>>>>> 201bda748d0b5bbe428c69f8c418751a77a5c166
 
 
+<<<<<<< HEAD
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/admins/members/1/edit" for 10.0.2.2 at 2020-07-20 05:11:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (138.5ms)
+  Rendered share/_gest-header.html.erb (3.0ms)
+Completed 200 OK in 6294ms (Views: 6140.1ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/admins/members/1/edit" for 10.0.2.2 at 2020-07-20 05:15:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (443.4ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 1051ms (Views: 1037.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/members/1" for 10.0.2.2 at 2020-07-20 05:21:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (4.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (1.8ms)
+  Rendered share/_gest-header.html.erb (1.7ms)
+Completed 200 OK in 1096ms (Views: 1019.4ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/admins/sign_in" for 10.0.2.2 at 2020-07-20 05:21:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (9.4ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 640ms (Views: 593.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admins/top" for 10.0.2.2 at 2020-07-20 05:21:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::TopController#top as HTML
+  Rendering admins/top/top.html.erb within layouts/application
+  Rendered admins/top/top.html.erb within layouts/application (1.4ms)
+  Rendered share/_gest-header.html.erb (5.9ms)
+Completed 200 OK in 767ms (Views: 747.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 05:21:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (7.7ms)
+  Rendered share/_gest-header.html.erb (1.6ms)
+Completed 200 OK in 1128ms (Views: 1118.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:24:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (2.8ms)
+Completed 200 OK in 639ms (Views: 628.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 05:24:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (3.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (24.0ms)
+  Rendered share/_gest-header.html.erb (1.2ms)
+Completed 200 OK in 763ms (Views: 683.8ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:24:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xL3UdU1b7qe7jS0POSqF/B3Gowti19Vvnlwg+RSu7s/PrhRRUT33XFDsPgn/Rbd0XszI6J6YYeMLTWwWXs6kDQ==", "member"=>{"last_name"=>"rrrrr", "first_name"=>"rrrr", "last_name_phonetic"=>"rrrr", "first_name_phonetic"=>"rrrr", "postcode"=>"00000000", "address"=>"東京都新宿区1-1", "telephone_number"=>"0000000000", "email"=>"rrrrrr@rrrrr", "is_deleted"=>"退会済み"}, "commit"=>"変更を保存する", "id"=>"3"}
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:12
+Unpermitted parameters: :email, :is_deleted
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+Redirected to http://localhost:3000/admins/members
+Completed 302 Found in 21ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 05:24:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (5.5ms)
+  Rendered share/_gest-header.html.erb (2.1ms)
+Completed 200 OK in 543ms (Views: 525.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 05:24:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (4.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (23.8ms)
+  Rendered share/_gest-header.html.erb (2.8ms)
+Completed 200 OK in 609ms (Views: 558.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:24:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (3.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (8.0ms)
+  Rendered share/_gest-header.html.erb (2.2ms)
+Completed 200 OK in 829ms (Views: 812.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:25:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (2.9ms)
+  Rendered share/_gest-header.html.erb (1.5ms)
+Completed 200 OK in 675ms (Views: 658.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 05:25:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (8.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (32.0ms)
+  Rendered share/_gest-header.html.erb (3.0ms)
+Completed 200 OK in 573ms (Views: 543.8ms | ActiveRecord: 8.6ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsDeletedDefaultOnMembers (20200720053420)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsDeletedDefaultOnMembers (20200720053420)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "amembers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "name" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "first_name_phonetic" varchar DEFAULT NULL, "last_name_phonetic" varchar DEFAULT NULL, "telephone_number" varchar DEFAULT NULL, "postcode" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "is_deleted" boolean DEFAULT NULL)[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_amembers_on_reset_password_token" ON "amembers" ("reset_password_token")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_amembers_on_email" ON "amembers" ("email")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "amembers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted" FROM "members"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (8.7ms)[0m  [1m[35mDROP TABLE "members"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "members" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "name" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "first_name_phonetic" varchar DEFAULT NULL, "last_name_phonetic" varchar DEFAULT NULL, "telephone_number" varchar DEFAULT NULL, "postcode" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "is_deleted" boolean DEFAULT 1)[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "members" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted" FROM "amembers"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (2.8ms)[0m  [1m[35mDROP TABLE "amembers"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720053420"]]
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (4.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 05:48:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (2.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (280.3ms)
+  Rendered share/_gest-header.html.erb (3.3ms)
+Completed 200 OK in 3089ms (Views: 2976.9ms | ActiveRecord: 10.3ms)
+
+
+Started PATCH "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:49:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JH6RJTUVVxusQTgIACD5vlec/d3ZeMgX3G5B2v7b564vbVEBKXNO4EcgKw7GT8s2FJaWPiU3fJtJfw01tLutbA==", "member"=>{"last_name"=>"rrrrr", "first_name"=>"rrrr", "last_name_phonetic"=>"rrrr", "first_name_phonetic"=>"rrrr", "postcode"=>"00000000", "address"=>"東京都新宿区1-1", "telephone_number"=>"0000000000", "email"=>"rrrrrr@rrrrr", "is_deleted"=>"有効"}, "commit"=>"変更を保存する", "id"=>"3"}
+  [1m[36mMember Load (3.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:12
+Unpermitted parameters: :email, :is_deleted
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[35m (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+Redirected to http://localhost:3000/admins/members
+Completed 302 Found in 32ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 05:49:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (5.3ms)
+  Rendered share/_gest-header.html.erb (1.9ms)
+Completed 200 OK in 651ms (Views: 635.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/members/1" for 10.0.2.2 at 2020-07-20 05:49:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (2.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.7ms)
+  Rendered share/_gest-header.html.erb (1.6ms)
+Completed 200 OK in 876ms (Views: 858.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admins/members/1/edit" for 10.0.2.2 at 2020-07-20 05:49:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (3.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (19.2ms)
+  Rendered share/_gest-header.html.erb (3.8ms)
+Completed 200 OK in 874ms (Views: 854.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/admins/members/1/edit" for 10.0.2.2 at 2020-07-20 05:50:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (12.5ms)
+  Rendered share/_gest-header.html.erb (2.2ms)
+Completed 200 OK in 773ms (Views: 756.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/members/1/edit" for 10.0.2.2 at 2020-07-20 05:51:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (1657.9ms)
+Completed 500 Internal Server Error in 1752ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `member' for #<#<Class:0x00007f54f47a4ec8>:0x00007f54f5cf6920>
+Did you mean?  @member):
+    49:           <td>
+    50:             <label><%= f.radio_button :is_deleted, "有効" ,checked: "checked"%> 有効 </label>
+    51:             <label><%= f.radio_button :is_deleted, "退会済み" %> 退会済み</label>
+    52:             <td><%= member.is_deleted %></td>
+    53:           </td>
+    54:         </tr>
+    55:       </div>
+  
+app/views/admins/members/edit.html.erb:52:in `block in _app_views_admins_members_edit_html_erb__1866398170111442989_70001439015180'
+app/views/admins/members/edit.html.erb:6:in `_app_views_admins_members_edit_html_erb__1866398170111442989_70001439015180'
+Started GET "/admins/members/1/edit" for 10.0.2.2 at 2020-07-20 05:51:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (2.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (73.6ms)
+  Rendered share/_gest-header.html.erb (2.0ms)
+Completed 200 OK in 872ms (Views: 855.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admins/members/1" for 10.0.2.2 at 2020-07-20 05:51:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (2.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (4.3ms)
+  Rendered share/_gest-header.html.erb (2.8ms)
+Completed 200 OK in 922ms (Views: 898.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/admins/members/1" for 10.0.2.2 at 2020-07-20 05:55:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (4.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.5ms)
+  Rendered share/_gest-header.html.erb (28.9ms)
+Completed 200 OK in 1559ms (Views: 1511.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:56:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.5ms)
+  Rendered share/_gest-header.html.erb (8.6ms)
+Completed 200 OK in 1207ms (Views: 1161.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:57:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (22.0ms)
+  Rendered share/_gest-header.html.erb (3.8ms)
+Completed 200 OK in 5197ms (Views: 4999.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 05:57:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (8.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (379.7ms)
+  Rendered share/_gest-header.html.erb (6.1ms)
+Completed 200 OK in 1553ms (Views: 1523.3ms | ActiveRecord: 8.2ms)
+
+
+Started PATCH "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:58:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7nQLMZN2dxHQRRfbgtde56hFg6MKFMv/RudwzACk/EYnxJ6hJBAUT33zOwnOtX1peL65anHEVdxEkngwF+XyFQ==", "member"=>{"last_name"=>"rrrrr", "first_name"=>"rrrr", "last_name_phonetic"=>"rrrr", "first_name_phonetic"=>"rrrr", "postcode"=>"00000000", "address"=>"東京都新宿区1-1", "telephone_number"=>"0000000000", "email"=>"rrrrrr@rrrrr", "is_deleted"=>"退会済み"}, "commit"=>"変更を保存する", "id"=>"3"}
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:12
+Unpermitted parameter: :email
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[36mMember Update (7.1ms)[0m  [1m[33mUPDATE "members" SET "is_deleted" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["is_deleted", 0], ["updated_at", "2020-07-20 05:58:00.289863"], ["id", 3]]
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+Redirected to http://localhost:3000/admins/members
+Completed 302 Found in 108ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 05:58:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (2.1ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (8.6ms)
+  Rendered share/_gest-header.html.erb (12.3ms)
+Completed 200 OK in 1143ms (Views: 1070.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admins/members/1" for 10.0.2.2 at 2020-07-20 05:58:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (9.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.1ms)
+  Rendered share/_gest-header.html.erb (1.8ms)
+Completed 200 OK in 733ms (Views: 710.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 05:58:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (2.6ms)
+  Rendered share/_gest-header.html.erb (3.9ms)
+Completed 200 OK in 1431ms (Views: 1412.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:01:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (2.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.0ms)
+  Rendered share/_gest-header.html.erb (2.9ms)
+Completed 200 OK in 1062ms (Views: 1039.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:01:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (24.5ms)
+  Rendered share/_gest-header.html.erb (1.2ms)
+Completed 200 OK in 837ms (Views: 802.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:03:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.7ms)
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 06:03:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (7.0ms)
+  Rendered share/_gest-header.html.erb (1.2ms)
+Completed 200 OK in 3508ms (Views: 3404.1ms | ActiveRecord: 5.2ms)
+
+
+  Rendered share/_gest-header.html.erb (4.1ms)
+Completed 200 OK in 2693ms (Views: 2682.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admins/members/1" for 10.0.2.2 at 2020-07-20 06:04:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.1ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 479ms (Views: 466.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:05:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.4ms)
+  Rendered share/_gest-header.html.erb (1.9ms)
+Completed 200 OK in 528ms (Views: 512.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:10:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/members/show.html.erb:7: syntax error, unexpected tLABEL, expecting '='
+...nd=( @member.is_deleted, class: "btn btn-primary" );@output_...
+...                         ^~~~~~):
+  
+app/views/admins/members/show.html.erb:7: syntax error, unexpected tLABEL, expecting '='
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:10:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    4: 		  <h2>会員詳細</h2>
+    5: 		  <table class="table table-hover table-inverse">
+    6: 		      <td>顧客ID</td>
+    7:               <td><%= @member.id %><%= @member.is_deleted class: "btn btn-primary" %></td>
+    8:             </tr>
+    9: 
+   10:             <tr>
+  
+app/views/admins/members/show.html.erb:7:in `_app_views_admins_members_show_html_erb___864134407039962735_70005115268640'
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:12:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (5.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.0ms)
+  Rendered share/_gest-header.html.erb (1.4ms)
+Completed 200 OK in 756ms (Views: 738.7ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:12:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (5.1ms)
+  Rendered share/_gest-header.html.erb (1.8ms)
+Completed 200 OK in 703ms (Views: 660.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:12:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (4.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (4.9ms)
+  Rendered share/_gest-header.html.erb (2.4ms)
+Completed 200 OK in 661ms (Views: 631.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:14:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.6ms)
+  Rendered share/_gest-header.html.erb (5.6ms)
+Completed 200 OK in 729ms (Views: 718.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:15:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (2.9ms)
+  Rendered share/_gest-header.html.erb (3.7ms)
+Completed 200 OK in 824ms (Views: 809.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:15:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (6.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.9ms)
+  Rendered share/_gest-header.html.erb (1.9ms)
+Completed 200 OK in 603ms (Views: 581.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:16:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (2.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (4.2ms)
+  Rendered share/_gest-header.html.erb (1.3ms)
+Completed 200 OK in 1215ms (Views: 1199.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:17:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (3.8ms)
+  Rendered share/_gest-header.html.erb (4.1ms)
+Completed 200 OK in 733ms (Views: 709.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/members/" for 10.0.2.2 at 2020-07-20 06:17:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (12.6ms)
+  Rendered share/_gest-header.html.erb (1.4ms)
+Completed 200 OK in 777ms (Views: 764.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:18:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (12.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (1.7ms)
+  Rendered share/_gest-header.html.erb (2.3ms)
+Completed 200 OK in 617ms (Views: 590.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:18:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (6.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (406.5ms)
+  Rendered share/_gest-header.html.erb (6.5ms)
+Completed 200 OK in 1197ms (Views: 1145.8ms | ActiveRecord: 6.0ms)
+
+
+Started PATCH "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:18:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FJxdYICZN0y7qZyS8uKuWhWc4STBIAjFJuZAAAL03eUfj51EnP8ut1DIj5Q0jZzSVpaKxz1vvEmz9wzvSJSXJw==", "member"=>{"last_name"=>"rrrrr", "first_name"=>"rrrr", "last_name_phonetic"=>"rrrr", "first_name_phonetic"=>"rrrr", "postcode"=>"00000000", "address"=>"東京都新宿区1-1", "telephone_number"=>"0000000000", "email"=>"rrrrrr@rrrrr", "is_deleted"=>"有効"}, "commit"=>"変更を保存する", "id"=>"3"}
+  [1m[36mMember Load (5.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:12
+Unpermitted parameter: :email
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[36mMember Update (3.2ms)[0m  [1m[33mUPDATE "members" SET "is_deleted" = ?, "updated_at" = ? WHERE "members"."id" = ?[0m  [["is_deleted", 1], ["updated_at", "2020-07-20 06:18:16.787694"], ["id", 3]]
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+Redirected to http://localhost:3000/admins/members
+Completed 302 Found in 44ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 06:18:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (5.1ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 814ms (Views: 768.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:18:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (6.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (48.0ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 682ms (Views: 651.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:18:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (9.2ms)
+  Rendered share/_gest-header.html.erb (24.1ms)
+Completed 200 OK in 517ms (Views: 495.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:19:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (1.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (18.0ms)
+  Rendered share/_gest-header.html.erb (1.5ms)
+Completed 200 OK in 675ms (Views: 659.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:19:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (4.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (1165.3ms)
+Completed 500 Internal Server Error in 1213ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `member' for #<#<Class:0x00007f56b07bb098>:0x0000000003c1e6b8>
+Did you mean?  @member):
+     7:       <table class="table table-hover table-inverse">
+     8:         <tr>
+     9:           <td><%= f.label :会員id %>
+    10:               <%= member.id %>
+    11:           </td>
+    12:         </tr>
+    13:         <tr>
+  
+app/views/admins/members/edit.html.erb:10:in `block in _app_views_admins_members_edit_html_erb__4394335582749189314_31864280'
+app/views/admins/members/edit.html.erb:6:in `_app_views_admins_members_edit_html_erb__4394335582749189314_31864280'
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:19:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (3.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (31.6ms)
+  Rendered share/_gest-header.html.erb (6.3ms)
+Completed 200 OK in 998ms (Views: 969.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:19:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (7.2ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (9.4ms)
+  Rendered share/_gest-header.html.erb (1.9ms)
+Completed 200 OK in 1001ms (Views: 904.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/admins/sign_in" for 10.0.2.2 at 2020-07-20 06:19:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (17.6ms)
+  Rendered share/_gest-header.html.erb (3.8ms)
+Completed 200 OK in 710ms (Views: 659.8ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/admins/top" for 10.0.2.2 at 2020-07-20 06:20:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::TopController#top as HTML
+  Rendering admins/top/top.html.erb within layouts/application
+  Rendered admins/top/top.html.erb within layouts/application (1.4ms)
+  Rendered share/_gest-header.html.erb (2.3ms)
+Completed 200 OK in 844ms (Views: 827.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 06:20:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (11.9ms)
+  Rendered share/_gest-header.html.erb (3.3ms)
+Completed 200 OK in 648ms (Views: 634.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/members/3/edit" for 10.0.2.2 at 2020-07-20 06:20:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:9
+  Rendering admins/members/edit.html.erb within layouts/application
+  Rendered admins/members/edit.html.erb within layouts/application (75.6ms)
+  Rendered share/_gest-header.html.erb (1.5ms)
+Completed 200 OK in 713ms (Views: 698.7ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:20:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8l95oSwNhX1yilRs3AvxO5Pdvh13bS6xUyiIWjqrtmE77+wxm2vmI988eL6QadK1QyaE1Ay9sJJRXYCmLeq4Mg==", "member"=>{"last_name"=>"rrrrr", "first_name"=>"rrrr", "last_name_phonetic"=>"rrrr", "first_name_phonetic"=>"rrrr", "postcode"=>"00000000", "address"=>"東京都新宿区1-1", "telephone_number"=>"0000000000", "email"=>"rrrrrr@rrrrr", "is_deleted"=>"有効"}, "commit"=>"変更を保存する", "id"=>"3"}
+  [1m[36mMember Load (1.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:12
+Unpermitted parameter: :email
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/members_controller.rb:13
+Redirected to http://localhost:3000/admins/members
+Completed 302 Found in 31ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 06:20:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (8.4ms)
+  Rendered share/_gest-header.html.erb (4.9ms)
+Completed 200 OK in 794ms (Views: 781.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/members/3" for 10.0.2.2 at 2020-07-20 06:20:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember Load (7.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/members_controller.rb:6
+  Rendering admins/members/show.html.erb within layouts/application
+  Rendered admins/members/show.html.erb within layouts/application (4.0ms)
+  Rendered share/_gest-header.html.erb (9.4ms)
+Completed 200 OK in 751ms (Views: 711.4ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/admins/order_details" for 10.0.2.2 at 2020-07-20 06:20:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Admins::OrderDetailsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 06:20:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (1.2ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (4.7ms)
+  Rendered share/_gest-header.html.erb (1.4ms)
+Completed 200 OK in 568ms (Views: 556.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admins/members" for 10.0.2.2 at 2020-07-20 06:24:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::MembersController#index as HTML
+  Rendering admins/members/index.html.erb within layouts/application
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT "members".* FROM "members"[0m
+  ↳ app/views/admins/members/index.html.erb:15
+  Rendered admins/members/index.html.erb within layouts/application (94.2ms)
+  Rendered share/_gest-header.html.erb (2.6ms)
+Completed 200 OK in 3097ms (Views: 3041.7ms | ActiveRecord: 5.8ms)
+
+
+=======
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 Migrating to ChangeWorkStatusOfOrderDetails (20200720035604)
@@ -33941,6 +34908,7 @@ roducts_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFA
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+<<<<<<< HEAD
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 Migrating to ChangeIsCapableOfProducts (20200719043136)
@@ -34687,3 +35655,6 @@ Processing by Admins::ProductsController#index as HTML
 Completed 200 OK in 98ms (Views: 94.7ms | ActiveRecord: 0.5ms)
 
 
+=======
+>>>>>>> origin/develop
+>>>>>>> origin/develop
