@@ -9,6 +9,8 @@ namespace :member do
   resources :orders
   resources :shippings
   resources :cart_items
+  get '/orders/confirm' => 'orders#confirm'
+  post '/orders/confirm' => 'orders#confirm'
 end
   root 'homes#top'
   get 'home/about' => 'homes#about'
