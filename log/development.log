@@ -30892,3 +30892,2843 @@ Completed 200 OK in 111ms (Views: 105.5ms | ActiveRecord: 0.9ms)
 
 
 >>>>>>> origin/develop
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3ilties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 03:45:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20200719083217)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719083217"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddColumsToCartItems (20200719091941)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "product_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "member_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "number" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719091941"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsEnabledOfGenres (20200719122102)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agenres" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "is_enabled" boolean DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "agenres" ("id","name","is_enabled","created_at","updated_at")
+                     SELECT "id","name","is_enabled","created_at","updated_at" FROM "genres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "genres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "is_enabled" boolean DEFAULT 1, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "genres" ("id","name","is_enabled","created_at","updated_at")
+                     SELECT "id","name","is_enabled","created_at","updated_at" FROM "agenres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "agenres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719122102"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 03:46:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.0ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (8.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 854ms (Views: 820.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:46:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (1.9ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (19.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 125.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 03:46:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (10.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 152ms (Views: 142.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 03:46:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (1.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.6ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 131ms (Views: 120.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:46:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 141ms (Views: 130.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 03:46:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 03:46:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 121.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-20 03:46:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.7ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 165ms (Views: 148.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-20 03:46:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-20 03:46:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B1zxKp4xbjXENYqkqK8NtNBJnWIvZR9m83nIUFtt5j7olOuEN9esaYVng6Ql3bXb2OxFFojAVLt45ufXJXH+Lg==", "member"=>{"email"=>"aaa@aaaaaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (1.1ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 240ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 03:46:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (7.7ms)
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.4ms)
+Completed 200 OK in 130ms (Views: 124.1ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-20 03:46:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rWESNudfAQBC/tKSHuO0ytz6Tl4Cvo8MorkBHg59hhRxiNalcTkbUHr+FPtekLYWTZUuIJ8AQGzS1OJYjll4bQ=="}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 03:46:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  Rendered homes/top.html.erb within layouts/application (8.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 148ms (Views: 141.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 03:46:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 03:46:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 151ms (Views: 142.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-20 03:46:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 127ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-20 03:46:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-20 03:46:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wz2aliRQh1iak2b5jg27Kbrn/ln4g2/J1rafoapkdryL++PdKNHViogQ/pROAR60dHtFBZast+2BK8dAFRNcFQ==", "member"=>{"email"=>"aaa@aaaaaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 244ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 03:46:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  Rendered homes/top.html.erb within layouts/application (7.5ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.0ms)
+Completed 200 OK in 146ms (Views: 140.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:46:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.9ms)
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.6ms)
+Completed 200 OK in 133ms (Views: 122.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 03:46:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.0ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (8.9ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 123.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 03:46:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.1ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (8.8ms)
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.7ms)
+Completed 200 OK in 126ms (Views: 116.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-20 03:47:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (12.5ms)
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 140ms (Views: 132.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-20 03:47:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h64Pec0n1JXxBUCe+oj4ZBk4SnVeGzGvuh8iYR1+Gefm6DFtnFNV1itgqAy3rGU/5HQg8drrLrKbNyqaWBHO7Q=="}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 03:47:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (8.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 137ms (Views: 130.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 03:47:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.6ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 150ms (Views: 141.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-20 03:47:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (8.9ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 139ms (Views: 131.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-20 03:48:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IM4dvKdUjkLYz0AFih/nu74pwlEV0AwSXkbzzIRAkzmG0jeCki06jkSQboGSydUC/SuMEQ5gIETxKkVFKVoIMA==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9f28047210 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-16535-j6udsp.jpeg>, @original_filename="A44B5E03-572C-42BA-9440-E4131D9A70E1.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"A44B5E03-572C-42BA-9440-E4131D9A70E1.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"パン", "explanatory"=>"小麦粉", "genre_id"=>"4", "price"=>"500", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "image_id", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 4], ["name", "パン"], ["explanatory", "小麦粉"], ["image_id", "9df63bac5bcaf1e56ab5d10d5c8280e751ae47d69c63d917ca7b1ed113ed"], ["price", 500], ["created_at", "2020-07-20 03:48:55.309993"], ["updated_at", "2020-07-20 03:48:55.309993"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 20ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 03:48:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 131ms (Views: 124.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/products/4" for 10.0.2.2 at 2020-07-20 03:48:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (2.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 131ms (Views: 121.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/attachments/0c63da98f849a47185128a9996e48466e43a4a99/store/9df63bac5bcaf1e56ab5d10d5c8280e751ae47d69c63d917ca7b1ed113ed/image" for 10.0.2.2 at 2020-07-20 03:48:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-07-20 03:48:57 +0000] GET "/0c63da98f849a47185128a9996e48466e43a4a99/store/9df63bac5bcaf1e56ab5d10d5c8280e751ae47d69c63d917ca7b1ed113ed/image" 200 4.0ms
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 03:49:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.1ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 03:49:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 138ms (Views: 131.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 03:49:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (12.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 133ms (Views: 123.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:49:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/member/products/show.html.erb:12
+  Rendered member/products/show.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 112.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:49:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.8ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 127ms (Views: 118.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 03:49:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.7ms)
+  Rendered share/_gest-header.html.erb (6.0ms)
+Completed 200 OK in 141ms (Views: 132.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 03:49:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.2ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 116.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 03:49:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.9ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 136ms (Views: 128.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 03:52:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.2ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.5ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 172ms (Views: 164.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 03:52:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.0ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (11.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 124.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:52:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 138ms (Views: 129.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 03:52:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (1.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 133ms (Views: 122.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:52:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (22.9ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 143ms (Views: 133.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 03:52:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.9ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 141ms (Views: 131.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 03:52:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 116.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:52:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (23.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 140ms (Views: 130.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 03:52:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.7ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 127.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:52:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/member/products/show.html.erb:12
+  Rendered member/products/show.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 126ms (Views: 117.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:54:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/member/products/show.html.erb:15
+  Rendered member/products/show.html.erb within layouts/application (9.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 176ms (Views: 167.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 03:54:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 152ms (Views: 143.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 03:54:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 137ms (Views: 128.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products/3" for 10.0.2.2 at 2020-07-20 03:54:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/member/products/show.html.erb:15
+  Rendered member/products/show.html.erb within layouts/application (5.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 121ms (Views: 114.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 03:54:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (12.8ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 141ms (Views: 130.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:54:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/member/products/show.html.erb:15
+  Rendered member/products/show.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 119.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:58:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (243.6ms)
+Completed 500 Internal Server Error in 262ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x00000000051c3d88>:0x00007f9f14247808>
+Did you mean?  @product):
+    12: 		<p><%= @product.explanatory %></p>
+    13: 		</dix>
+    14: 		<dix>
+    15: 		<h3><%= (product.price* 1.1).round %>円(税込）</h3>
+    16: 		</dix>
+    17: 	</div>
+    18: 	</div>
+  
+app/views/member/products/show.html.erb:15:in `_app_views_member_products_show_html_erb___347946533284387064_70160607248640'
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:59:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (319.9ms)
+Completed 500 Internal Server Error in 336ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x00000000051c3d88>:0x00007f9f140e52a8>
+Did you mean?  @product):
+    12: 		<p><%= @product.explanatory %></p>
+    13: 		</dix>
+    14: 		<dix>
+    15: 		<h3><%= (product.price* 1.1).round %>円(税込) %></h3>
+    16: 		</dix>
+    17: 	</div>
+    18: 	</div>
+  
+app/views/member/products/show.html.erb:15:in `_app_views_member_products_show_html_erb___347946533284387064_70160606506720'
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 03:59:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (263.5ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x00000000051c3d88>:0x00007f9f141838b8>
+Did you mean?  @product):
+    12: 		<p><%= @product.explanatory %></p>
+    13: 		</dix>
+    14: 		<dix>
+    15: 		<P>金額<%= (product.price* 1.1).round %>円(税込）</P>
+    16: 		</dix>
+    17: 	</div>
+    18: 	</div>
+  
+app/views/member/products/show.html.erb:15:in `_app_views_member_products_show_html_erb___347946533284387064_70160606847460'
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:01:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (0.9ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 136ms (Views: 129.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:02:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (0.8ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 159.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:02:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 132ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:02:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.1ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 137ms (Views: 129.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 04:02:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (1.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.8ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 144ms (Views: 134.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 04:02:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.5ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 129ms (Views: 119.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 04:02:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 147ms (Views: 137.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 04:02:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 125.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 04:02:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 137ms (Views: 127.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:02:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (0.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 120.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:03:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  Rendered homes/top.html.erb within layouts/application (8.0ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 150ms (Views: 143.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/info/routes" for 10.0.2.2 at 2020-07-20 04:03:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [119 times] (21.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 04:05:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 162ms (Views: 153.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:05:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.0ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 130ms (Views: 122.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/member/cart_items" for 10.0.2.2 at 2020-07-20 04:05:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::CartItemsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:05:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 133.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:05:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.8ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 143ms (Views: 135.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 04:06:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.5ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 152ms (Views: 144.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 04:06:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 150ms (Views: 144.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-20 04:06:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (8.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 139ms (Views: 129.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-20 04:08:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GXN9ihyPN7Smsu0ffT6cPE5cS5pqBEbp9rzg+5ZDyPC/b1e0KfaDeDrtw5tl6K6FDV4F2nG0ar9Z0FZyO1lT+Q==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9f140b14a8 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-16535-96ofhw.jpeg>, @original_filename="OIP.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"OIP.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"安倍っち", "explanatory"=>"うーーーーーーーーーーーーーーーーーーーーーーん大統領！！w", "genre_id"=>"3", "price"=>"100", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (1.5ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "image_id", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 3], ["name", "安倍っち"], ["explanatory", "うーーーーーーーーーーーーーーーーーーーーーーん大統領！！w"], ["image_id", "0d1c22f90febd79db99e000f4d9bf0570a5d969ae65aaa02c2ed530cd60b"], ["price", 100], ["created_at", "2020-07-20 04:08:42.039689"], ["updated_at", "2020-07-20 04:08:42.039689"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 12ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 04:08:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 184ms (Views: 177.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products/5" for 10.0.2.2 at 2020-07-20 04:08:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 116.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/attachments/30a94c5bb42fc6ae310b6643a5ce0f89e58b1b3f/store/0d1c22f90febd79db99e000f4d9bf0570a5d969ae65aaa02c2ed530cd60b/image" for 10.0.2.2 at 2020-07-20 04:08:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-07-20 04:08:44 +0000] GET "/30a94c5bb42fc6ae310b6643a5ce0f89e58b1b3f/store/0d1c22f90febd79db99e000f4d9bf0570a5d969ae65aaa02c2ed530cd60b/image" 200 2.5ms
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:08:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.1ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (12.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 128.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:08:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 148ms (Views: 140.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/member/products/5" for 10.0.2.2 at 2020-07-20 04:09:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (0.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 110.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 04:10:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (10.1ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 169ms (Views: 158.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 04:10:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (12.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 159ms (Views: 150.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 04:10:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.2ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (15.2ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 156ms (Views: 145.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 04:10:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.6ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 165ms (Views: 156.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:10:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.3ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (17.2ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 163ms (Views: 153.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:10:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.1ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 135ms (Views: 125.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/member/products/5" for 10.0.2.2 at 2020-07-20 04:10:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.2ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 162ms (Views: 151.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/member/products/2" for 10.0.2.2 at 2020-07-20 04:10:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (3.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 151ms (Views: 142.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/member/products/3" for 10.0.2.2 at 2020-07-20 04:10:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (3.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 146ms (Views: 138.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:10:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.1ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 154ms (Views: 144.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/member/products/3" for 10.0.2.2 at 2020-07-20 04:10:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (3.9ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 153ms (Views: 144.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:11:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (4.6ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (22.4ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 199ms (Views: 191.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:11:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 155ms (Views: 146.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/member/cart_items" for 10.0.2.2 at 2020-07-20 04:11:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::CartItemsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:11:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 158ms (Views: 150.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:11:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (4.4ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 153ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:11:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (15.6ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 156ms (Views: 147.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/member/products/1" for 10.0.2.2 at 2020-07-20 04:12:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (3.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 118ms (Views: 110.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 04:12:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (12.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 140ms (Views: 131.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 04:12:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 124ms (Views: 115.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 04:12:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.2ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 127ms (Views: 117.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 04:12:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (10.0ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 140ms (Views: 130.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 04:12:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (1.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 123.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/member/products/1" for 10.0.2.2 at 2020-07-20 04:12:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (3.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 130ms (Views: 122.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:12:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 143ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:17:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.7ms)
+  Rendered share/_gest-header.html.erb (1.1ms)
+Completed 200 OK in 166ms (Views: 158.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:17:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.2ms)
+  Rendered homes/top.html.erb within layouts/application (9.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 163ms (Views: 155.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:18:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (2.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 140ms (Views: 132.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:18:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.6ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 139ms (Views: 131.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 04:18:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (12.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 134ms (Views: 125.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/member/products?genre_id=2" for 10.0.2.2 at 2020-07-20 04:18:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"2"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 2]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (9.1ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 126ms (Views: 116.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products?genre_id=3" for 10.0.2.2 at 2020-07-20 04:18:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"3"}
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 3]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (10.9ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 125ms (Views: 115.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/member/products?genre_id=4" for 10.0.2.2 at 2020-07-20 04:18:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"4"}
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 4]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (11.7ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 138ms (Views: 128.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/member/products?genre_id=1" for 10.0.2.2 at 2020-07-20 04:18:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Parameters: {"genre_id"=>"1"}
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:8
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."genre_id" = ?[0m  [["genre_id", 1]]
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (13.6ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 132ms (Views: 122.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-20 04:18:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 126ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-20 04:18:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-20 04:18:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UzgyvmszD889l+IivMXR4SdbxrqWFPXylfCe5ybjq17BzTE+txf+dabQq5/J9d+7CfDrSreSrLSvbsyh9M4xwg==", "member"=>{"email"=>"aaa@aaaaaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 250ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:18:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.5ms)
+  Rendered homes/top.html.erb within layouts/application (7.1ms)
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.7ms)
+Completed 200 OK in 130ms (Views: 124.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?class=glyphicon+glyphicon-user+user" for 10.0.2.2 at 2020-07-20 04:18:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Parameters: {"class"=>"glyphicon glyphicon-user user"}
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  Rendered homes/top.html.erb within layouts/application (7.6ms)
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 128.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?class=glyphicon+glyphicon-user+user" for 10.0.2.2 at 2020-07-20 04:18:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Parameters: {"class"=>"glyphicon glyphicon-user user"}
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (8.0ms)
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 109.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:18:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.3ms)
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 119.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/member/cart_items" for 10.0.2.2 at 2020-07-20 04:18:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::CartItemsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:18:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.5ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 153ms (Views: 145.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:18:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.0ms)
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 111.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-20 04:18:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5pH0zbHSxVGxrAMo6uL/4q05zBtIpes3sf7zmVNIbrlpYgYk1yybqmhGWVNONL+D7Jnpb2T1v/Dazu43mew82A=="}
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:18:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.8ms)
+  Rendered homes/top.html.erb within layouts/application (8.9ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 157.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/sign_in" for 10.0.2.2 at 2020-07-20 04:19:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (20.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 173ms (Views: 160.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/admins/sign_in" for 10.0.2.2 at 2020-07-20 04:19:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DpoyvvV93tHIthJMqlY4dHnCI4NEpmJWKiYw3dd90TUqgf9LnlkdoyjQ2BngPyRT7vvAca68ERSDZkRn4pZR+w==", "admin"=>{"email"=>"aaa@aaaaaaaaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mAdmin Load (1.0ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."email" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DpoyvvV93tHIthJMqlY4dHnCI4NEpmJWKiYw3dd90TUqgf9LnlkdoyjQ2BngPyRT7vvAca68ERSDZkRn4pZR+w==", "admin"=>{"email"=>"aaa@aaaaaaaaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.2ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 359ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/top" for 10.0.2.2 at 2020-07-20 04:19:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::TopController#top as HTML
+  Rendering admins/top/top.html.erb within layouts/application
+  Rendered admins/top/top.html.erb within layouts/application (0.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 144ms (Views: 136.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:22:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.0ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 136ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:22:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (14.3ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 148ms (Views: 139.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:22:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 143ms (Views: 136.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:22:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.6ms)
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (15.1ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 148ms (Views: 139.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:22:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 131ms (Views: 123.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:26:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.6ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 182ms (Views: 176.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/members/sign_in" for 10.0.2.2 at 2020-07-20 04:26:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 139ms (Views: 138.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members/sign_in" for 10.0.2.2 at 2020-07-20 04:26:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ndaiZO2FmXmWiUBemvMafGBozj4QNiPdB8pVYBbOBTeX2/y8oTTLn7IpuWUitExF4l+rN6eVVazpJ88vWTI6Og==", "member"=>{"email"=>"aaa@aaaaaaaaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."email" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["email", "aaa@aaaaaaaaa"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 230ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:26:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (1.7ms)
+  Rendered homes/top.html.erb within layouts/application (6.1ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.5ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/share/_member-header.html.erb:8: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...ジ', member_member_path class: 'glyphicon glyphicon-user us...
+...                         ^~~~~~):
+  
+app/views/share/_member-header.html.erb:8: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__1319829623605568627_70160775787540'
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:26:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (8.6ms)
+  [1m[36mMember Load (0.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (5.4ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"member/members"}, missing required keys: [:id]):
+     5:       </nav>
+     6:           <nav style="margin-top: 50px;">
+     7:             <ul class="nav navbar-nav navbar-right">
+     8: 			<il><%= link_to 'マイページ', member_member_path %></il>
+     9: 			<il><%= link_to '商品一覧', member_products_path %></il>
+    10: 			<il><%= link_to 'カート', member_cart_items_path %></il>
+    11: 			<il><%= link_to 'ログアウト', destroy_member_session_path, method: :delete %></il>
+  
+app/views/share/_member-header.html.erb:8:in `_app_views_share__member_header_html_erb__4584468483983677503_70160586511500'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__1319829623605568627_70160596154720'
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:31:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.4ms)
+  Rendered homes/top.html.erb within layouts/application (9.7ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.2ms)
+Completed 200 OK in 208ms (Views: 201.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:31:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.3ms)
+  Rendered homes/top.html.erb within layouts/application (7.9ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.7ms)
+Completed 200 OK in 158ms (Views: 150.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/members/sign_out" for 10.0.2.2 at 2020-07-20 04:31:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oK7bTkN3297G/vuxhpwSHxgKUtkZ1cwwJBGatorl3rOUmDMdlPvgyQQc+LplqXLsg9Q6sIKOAhr0iuxN2EIwkA=="}
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:31:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (1.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (4.3ms)
+  Rendered homes/top.html.erb within layouts/application (10.7ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 173ms (Views: 165.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/members/sign_up" for 10.0.2.2 at 2020-07-20 04:31:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 177ms (Views: 175.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/members" for 10.0.2.2 at 2020-07-20 04:32:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VZ4G2s37fAwn4oiKBc9rpUpYnAVuGkBYyYEb4YTre9yB+fz0jjqwxCUQT04hong5MkgQa9NzCLrvHP+0hiziRw==", "member"=>{"first_name"=>"rrrr", "last_name"=>"rrrrr", "first_name_phonetic"=>"rrrr", "last_name_phonetic"=>"rrrr", "email"=>"rrrrrr@rrrrr", "postcode"=>"00000000", "address"=>"東京都新宿区1-1", "telephone_number"=>"0000000000", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "members" WHERE "members"."email" = ? LIMIT ?[0m  [["email", "rrrrrr@rrrrr"], ["LIMIT", 1]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mMember Create (1.7ms)[0m  [1m[32mINSERT INTO "members" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name", "first_name_phonetic", "last_name_phonetic", "telephone_number", "postcode", "address") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "rrrrrr@rrrrr"], ["encrypted_password", "$2a$12$dEIB5PyigrN0mcnE0ziNiegWQ.pdv4JI/up5FftWKPnAd5wdn/bRO"], ["created_at", "2020-07-20 04:32:17.346318"], ["updated_at", "2020-07-20 04:32:17.346318"], ["first_name", "rrrr"], ["last_name", "rrrrr"], ["first_name_phonetic", "rrrr"], ["last_name_phonetic", "rrrr"], ["telephone_number", "0000000000"], ["postcode", "00000000"], ["address", "東京都新宿区1-1"]]
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 299ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:32:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.3ms)
+  Rendered homes/top.html.erb within layouts/application (9.1ms)
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.9ms)
+Completed 200 OK in 221ms (Views: 213.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:32:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.0ms)
+  Rendered homes/top.html.erb within layouts/application (9.2ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (7.0ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"member/members"}, missing required keys: [:id]):
+     5:       </nav>
+     6:           <nav style="margin-top: 50px;">
+     7:             <ul class="nav navbar-nav navbar-right">
+     8: 			<il><%= link_to 'マイページ' , member_member_path %></il>
+     9: 			<il><%= link_to '商品一覧', member_products_path %></il>
+    10: 			<il><%= link_to 'カート', member_cart_items_path %></il>
+    11: 			<il><%= link_to 'ログアウト', destroy_member_session_path, method: :delete %></il>
+  
+app/views/share/_member-header.html.erb:8:in `_app_views_share__member_header_html_erb__4584468483983677503_70160775963000'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__1319829623605568627_70160585909100'
+Started GET "/" for 10.0.2.2 at 2020-07-20 04:33:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (3.1ms)
+  Rendered homes/top.html.erb within layouts/application (9.0ms)
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 188ms (Views: 180.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/member/members" for 10.0.2.2 at 2020-07-20 04:33:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::MembersController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/members" for 10.0.2.2 at 2020-07-20 04:34:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::MembersController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/members" for 10.0.2.2 at 2020-07-20 04:34:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::MembersController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:34:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (399.0ms)
+  [1m[36mMember Load (0.9ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (7.8ms)
+Completed 500 Internal Server Error in 743ms (ActiveRecord: 6.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"member/members"}, missing required keys: [:id]):
+     5:       </nav>
+     6:           <nav style="margin-top: 50px;">
+     7:             <ul class="nav navbar-nav navbar-right">
+     8: 			<il><%= link_to 'マイページ' , member_member_path %></il>
+     9: 			<il><%= link_to '商品一覧', member_products_path %></il>
+    10: 			<il><%= link_to 'カート', member_cart_items_path %></il>
+    11: 			<il><%= link_to 'ログアウト', destroy_member_session_path, method: :delete %></il>
+  
+app/views/share/_member-header.html.erb:8:in `_app_views_share__member_header_html_erb___3265636481083536567_70083012892440'
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__84260468867297401_70082994884660'
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:34:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.5ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.8ms)
+Completed 200 OK in 166ms (Views: 158.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:34:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (3.3ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.7ms)
+Completed 200 OK in 149ms (Views: 143.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/about" for 10.0.2.2 at 2020-07-20 04:35:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#about as HTML
+  Rendering homes/about.html.erb within layouts/application
+  Rendered homes/about.html.erb within layouts/application (4.0ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.9ms)
+Completed 200 OK in 166ms (Views: 159.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:35:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (8.3ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (33.0ms)
+  [1m[36mMember Load (0.7ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 212ms (Views: 173.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/member/cart_items" for 10.0.2.2 at 2020-07-20 04:35:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::CartItemsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:35:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.9ms)
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (21.3ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 190ms (Views: 181.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:35:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.1ms)
+  [1m[36mMember Load (0.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (1.1ms)
+Completed 200 OK in 160ms (Views: 150.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/member/cart_items" for 10.0.2.2 at 2020-07-20 04:35:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for Member::CartItemsController):
+  
+actionpack (5.2.4.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member/products/4" for 10.0.2.2 at 2020-07-20 04:35:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/member/products_controller.rb:3
+  Rendering member/products/show.html.erb within layouts/application
+  Rendered member/products/show.html.erb within layouts/application (1.1ms)
+  [1m[36mMember Load (0.8ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.8ms)
+Completed 200 OK in 185ms (Views: 176.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/member/products" for 10.0.2.2 at 2020-07-20 04:35:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Member::ProductsController#index as HTML
+  Rendering member/products/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/share/_sidebar.html.erb:9
+  Rendered share/_sidebar.html.erb (2.7ms)
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/member/products/index.html.erb:5
+  Rendered member/products/index.html.erb within layouts/application (15.1ms)
+  [1m[36mMember Load (0.6ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE "members"."id" = ? ORDER BY "members"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered share/_member-header.html.erb (0.7ms)
+Completed 200 OK in 170ms (Views: 161.0ms | ActiveRecord: 1.7ms)
+
+

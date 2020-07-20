@@ -8,9 +8,9 @@
        <div style="float: left">
 
        </style>
-           <%= image_tag'nagano.jpg',  size: '170x170' %>
+        	<%= attachment_image_tag product, :image, size: "200x200", fallback: "no_image.jpg"%>
             <P><%= product.name %></P>
-           <P>金額<%= (product.price* 1.1).round %>円(税込）</P>
+           　<P>金額<%= (product.price* 1.1).round %>円(税込）</P>
        </div>
         <%end%>
        <%end%>
