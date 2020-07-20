@@ -40780,3 +40780,74 @@ roducts_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFA
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 >>>>>>> origin/develop
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeWorkStatusOfOrderDetails (20200720035604)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorder_details" ("id" integer NOT NULL PRIMARY KEY, "order_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "work_status" integer DEFAULT NULL, "number" integer DEFAULT NULL, "tax_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aorder_details" ("id","order_id","product_id","work_status","number","tax_price","created_at","updated_at")
+                     SELECT "id","order_id","product_id","work_status","number","tax_price","created_at","updated_at" FROM "order_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "order_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "order_details" ("id" integer NOT NULL PRIMARY KEY, "order_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "work_status" integer DEFAULT 0, "number" integer DEFAULT NULL, "tax_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "order_details" ("id","order_id","product_id","work_status","number","tax_price","created_at","updated_at")
+                     SELECT "id","order_id","product_id","work_status","number","tax_price","created_at","updated_at" FROM "aorder_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aorder_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720035604"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrders (20200720045817)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "member_id" integer, "name" varchar, "postcode" varchar, "address" varchar, "postage" integer DEFAULT 800, "total_products_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720045817_create_orders.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720045817"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsDeletedDefaultOnMembers (20200720053420)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "amembers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "name" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "first_name_phonetic" varchar DEFAULT NULL, "last_name_phonetic" varchar DEFAULT NULL, "telephone_number" varchar DEFAULT NULL, "postcode" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "is_deleted" boolean DEFAULT NULL)[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_amembers_on_reset_password_token" ON "amembers" ("reset_password_token")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_amembers_on_email" ON "amembers" ("email")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "amembers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted" FROM "members"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (3.0ms)[0m  [1m[35mDROP TABLE "members"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "members" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "name" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "first_name" varchar DEFAULT NULL, "last_name" varchar DEFAULT NULL, "first_name_phonetic" varchar DEFAULT NULL, "last_name_phonetic" varchar DEFAULT NULL, "telephone_number" varchar DEFAULT NULL, "postcode" varchar DEFAULT NULL, "address" varchar DEFAULT NULL, "is_deleted" boolean DEFAULT 1)[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "members" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","name","created_at","updated_at","first_name","last_name","first_name_phonetic","last_name_phonetic","telephone_number","postcode","address","is_deleted" FROM "amembers"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "amembers"[0m
+  ↳ db/migrate/20200720053420_change_is_deleted_default_on_members.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720053420"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
