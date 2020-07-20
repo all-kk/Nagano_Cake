@@ -6,4 +6,5 @@ class Member < ApplicationRecord
   has_many :shippings, dependent: :destroy
   has_many :orders, dependent: :destroy
   has_many :cart_items, dependent: :destroy
+  enum is_deleted: { 有効: true, 退会済み: false}
 end
