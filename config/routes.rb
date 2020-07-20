@@ -9,10 +9,11 @@ namespace :member do
   resources :orders
   resources :shippings
   resources :cart_items
+  get '/members/:id/deactivate' => 'members#deactivate', as:'deactivate_member'
 end
+
   root 'homes#top'
   get 'home/about' => 'homes#about'
-
     namespace :admins do
       get 'top' => 'top'
     	resources :orders
