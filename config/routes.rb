@@ -9,6 +9,7 @@ namespace :member do
   resources :orders
   resources :shippings
   resources :cart_items
+  delete '/cart_items/destroy_all' => 'cart_items#destroy_all'
 end
   root 'homes#top'
   get 'home/about' => 'homes#about'
