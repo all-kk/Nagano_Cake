@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2020_07_20_053420) do
+=======
 ActiveRecord::Schema.define(version: 2020_07_20_045817) do
+>>>>>>> origin/develop
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -55,12 +59,18 @@ ActiveRecord::Schema.define(version: 2020_07_20_045817) do
     t.string "name"
     t.string "postcode"
     t.string "address"
+<<<<<<< HEAD
+    t.boolean "is_deleted", default: true
+    t.index ["email"], name: "index_members_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
+=======
     t.integer "postage"
     t.integer "total_products_cos"
     t.integer "payment_method"
     t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+>>>>>>> origin/develop
   end
 
   create_table "order_details", force: :cascade do |t|
