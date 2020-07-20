@@ -9,8 +9,12 @@ namespace :member do
   resources :orders
   resources :shippings
   resources :cart_items
+<<<<<<< HEAD
   get '/orders/confirm' => 'orders#confirm'
   post '/orders/confirm' => 'orders#confirm'
+=======
+  delete '/cart_items/destroy_all' => 'cart_items#destroy_all'
+>>>>>>> 50ce59b2cadfcb2149ff640e1f0d0e6b2d68eb34
 end
   root 'homes#top'
   get 'home/about' => 'homes#about'
