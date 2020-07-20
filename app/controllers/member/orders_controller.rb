@@ -5,4 +5,12 @@ class Member::OrdersController < ApplicationController
 		@shippings = Shipping.all
 	end
 
+	def confirm
+		params[:order][:payment_method] = params[:order][:payment_method].to_i
+		@order = Order.new
+	end
+    
+    private
+    def order_params
+    end 
 end
