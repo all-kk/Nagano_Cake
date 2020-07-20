@@ -1,10 +1,8 @@
 class Product < ApplicationRecord
+	attachment :image
 	belongs_to :genre
-<<<<<<< HEAD
 	has_many :order_details
-=======
-	belongs_to :cart_item
+	belongs_to :cart_item, optional: true
 	has_many :order_details, dependent: :destroy
->>>>>>> origin/develop
 	enum is_capable: { 販売中: true, 販売停止中: false}
 end

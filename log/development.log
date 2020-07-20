@@ -20200,3 +20200,1952 @@ Completed 200 OK in 436ms (Views: 428.6ms | ActiveRecord: 2.3ms)
 >>>>>>> origin/develop
 
 
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 13:35:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20200719083217)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719083217"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddColumsToCartItems (20200719091941)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "product_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "member_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "number" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719091941"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 13:36:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/models/product.rb:3: syntax error, unexpected <<, expecting keyword_end
+<<<<<<< HEAD
+^~
+/home/vagrant/work/Nagano_Cake/app/models/product.rb:5: syntax error, unexpected ===, expecting keyword_end
+=======
+^~~
+/home/vagrant/work/Nagano_Cake/app/models/product.rb:8: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> origin/develop
+^~):
+  
+app/models/product.rb:3: syntax error, unexpected <<, expecting keyword_end
+app/models/product.rb:5: syntax error, unexpected ===, expecting keyword_end
+app/models/product.rb:8: syntax error, unexpected >>, expecting keyword_end
+app/controllers/admins/products_controller.rb:11:in `index'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:37:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/views/admins/products/new.html.erb:45: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/admins/products/new.html.erb:45: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:38:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<Product:0x0000000004c7bbf0>
+Did you mean?  image_id):
+    3: 	<div class="row">
+    4: 		<%= form_for(@product, url: admins_products_path) do |f| %>
+    5: 		<div class="col-xs-4">
+    6: 			 <%= attachment_image_tag @product, :image, class: "img-square", fallback: "no_image.jpg", size:"300x300" %>
+    7: 			  <%= f.attachment_field :image, placeholder: "商品画像" %>
+    8: 		</div>
+    9: 		<div class="col-xs-8">
+  
+app/views/admins/products/new.html.erb:6:in `block in _app_views_admins_products_new_html_erb__4350977968496300374_40087600'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb__4350977968496300374_40087600'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:38:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (4320.5ms)
+Completed 500 Internal Server Error in 4329ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<Product:0x0000000005e98c70>):
+    4: 		<%= form_for(@product, url: admins_products_path) do |f| %>
+    5: 		<div class="col-xs-4">
+    6: 			 <%= attachment_image_tag @product, :image_id, class: "img-square", fallback: "no_image.jpg", size:"300x300" %>
+    7: 			  <%= f.attachment_field :image, placeholder: "商品画像" %>
+    8: 		</div>
+    9: 		<div class="col-xs-8">
+   10: 				<div>
+  
+app/views/admins/products/new.html.erb:7:in `block in _app_views_admins_products_new_html_erb__4350977968496300374_49658420'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb__4350977968496300374_49658420'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:39:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<Product:0x00007ff0bf89e470>):
+    4: 		<%= form_for(@product, url: admins_products_path) do |f| %>
+    5: 		<div class="col-xs-4">
+    6: 			 <%= attachment_image_tag @product, :image_id, class: "img-square", fallback: "no_image.jpg", size:"300x300" %>
+    7: 			  <%= f.attachment_field :image, placeholder: "商品画像" %>
+    8: 		</div>
+    9: 		<div class="col-xs-8">
+   10: 				<div>
+  
+app/views/admins/products/new.html.erb:7:in `block in _app_views_admins_products_new_html_erb__4350977968496300374_70335991178720'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb__4350977968496300374_70335991178720'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:39:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_id_attachment_definition' for #<Product:0x00007ff0bddcfa68>
+Did you mean?  image_id_in_database):
+    4: 		<%= form_for(@product, url: admins_products_path) do |f| %>
+    5: 		<div class="col-xs-4">
+    6: 			 <%= attachment_image_tag @product, :image_id, class: "img-square", fallback: "no_image.jpg", size:"300x300" %>
+    7: 			  <%= f.attachment_field :image_id, placeholder: "商品画像" %>
+    8: 		</div>
+    9: 		<div class="col-xs-8">
+   10: 				<div>
+  
+app/views/admins/products/new.html.erb:7:in `block in _app_views_admins_products_new_html_erb__4350977968496300374_70335977123600'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb__4350977968496300374_70335977123600'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:39:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (120.9ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<Product:0x00007ff0bf9712f8>):
+    4: 		<%= form_for(@product, url: admins_products_path) do |f| %>
+    5: 		<div class="col-xs-4">
+    6: 			 <%= attachment_image_tag @product, :image_id, class: "img-square", fallback: "no_image.jpg", size:"300x300" %>
+    7: 			  <%= f.attachment_field :image, placeholder: "商品画像" %>
+    8: 		</div>
+    9: 		<div class="col-xs-8">
+   10: 				<div>
+  
+app/views/admins/products/new.html.erb:7:in `block in _app_views_admins_products_new_html_erb__4350977968496300374_70335991610060'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb__4350977968496300374_70335991610060'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:45:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  Rendered admins/products/new.html.erb within layouts/application (447.3ms)
+Completed 500 Internal Server Error in 477ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/vagrant/work/Nagano_Cake/app/models/genre.rb:2: syntax error, unexpected <<
+<<<<<<< HEAD
+^~
+/home/vagrant/work/Nagano_Cake/app/models/genre.rb:5: syntax error, unexpected ===, expecting keyword_end
+=======
+^~~
+/home/vagrant/work/Nagano_Cake/app/models/genre.rb:7: syntax error, unexpected >>, expecting keyword_end
+>>>>>>> origin/develop
+^~):
+  
+app/models/genre.rb:2: syntax error, unexpected <<
+app/models/genre.rb:5: syntax error, unexpected ===, expecting keyword_end
+app/models/genre.rb:7: syntax error, unexpected >>, expecting keyword_end
+app/views/admins/products/new.html.erb:20:in `block in _app_views_admins_products_new_html_erb__981268569861077849_69845500052100'
+app/views/admins/products/new.html.erb:4:in `_app_views_admins_products_new_html_erb__981268569861077849_69845500052100'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:45:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:20
+  Rendered admins/products/new.html.erb within layouts/application (21.1ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 422ms (Views: 418.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 13:47:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CPV3RlCX5CkPj4iuJDHHi7Kjuuo8sQ6mcfPd0udFFjpToL1f5KadW1N4zRxwAbm/4GBoG5GVjCQe9OGt50G7Ng==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f0c5a9761a8 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13546-1gk9poh.jpg>, @original_filename="sample-post9.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post9.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"200", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 13:47:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 109ms (Views: 105.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 13:48:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:14
+  Rendered admins/products/show.html.erb within layouts/application (2.9ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 116.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/products/11" for 10.0.2.2 at 2020-07-19 13:50:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (359.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 598ms (Views: 576.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:50:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:20
+  Rendered admins/products/new.html.erb within layouts/application (17.8ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 126ms (Views: 123.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 13:51:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jLCsD7bSQVa2+1FdZqPDJMa5i0+Z0LgG6/eqOPInjMPX5WYWAuM4JOoMFO8yk70QlHpZvjT0OoSE8JZH8iMhzw==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f66e29cd038 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-1makkw.jpg>, @original_filename="sample-post4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"as", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"100", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 13:51:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 110ms (Views: 106.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 13:51:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (6.2ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 120ms (Views: 115.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:55:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:20
+  Rendered admins/products/new.html.erb within layouts/application (7.6ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 13:56:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FwI3zgJ0Dy5SmA5afi4MKVwQ84tIpZJ+ROGFybA/NEVMV/3XtkV2XA5vS+gqHnIdDtMheuWBEPwr5rm2sDuZSQ==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f66e206ca20 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-15snanz.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aab", "explanatory"=>"aac", "genre_id"=>"3", "price"=>"as", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 13:56:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 104.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:57:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:21
+  Rendered admins/products/new.html.erb within layouts/application (8.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 126ms (Views: 122.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 13:57:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6LBVyzsQG/7ShipA4O7uTiNNg1k9qRgs9gLYPY8eehOz5Z/SjyFijI5xb/K03pB6cY5RqJCNmq6ZBeRCjxrXHw==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f66f449af40 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-16ab4o6.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aab", "explanatory"=>"asd", "genre_id"=>"3", "price"=>"asdf", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 13:57:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.1ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 107.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 13:59:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:23
+  Rendered admins/products/new.html.erb within layouts/application (7.8ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 115ms (Views: 112.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:00:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fYyyd+qTlJjDisiHeot2k6nLUjhDX+4hhXeMO+KVu2Um2XhuXqLt6p99jTUuuwin+wiAye57bKPqcLBE4pEWaQ==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f66e1731f78 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-1dcv44q.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aab", "explanatory"=>"asd", "genre_id"=>"2", "price"=>"100", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:00:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 115ms (Views: 111.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:05:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (6.4ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 105ms (Views: 100.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:06:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (4.6ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 111ms (Views: 105.2ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:06:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RVivnjqTxfxJ++5MC28R5IpGN/o5USkb64yEm3v5nTRgzQ6IG79cMJIVNgeUmqEtLKD9n+ZcWjQQL7N06Fynyg==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 6ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:06:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 14:07:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:20
+  Rendered admins/products/new.html.erb within layouts/application (8.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 112ms (Views: 109.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:07:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f0MwMyp2Z4UDw5R1F9O6SD8ByFt/R+47okYRdm9NxtEkFvoqnkce91800cdD48R8bcIaqtJjbLnNQS0Jb0lr3Q==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f66f42bbdf0 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-1dyzg11.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aab", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"100", "is_capable"=>"販売停止中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:07:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 100.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 14:07:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:20
+  Rendered admins/products/new.html.erb within layouts/application (7.6ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 111ms (Views: 107.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:08:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XScqid1nbgIhbxoSyJRgnHidCmC+n4kBDCAagWn/uV8GcuCQaVYXcH2YX6CcpB6oKl7YkRO7C4NjJyb+afsUUw==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x0000000001cbe750 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-1anuwag.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"bbb", "explanatory"=>"xfd", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:08:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 98ms (Views: 95.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 14:08:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:20
+  Rendered admins/products/new.html.erb within layouts/application (8.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 124.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:09:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BVw3TIjtogsEgoY79WlF4XPc2HKflkA9T1rs1WUs+BReCf1VPNzbeVh1w4mhWTvVIR8KgzKywr8gXdCqZShVGA==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f66e25edf30 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13596-zh37q9.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"ccc", "explanatory"=>"aa", "genre_id"=>"4", "price"=>"122", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+Unpermitted parameter: :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:09:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:10:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (4.8ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 151ms (Views: 146.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:10:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (4.5ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 122ms (Views: 118.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PVRTsA6n1WS4xb8Y18DMx3MADCJTfMZRXz00kt8Eg44YwfKmL4tMqGMrZ1NINXwO1ebGR4xxtX6kngN9TKG5cA==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 100.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/11" for 10.0.2.2 at 2020-07-19 14:10:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (5.0ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 115ms (Views: 110.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/products/11/edit" for 10.0.2.2 at 2020-07-19 14:10:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (4.3ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 103.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/admins/products/11" for 10.0.2.2 at 2020-07-19 14:10:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fgu9UHRbQ/SGexr5DQEf2GcMnu8dsK7TmxDXiqUHzTZm4RROjTBb7QSv8rL2kp2K77DtfqMwqAJMEgYHMVd6sQ==", "product"=>{"name"=>"ad", "explanatory"=>"as", "genre_id"=>"1", "price"=>"0", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"11"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 5ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:10:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 97.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:12:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 109.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:12:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (5.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 106.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:12:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (4.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 125ms (Views: 120.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:13:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (4.4ms)
+  Rendered share/_gest-header.html.erb (1.2ms)
+Completed 200 OK in 119ms (Views: 114.3ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:13:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ye0Ml+Y1DynUIRtOFDRBfFwUg5VoDZovSf334Nl15dSSuMaOUgR2W4jWXvxABD9IDtdRZMUpGK0m+suf2XFI2A==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:13:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 115ms (Views: 112.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/10" for 10.0.2.2 at 2020-07-19 14:13:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (6.1ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 111ms (Views: 105.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admins/products/10/edit" for 10.0.2.2 at 2020-07-19 14:13:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (4.7ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 103.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/admins/products/10" for 10.0.2.2 at 2020-07-19 14:13:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CWA0pqUZ5nbYpVWrs6mWK8d3nt7s4R3s3gLP0Pm+53S8NhzMRuc5kpj+vamjAKFVBi/hF2BK8ykBAgaJ9rUPVQ==", "product"=>{"name"=>"aab", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"0", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"10"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:13:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 110ms (Views: 107.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:17:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (349.1ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 598ms (Views: 574.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:17:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (14.8ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 130ms (Views: 125.9ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:17:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1HsWmfynd78rnnqwja57TtfhFlzqik60UOzAf9AjpVjx7reP3Yvuc/BwovsSW8uHcQfcOTWHPZurT/eQQ4afpg==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 11ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:17:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:19:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (11.2ms)
+  Rendered share/_gest-header.html.erb (1.3ms)
+Completed 200 OK in 592ms (Views: 576.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:25:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (325.5ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 548ms (Views: 524.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:25:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (20.8ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 140ms (Views: 130.6ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:25:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0BLPYH+4Zg0N7ASIzsp6swJBCErt7iDN6wqSjs2W9jP1h252XpT/wdYC3MNRP8p6pKfCLzLjU+IQqaVhXjPMzQ==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:25:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.1ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:25:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (5.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 99ms (Views: 93.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:25:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (1.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (8.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 128ms (Views: 121.1ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:25:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jkX8aecIXdjZnAJ8/Kzp7u33T5LAy6xvpmr3789XQQ2r0F1/xiTEFAJy2jdjWVknSxGF9x/G30BdycAAXPJ78w==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:25:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 92.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:27:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (9.6ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 548ms (Views: 532.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:27:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (16.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 122ms (Views: 115.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:27:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.8ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (14.6ms)
+  Rendered share/_gest-header.html.erb (1.4ms)
+Completed 200 OK in 140ms (Views: 132.3ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:27:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JLPOmhZX7u/StMEU/Kxp6FBmk55WLBckF9p6j0Llp04BJm+MN3t3IwlaGV9jWdkh9oBZ+4khZAvseU1g0UCdsA==", "product"=>{"name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売停止中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:27:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.1ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 101.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 14:34:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (327.8ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 546ms (Views: 524.2ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:34:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+ABjIz+cbPITGZhgY7y65zK76JPXBVAf4NOPjrmjviWjVak6i60VgE/u3dI3jMTTYHg6Ynoh0p2P1LPxuacTKQ==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f6bac1bab10 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13890-1j9333s.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"asd", "explanatory"=>"asd", "genre_id"=>"2", "price"=>"99", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Completed 422 Unprocessable Entity in 17ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Cart item must exist):
+  
+app/controllers/admins/products_controller.rb:7:in `create'
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 14:38:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (344.7ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 560ms (Views: 537.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:38:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WSHNYEyCPwItr/yP74rfcAO+QDiHTKiq5boGE/JLA28CdAd5+LNGcHFYuT27uqFEUX2SySpoKiiKvTps8k+uYw==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f80e01f85c0 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13939-pk1ed7.jpg>, @original_filename="sample-post5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"ccc", "genre_id"=>"1", "price"=>"100", "is_capable"=>"販売停止中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:38:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.8ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 113ms (Views: 109.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:38:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (1.9ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 103ms (Views: 99.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-19 14:39:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (317.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 524ms (Views: 501.7ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:40:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sD2R2LWUfMdsY2bi56DL9bG7axPUd6qLHIevYFbl7fXraFvBAaUFtTCUI1CzkLXB43i54nlTKAlzgJMfVuFA+Q==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9b2418d028 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-13987-163ndc4.jpg>, @original_filename="sample-post4.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post4.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"190", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Completed 422 Unprocessable Entity in 16ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Cart item must exist):
+  
+app/controllers/admins/products_controller.rb:7:in `create'
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-19 14:42:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sD2R2LWUfMdsY2bi56DL9bG7axPUd6qLHIevYFbl7fXraFvBAaUFtTCUI1CzkLXB43i54nlTKAlzgJMfVuFA+Q==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8b0c7a0e38 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-14036-15hp7fj.jpg>, @original_filename="sample-post5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"190", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "image_id", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 1], ["name", "aaa"], ["explanatory", "asd"], ["image_id", "d89f1fe5e9999e3083e5ff2309c944ce41cc701b043a9d4e33eee82e5a70"], ["price", 190], ["created_at", "2020-07-19 14:42:35.482803"], ["updated_at", "2020-07-19 14:42:35.482803"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 44ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:42:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 549ms (Views: 546.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/11" for 10.0.2.2 at 2020-07-19 14:42:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (5.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 102ms (Views: 96.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/products/11/edit" for 10.0.2.2 at 2020-07-19 14:42:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:18
+  Rendered admins/products/edit.html.erb within layouts/application (14.3ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 130ms (Views: 121.5ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/admins/products/11" for 10.0.2.2 at 2020-07-19 14:42:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jt/pdNevl8Y99+soSaJFz1Zg2Miuj6kqtZiOC/TL5C1WNUBqLsSP378jA2OyMced3tyrWRAPr/timl+GYJtTqg==", "product"=>{"name"=>"ad", "explanatory"=>"as", "genre_id"=>"1", "price"=>"0", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"11"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mProduct Update (2.4ms)[0m  [1m[33mUPDATE "products" SET "is_capable" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["is_capable", 1], ["updated_at", "2020-07-19 14:42:43.538684"], ["id", 11]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 11ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:42:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (3.4ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 104ms (Views: 101.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/12" for 10.0.2.2 at 2020-07-19 14:49:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  Rendered admins/products/show.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_id_attacher' for #<Product:0x00007f83d86f8c00>
+Did you mean?  image_attacher):
+    2: 	<h2>商品詳細</h2>
+    3: 	<div class="row">
+    4: 	<div class="col-xs-4">
+    5: 		<%= attachment_image_tag @product, :image_id, size: "300x300", fallback: "no_image.jpg"%>
+    6: 	</div>
+    7: 	<div class="col-xs-8">
+    8: 		<dix>
+  
+app/views/admins/products/show.html.erb:5:in `_app_views_admins_products_show_html_erb___747398196151211637_43189900'
+Started GET "/admins/products/12" for 10.0.2.2 at 2020-07-19 14:49:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (14.0ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 534ms (Views: 529.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/attachments/9232fb4e263eff00acd417c8f4a984e9157bde4c/store/d89f1fe5e9999e3083e5ff2309c944ce41cc701b043a9d4e33eee82e5a70/image" for 10.0.2.2 at 2020-07-19 14:49:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-07-19 14:49:32 +0000] GET "/9232fb4e263eff00acd417c8f4a984e9157bde4c/store/d89f1fe5e9999e3083e5ff2309c944ce41cc701b043a9d4e33eee82e5a70/image" 200 10.9ms
+
+Started GET "/admins/products/12/edit" for 10.0.2.2 at 2020-07-19 14:51:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:20
+  Rendered admins/products/edit.html.erb within layouts/application (21.2ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 131ms (Views: 125.1ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/admins/products/12" for 10.0.2.2 at 2020-07-19 14:51:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RP9X4qFU9600IsFgUqFkMYAo+3HBv/JNs1bIA0QTta7lq/NeCYvc1/4R1vn5ASvrryxBxOkYYgYMbOJrQKxNxA==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f83d8bed008 @tempfile=#<Tempfile:/tmp/RackMultipart20200719-14084-ks633p.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"190", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"12"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "image_id" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["image_id", "c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41"], ["updated_at", "2020-07-19 14:51:58.356829"], ["id", 12]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 18ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:51:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.1ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 113.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/12" for 10.0.2.2 at 2020-07-19 14:52:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (3.0ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 123ms (Views: 118.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/attachments/0eae2eae6e5a4ef0a2742fb2f1640d97cbc99161/store/c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41/image" for 10.0.2.2 at 2020-07-19 14:52:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-07-19 14:52:01 +0000] GET "/0eae2eae6e5a4ef0a2742fb2f1640d97cbc99161/store/c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41/image" 200 8.3ms
+
+Started GET "/admins/genres" for 10.0.2.2 at 2020-07-19 14:53:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::GenresController#index as HTML
+  Rendering admins/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/genres/index.html.erb:23
+  Rendered admins/genres/index.html.erb within layouts/application (54.7ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 173ms (Views: 169.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/admins/genres" for 10.0.2.2 at 2020-07-19 14:53:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::GenresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MNQ/Q7MhGbwAP4A2ZekA4Ikcilw8kek64wPk+0mRF89rgfVaBxBgzlzIxYQx2X7U299YrZG1a7iMBNiESZW6ww==", "genre"=>{"name"=>"カステラ", "is_enabled"=>"有効"}, "commit"=>"追加"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/genres_controller.rb:8
+  [1m[36mGenre Create (2.4ms)[0m  [1m[32mINSERT INTO "genres" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "カステラ"], ["created_at", "2020-07-19 14:53:15.416496"], ["updated_at", "2020-07-19 14:53:15.416496"]]
+  ↳ app/controllers/admins/genres_controller.rb:8
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/genres_controller.rb:8
+Redirected to http://localhost:3000/admins/genres
+Completed 302 Found in 9ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/admins/genres" for 10.0.2.2 at 2020-07-19 14:53:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::GenresController#index as HTML
+  Rendering admins/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/genres/index.html.erb:23
+  Rendered admins/genres/index.html.erb within layouts/application (3.2ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admins/genres/5/edit" for 10.0.2.2 at 2020-07-19 14:53:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::GenresController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admins/genres_controller.rb:12
+  Rendering admins/genres/edit.html.erb within layouts/application
+  Rendered admins/genres/edit.html.erb within layouts/application (1.5ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 106ms (Views: 100.5ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/admins/genres/5" for 10.0.2.2 at 2020-07-19 14:53:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::GenresController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jzI5rX0HIeV7LAQrOON9Vhi6KOHtD2fUnJNIbaZcRL/yhEa9U1fgdsFz5xdkBj3pHnD59ERLSetRNIPYvM50rA==", "genre"=>{"name"=>"カステラ", "is_enabled"=>"無効"}, "commit"=>"変更を保存する", "id"=>"5"}
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/admins/genres_controller.rb:15
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/genres_controller.rb:16
+  [1m[36mGenre Update (2.1ms)[0m  [1m[33mUPDATE "genres" SET "is_enabled" = ?, "updated_at" = ? WHERE "genres"."id" = ?[0m  [["is_enabled", 0], ["updated_at", "2020-07-19 14:53:20.122578"], ["id", 5]]
+  ↳ app/controllers/admins/genres_controller.rb:16
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/genres_controller.rb:16
+Redirected to http://localhost:3000/admins/genres
+Completed 302 Found in 7ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/admins/genres" for 10.0.2.2 at 2020-07-19 14:53:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::GenresController#index as HTML
+  Rendering admins/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/genres/index.html.erb:23
+  Rendered admins/genres/index.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:53:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.8ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 101.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products/12" for 10.0.2.2 at 2020-07-19 14:54:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (3.0ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 99.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products/1" for 10.0.2.2 at 2020-07-19 14:54:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  Rendered admins/products/show.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12: 		<h3>商品説明：<%= @product.explanatory %></h3>
+    13: 		</dix>
+    14: 		<dix>
+    15: 		<h3>ジャンル：<%= @product.genre.name %></h3>
+    16: 		</dix>
+    17: 		<dix>
+    18: 		<h3>税抜き価格：<%= @product.price %></h3>
+  
+app/views/admins/products/show.html.erb:15:in `_app_views_admins_products_show_html_erb___747398196151211637_70102073939320'
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:54:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.3ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 103.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/1" for 10.0.2.2 at 2020-07-19 14:54:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  Rendered admins/products/show.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    12: 		<h3>商品説明：<%= @product.explanatory %></h3>
+    13: 		</dix>
+    14: 		<dix>
+    15: 		<h3>ジャンル：<%= @product.genre.name %></h3>
+    16: 		</dix>
+    17: 		<dix>
+    18: 		<h3>税抜き価格：<%= @product.price %></h3>
+  
+app/views/admins/products/show.html.erb:15:in `_app_views_admins_products_show_html_erb___747398196151211637_70102074123320'
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:54:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.4ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 106.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/10" for 10.0.2.2 at 2020-07-19 14:54:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (5.2ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 95.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/products/10/edit" for 10.0.2.2 at 2020-07-19 14:54:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.6ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:20
+  Rendered admins/products/edit.html.erb within layouts/application (7.5ms)
+  Rendered share/_gest-header.html.erb (0.5ms)
+Completed 200 OK in 108ms (Views: 103.0ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/admins/products/10" for 10.0.2.2 at 2020-07-19 14:55:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+7vFJkPTP2qWyGRRKt2UZQE3P0QO+XVYFsQQziAa6ulO7e1MoC3gjtaTjFM6dKMbwG9AjYJSm53JxNmXLxECyA==", "product"=>{"image"=>"{}", "name"=>"aab", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"0", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"10"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mProduct Update (1.5ms)[0m  [1m[33mUPDATE "products" SET "is_capable" = ?, "image_id" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["is_capable", 1], ["image_id", nil], ["updated_at", "2020-07-19 14:55:01.278678"], ["id", 10]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:55:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.9ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 90.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admins/products/9" for 10.0.2.2 at 2020-07-19 14:55:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (5.7ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 93.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products/9/edit" for 10.0.2.2 at 2020-07-19 14:55:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:20
+  Rendered admins/products/edit.html.erb within layouts/application (6.2ms)
+  Rendered share/_gest-header.html.erb (0.8ms)
+Completed 200 OK in 109ms (Views: 103.2ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/admins/products/9" for 10.0.2.2 at 2020-07-19 14:55:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NLUsAEa3LWBtEsOaDKd/xPwmK5w9aiZitrlf15Btk8ro34P8iuXHcKLMlnTh3a+gmied9ms0lIsri6RmUnddLA==", "product"=>{"image"=>"{}", "name"=>"bbb", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"100", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"9"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (1.0ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mProduct Update (1.9ms)[0m  [1m[33mUPDATE "products" SET "is_capable" = ?, "image_id" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["is_capable", 1], ["image_id", nil], ["updated_at", "2020-07-19 14:55:06.647526"], ["id", 9]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 15ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:55:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 111ms (Views: 108.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:55:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.7ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (4.6ms)
+  Rendered share/_gest-header.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 96.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins/products/8/edit" for 10.0.2.2 at 2020-07-19 14:55:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:20
+  Rendered admins/products/edit.html.erb within layouts/application (6.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 123ms (Views: 113.6ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/admins/products/8" for 10.0.2.2 at 2020-07-19 14:55:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e1XLeZvWutTKpCunja6tJ304UjVtHyd6D++p93C7Eg5ewGpvuvojGBFK8+wSWx3u296YULISVFX0TJ4Y4x4o8A==", "product"=>{"image"=>"{}", "name"=>"bbc", "explanatory"=>"ccc", "genre_id"=>"2", "price"=>"190", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"8"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "is_capable" = ?, "image_id" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["is_capable", 1], ["image_id", nil], ["updated_at", "2020-07-19 14:55:11.882422"], ["id", 8]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 11ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-19 14:55:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (2.7ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 105ms (Views: 102.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 03:27:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (13.5ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 3709ms (Views: 3690.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admins/products/12" for 10.0.2.2 at 2020-07-20 03:28:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (24.1ms)
+  Rendered share/_gest-header.html.erb (0.9ms)
+Completed 200 OK in 152ms (Views: 137.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/attachments/6f97d11d15d6434819c48c93a1f396e876eb717a/store/c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41/image" for 10.0.2.2 at 2020-07-20 03:28:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41
+Refile::App: [2020-07-20 03:28:18 +0000] GET "/6f97d11d15d6434819c48c93a1f396e876eb717a/store/c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41/image" 404 3.4ms
+
+Started GET "/admins/products/12/edit" for 10.0.2.2 at 2020-07-20 03:28:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:20
+  Rendered admins/products/edit.html.erb within layouts/application (47.3ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 187ms (Views: 181.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/attachments/6f97d11d15d6434819c48c93a1f396e876eb717a/store/c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41/image" for 10.0.2.2 at 2020-07-20 03:28:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: Could not find attachment by id: c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41
+Refile::App: [2020-07-20 03:28:28 +0000] GET "/6f97d11d15d6434819c48c93a1f396e876eb717a/store/c6b4ee9c4194cded90ba7a41b76df695a088c3d1f427738b35f13ba3bf41/image" 404 1.9ms
+
+Started PATCH "/admins/products/12" for 10.0.2.2 at 2020-07-20 03:28:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KWkp0GkUltaCBQ1HHhKl8o+U0O4dNAj3Myaj0rdBdFspbE1pqNfH+m6r6FpRjW9QCZHApP5oOUwB0ejUqHFO5g==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f3653815520 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-7268-3ealx9.jpg>, @original_filename="sample-post5.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post5.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"asd", "genre_id"=>"1", "price"=>"190", "is_capable"=>"販売中"}, "commit"=>"商品登録", "id"=>"12"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:20
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[36mProduct Update (1.3ms)[0m  [1m[33mUPDATE "products" SET "image_id" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["image_id", "fc5379159ac3548b4eab547b2d7670165e8c47a9f38cd95fd60e91cadc16"], ["updated_at", "2020-07-20 03:28:43.240718"], ["id", 12]]
+  ↳ app/controllers/admins/products_controller.rb:21
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:21
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 18ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 03:28:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (3.8ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 125ms (Views: 120.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admins/products/12" for 10.0.2.2 at 2020-07-20 03:28:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (4.0ms)
+  Rendered share/_gest-header.html.erb (0.7ms)
+Completed 200 OK in 194ms (Views: 180.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/attachments/8bffcc0df700b49f9a0689637fb180e14351bcb6/store/fc5379159ac3548b4eab547b2d7670165e8c47a9f38cd95fd60e91cadc16/image" for 10.0.2.2 at 2020-07-20 03:28:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-07-20 03:28:45 +0000] GET "/8bffcc0df700b49f9a0689637fb180e14351bcb6/store/fc5379159ac3548b4eab547b2d7670165e8c47a9f38cd95fd60e91cadc16/image" 200 6.1ms
+
+Started GET "/admins/products/new" for 10.0.2.2 at 2020-07-20 03:29:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#new as HTML
+  Rendering admins/products/new.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/new.html.erb:19
+  Rendered admins/products/new.html.erb within layouts/application (8.2ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 113ms (Views: 109.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/admins/products" for 10.0.2.2 at 2020-07-20 03:29:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fZGb7sXSezziERnoB2ZMEkvVkCmVaSHlEnAn0aKt+oaVGo4SrUIJiBajK7jED1U9w73wy2TBG7eMGVL50aNaEw==", "product"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f36521cd1a0 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-7268-707eg3.jpg>, @original_filename="sample-post3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"sample-post3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "name"=>"aaa", "explanatory"=>"aaa", "genre_id"=>"4", "price"=>"123", "is_capable"=>"販売中"}, "commit"=>"商品登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[36mProduct Create (1.2ms)[0m  [1m[32mINSERT INTO "products" ("genre_id", "name", "explanatory", "image_id", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["genre_id", 4], ["name", "aaa"], ["explanatory", "aaa"], ["image_id", "a7434129254357a165ceacb44584b5d0cf2f297da40aee4e2c3ae72f00bf"], ["price", 123], ["created_at", "2020-07-20 03:29:59.283769"], ["updated_at", "2020-07-20 03:29:59.283769"]]
+  ↳ app/controllers/admins/products_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admins/products_controller.rb:7
+Redirected to http://localhost:3000/admins/products
+Completed 302 Found in 16ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/admins/products" for 10.0.2.2 at 2020-07-20 03:29:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#index as HTML
+  Rendering admins/products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/admins/products/index.html.erb:14
+  Rendered admins/products/index.html.erb within layouts/application (3.6ms)
+  Rendered share/_gest-header.html.erb (1.0ms)
+Completed 200 OK in 140ms (Views: 136.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admins/products/13" for 10.0.2.2 at 2020-07-20 03:30:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:14
+  Rendering admins/products/show.html.erb within layouts/application
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT  "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/admins/products/show.html.erb:15
+  Rendered admins/products/show.html.erb within layouts/application (2.6ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 127ms (Views: 122.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/attachments/4ad55cc64eae6a2e2c8e8098ecc030c7ca6e1470/store/a7434129254357a165ceacb44584b5d0cf2f297da40aee4e2c3ae72f00bf/image" for 10.0.2.2 at 2020-07-20 03:30:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2020-07-20 03:30:02 +0000] GET "/4ad55cc64eae6a2e2c8e8098ecc030c7ca6e1470/store/a7434129254357a165ceacb44584b5d0cf2f297da40aee4e2c3ae72f00bf/image" 200 6.8ms
+
+Started GET "/admins/products/13/edit" for 10.0.2.2 at 2020-07-20 03:30:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admins::ProductsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/admins/products_controller.rb:17
+  Rendering admins/products/edit.html.erb within layouts/application
+  [1m[36mGenre Load (0.4ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admins/products/edit.html.erb:20
+  Rendered admins/products/edit.html.erb within layouts/application (6.6ms)
+  Rendered share/_gest-header.html.erb (0.6ms)
+Completed 200 OK in 111ms (Views: 105.5ms | ActiveRecord: 0.9ms)
+
+
