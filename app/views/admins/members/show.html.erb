@@ -4,7 +4,8 @@
 		  <h2>会員詳細</h2>
 		  <table class="table table-hover table-inverse">
 		      <td>顧客ID</td>
-              <td><%= @member.id %></td>
+              <td><%= @member.id %><span class="label label-primary"><%= @member.is_deleted %></span>
+              </td>
             </tr>
 
             <tr>
