@@ -33885,3 +33885,150 @@ Completed 200 OK in 170ms (Views: 161.0ms | ActiveRecord: 1.7ms)
 >>>>>>> 201bda748d0b5bbe428c69f8c418751a77a5c166
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeWorkStatusOfOrderDetails (20200720035604)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorder_details" ("id" integer NOT NULL PRIMARY KEY, "order_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "work_status" integer DEFAULT NULL, "number" integer DEFAULT NULL, "tax_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorder_details" ("id","order_id","product_id","work_status","number","tax_price","created_at","updated_at")
+                     SELECT "id","order_id","product_id","work_status","number","tax_price","created_at","updated_at" FROM "order_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "order_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "order_details" ("id" integer NOT NULL PRIMARY KEY, "order_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "work_status" integer DEFAULT 0, "number" integer DEFAULT NULL, "tax_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "order_details" ("id","order_id","product_id","work_status","number","tax_price","created_at","updated_at")
+                     SELECT "id","order_id","product_id","work_status","number","tax_price","created_at","updated_at" FROM "aorder_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "aorder_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720035604"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  ↳ bin/rails:9
+)[0m  [1m[31mrollback transaction[0m
+d" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "member_id" integer, "name" varchar, "postcode" varchar, "address" varchar, "postage" integer DEFAULT 800, "total_products_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ↳ bin/rails:9
+)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+ernal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+roducts_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+                                                                                                                                      integer, "name" varchar, "postcode" varchar, "address" varchar, "postage" integer DEFAULT 800, "total_products_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720045817_create_orders.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720045817"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  ↳ bin/rails:9
+)[0m  [1m[31mrollback transaction[0m
+d" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "member_id" integer, "name" varchar, "postcode" varchar, "address" varchar, "postage" integer DEFAULT 800, "total_products_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                 _is_capable_of_products.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aproducts" ("id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at")
+                     SELECT "id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at" FROM "products"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "products"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer NOT NULL PRIMARY KEY, "genre_id" integer DEFAULT NULL, "name" varchar DEFAULT NULL, "explanatory" text DEFAULT NULL, "image_id" varchar DEFAULT NULL, "is_capable" boolean DEFAULT 1, "price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "products" ("id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at")
+                     SELECT "id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at" FROM "aproducts"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aproducts"[0m
+  ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719043136"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateCartItems (20200719083217)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "cart_items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719083217_create_cart_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719083217"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddColumsToCartItems (20200719091941)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "product_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "member_id" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:4
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "cart_items" ADD "number" integer[0m
+  ↳ db/migrate/20200719091941_add_colums_to_cart_items.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719091941"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeIsEnabledOfGenres (20200719122102)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "agenres" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "is_enabled" boolean DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "agenres" ("id","name","is_enabled","created_at","updated_at")
+                     SELECT "id","name","is_enabled","created_at","updated_at" FROM "genres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "genres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "genres" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "is_enabled" boolean DEFAULT 1, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("id","name","is_enabled","created_at","updated_at")
+                     SELECT "id","name","is_enabled","created_at","updated_at" FROM "agenres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "agenres"[0m
+  ↳ db/migrate/20200719122102_change_is_enabled_of_genres.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200719122102"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to ChangeWorkStatusOfOrderDetails (20200720035604)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aorder_details" ("id" integer NOT NULL PRIMARY KEY, "order_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "work_status" integer DEFAULT NULL, "number" integer DEFAULT NULL, "tax_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "aorder_details" ("id","order_id","product_id","work_status","number","tax_price","created_at","updated_at")
+                     SELECT "id","order_id","product_id","work_status","number","tax_price","created_at","updated_at" FROM "order_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "order_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "order_details" ("id" integer NOT NULL PRIMARY KEY, "order_id" integer DEFAULT NULL, "product_id" integer DEFAULT NULL, "work_status" integer DEFAULT 0, "number" integer DEFAULT NULL, "tax_price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "order_details" ("id","order_id","product_id","work_status","number","tax_price","created_at","updated_at")
+                     SELECT "id","order_id","product_id","work_status","number","tax_price","created_at","updated_at" FROM "aorder_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aorder_details"[0m
+  ↳ db/migrate/20200720035604_change_work_status_of_order_details.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200720035604"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateOrders (20200720045817)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "orders" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "member_id" integer, "name" varchar, "postcode" varchar, "address" varchar, "postage" integer DEFAULT 800, "total_products_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200720045817_create_orders.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
