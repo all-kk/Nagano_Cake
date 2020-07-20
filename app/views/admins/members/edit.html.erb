@@ -7,11 +7,11 @@
       <table class="table table-hover table-inverse">
         <tr>
           <td><%= f.label :会員id %>
-              <%= f.label :member_id %>
+              <%= @member.id %>
           </td>
         </tr>
         <tr>
-          <td><%= f.label :氏名 %>
+          <td><%= f.label :氏名　　%>
               <%= f.text_field :last_name %>
               <%= f.text_field :first_name %>
           </td>
@@ -29,7 +29,7 @@
         </tr>
         <tr>
           <td>
-              <%= f.label :住所 %>
+              <%= f.label :住所　　%>
               <%= f.text_field :address %>
           </td>
         </tr>
@@ -45,9 +45,14 @@
               <%= f.email_field :email %>
           </td>
         </tr>
+        <tr>
+          <td>
+            <label><%= f.radio_button :is_deleted, "有効" ,checked: "checked"%> 有効 </label>
+            <label><%= f.radio_button :is_deleted, "退会済み" %> 退会済み</label>
+          </td>
+        </tr>
       </div>
       </table>
-
           <%= f.submit "変更を保存する", class: "btn btn-primary" %>
       <% end %>
     </div>
