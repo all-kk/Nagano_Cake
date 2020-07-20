@@ -1,6 +1,7 @@
+<div class="shipping_edit_area" style="margin-top: 100px;">
 <h2>配送先編集</h2>
 
-  <%= form_for(@shipping) do |f| %>
+  <%= form_for @shipping, url:member_shipping_path(@shipping), method: :patch do |f| %>
   	<h4>郵便番号(ハイフンなし)</h4>
   	<%= f.label :郵便番号 %>
     <%= f.text_field :postcode, autofocus: true, autocomplete: "postcode" %>
@@ -13,3 +14,4 @@
 
     <%= f.submit '編集する' %>
  <% end %>
+</div>
