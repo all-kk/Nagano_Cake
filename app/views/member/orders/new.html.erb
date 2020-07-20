@@ -1,0 +1,13 @@
+<div class="new_order_area" style="margin-top: 100px;">
+	<h2>注文情報入力</h2>
+
+	<%= form_for @order, url:member_orders_confirm_path, method: :post do |f| %>
+	<h4>支払い方法</h4>
+	<%= f.radio_button :payment_method, 1, checked: true %><h4>クレジットカード</h4><br>
+	<%= f.radio_button :payment_method, 2 %><h4>銀行振り込み</h4>
+	<h4>お届け先</h4>
+	<%= f.radio_button :address_number, 1, checked: true %><h4>ご自身の住所</h4>
+	<%= current_member.postcode %><%= current_member.address %><%= current_member.last_name %><%= current_member.first_name %>
+	<%= f.radio_button :address_number, 2 %><h4>登録済み住所から選択</h4>
+	<% end %>
+</div>
