@@ -1,10 +1,11 @@
 <div class="container">
-	<
 	<div class="row">
+		<%= form_for(@product, url: admins_products_path) do |f| %>
 		<div class="col-xs-4">
+			 <%= attachment_image_tag @product, :image, class: "img-square", fallback: "no_image.jpg", size:"200x200" %>
+			  <%= f.attachment_field :image, placeholder: "商品画像" %>
 		</div>
-		<div class="col-xs-8">
-			<%= form_for(@product, url: admins_products_path) do |f| %>
+			<div class="col-xs-8">
 				<div>
 				<%= f.label :商品名,class: "col-xs-3" %>
 				<%= f.text_field :name,class: "col-xs-8" %>
@@ -26,13 +27,9 @@
 				<%= f.select :is_capable ,["販売中","販売停止中"] %>
 				</div>
 				<div>
-				<%= f.label :販売ステータス %>
-				<%= f.select :is_capable ,["販売中","販売停止中"] %>
-				</div>
-				<div>
 				<%= f.submit "商品登録" %>
 				</div>
-			<% end %>
-		</div>
+			</div>
+		<% end %>
 	</div>
 </div>
