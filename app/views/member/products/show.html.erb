@@ -1,0 +1,20 @@
+<div class="container">
+	<h2>商品詳細</h2>
+	<div class="row">
+	<div class="col-xs-4">
+		<%= attachment_image_tag @product, :image, size: "200x200", fallback: "no_image.jpg"%>
+	</div>
+	<div class="col-xs-8">
+		<dix>
+		<h3><%= @product.name %></h3>
+		</dix>
+		<dix>
+		<p><%= @product.explanatory %></p>
+		</dix>
+		<dix>
+		<h3>¥<%= (@product.price* 1.1).round %>(税込み)</h3>
+		</dix>
+	</div>
+	<%= link_to "カートに入れる", member_cart_items_path %>
+	</div>
+</div>
