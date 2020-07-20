@@ -34909,6 +34909,7 @@ roducts_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFA
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 <<<<<<< HEAD
+<<<<<<< .merge_file_TjGeV8
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 Migrating to ChangeIsCapableOfProducts (20200719043136)
@@ -34918,6 +34919,12 @@ Migrating to ChangeIsCapableOfProducts (20200719043136)
   ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
   [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aproducts" ("id" integer NOT NULL PRIMARY KEY, "genre_id" integer DEFAULT NULL, "name" varchar DEFAULT NULL, "explanatory" text DEFAULT NULL, "image_id" varchar DEFAULT NULL, "is_capable" boolean DEFAULT NULL, "price" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
+=======
+  ↳ bin/rails:9
+)[0m  [1m[31mrollback transaction[0m
+d" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "member_id" integer, "name" varchar, "postcode" varchar, "address" varchar, "postage" integer DEFAULT 800, "total_products_cost" integer, "payment_method" integer DEFAULT 0, "status" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                 _is_capable_of_products.rb:3
+>>>>>>> .merge_file_e1wCfc
   [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aproducts" ("id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at")
                      SELECT "id","genre_id","name","explanatory","image_id","is_capable","price","created_at","updated_at" FROM "products"[0m
   ↳ db/migrate/20200719043136_change_is_capable_of_products.rb:3
@@ -35005,6 +35012,7 @@ Migrating to CreateOrders (20200720045817)
   ↳ db/migrate/20200720045817_create_orders.rb:3
   [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
   ↳ bin/rails:9
+<<<<<<< .merge_file_TjGeV8
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 Migrating to CreateOrders (20200720045817)
@@ -38357,3 +38365,8 @@ Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0
 Refile::App: Could not find attachment by id: e15142d0c7d0c7cab9f86a33810b8ffca8220f7f839c85d6535179754c7f
 Refile::App: [2020-07-20 12:25:18 +0000] GET "/03a65edb5ed19529a5534cb1ef7f2ba256ab8c51/store/e15142d0c7d0c7cab9f86a33810b8ffca8220f7f839c85d6535179754c7f/image" 404 1.1ms
 
+=======
+=======
+>>>>>>> origin/develop
+>>>>>>> 760bb9567e07ec831eb5340051855cd0eecbb833
+>>>>>>> .merge_file_e1wCfc
