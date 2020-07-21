@@ -23,7 +23,7 @@ class Member::ShippingsController < ApplicationController
 
 	def destroy
 		@shipping = Shipping.find(params[:id])
-		@shipping.destroy(shipping_params)
+		@shipping.destroy
 		redirect_to member_shippings_path
 	end
 
