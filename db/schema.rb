@@ -54,6 +54,13 @@ ActiveRecord::Schema.define(version: 2020_07_20_053420) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+
+# Could not dump table "members" because of following StandardError
+#   Unknown type '' for column 'first_name'
+
+  create_table "oders", force: :cascade do |t|
+    t.integer "member_id"
+
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -64,9 +71,18 @@ ActiveRecord::Schema.define(version: 2020_07_20_053420) do
     t.string "telephone_number"
     t.string "postcode"
     t.string "address"
+
     t.boolean "is_deleted", default: true
     t.index ["email"], name: "index_members_on_email", unique: true
     t.index ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
+
+    t.integer "postage"
+    t.integer "total_products_cos"
+    t.integer "payment_method"
+    t.integer "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
   end
 
   create_table "order_details", force: :cascade do |t|
