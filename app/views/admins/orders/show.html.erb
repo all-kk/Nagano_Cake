@@ -3,19 +3,22 @@
 	<div class="row">
 		<div>
 			<p>購入者</p>
-			<p></p>
+			<p><%= @order.member.last_name %></p>
 		</div>
 		<div>
 			<p>配送先</p>
-			<p></p>
+			<p><%= @order.address %></p>
 		</div>
 		<div>
 			<p>支払方法</p>
-			<p></p>
+			<p><%= @order.payment_method %></p>
 		</div>
 		<div>
 			<p>注文ステータス</p>
-			<p></p>
+			<%= form_for @order, url: admins_order_path do |f| %>
+			<%= f.select :order_status,["入金待ち","入金確認","製作中","発送準備中","発送済"] %>
+			<%= f.submit "更新" ,class: "btn btn-primary btn-sm" %>
+			<% end %>
 		</div>
 	</div>
 	<div class="row">
@@ -32,12 +35,15 @@
  	</thead>
  	<tbody>
  		<tr>
- 			 <td></td>
- 			 <td></td>
- 			 <td></td>
- 			 <td></td>
- 			 <td></td>
- 			 <td></td>
+ 			 <td><%= @order.order_detail.product.name %></td>
+ 			 <td><%= @order.order_detail.product.price %></td>
+ 			 <td><%= @order.order_detail.number %></td>
+ 			 <td><%= @order.order_detail.product.price %></td>
+ 			 <%= form_for @order_detail, url: admins_order_detail_path do |f| %>
+ 			 <td><%= f.select :work_status,["着手不可","製作待ち","製作中","製作完了"] %>
+ 			 	</td>
+ 			 <td><%= f.submit "更新" ,class:"btn btn-primary btn-xs" %></td>
+ 			 <% end %>
  		</tr>
  		<% end %>
  	</tbody>

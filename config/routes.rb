@@ -11,6 +11,7 @@ namespace :member do
   resources :cart_items
   get '/orders/confirm' => 'orders#confirm'
   post '/orders/confirm' => 'orders#confirm'
+  delete '/cart_items/destroy_all' => 'cart_items#destroy_all'
 end
   root 'homes#top'
   get 'home/about' => 'homes#about'
