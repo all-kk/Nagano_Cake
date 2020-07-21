@@ -36,7 +36,7 @@ class DeviseCreateMembers < ActiveRecord::Migration[5.2]
       t.string :first_name_phonetic
       t.string :last_name_phonetic
       t.string :telephone_number
-      t.string :postcode, :string
+      t.string :postcode
       t.string :address
       t.boolean :is_deleted
       t.string :name
