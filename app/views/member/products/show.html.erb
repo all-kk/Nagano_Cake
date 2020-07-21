@@ -12,7 +12,7 @@
 		<p><%= @product.explanatory %></p>
 		</dix>
 		<dix>
-		<h3>¥<%= (@product.price* 1.1).round %>(税込み)</h3>
+		<h3><%= (@product.price* 1.1).round %>(税込み)</h3>
 		</dix>
 	</div>
 	<%= form_for(@cart_item, url: member_cart_items_path(@cart_item)) do |f| %>
