@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-7 col-md-offset-3">
+    <h2>会員編集画面</h2>
+
+      <%= form_for(@member, url:member_member_path) do |f| %>
+      <table class="table table-bordered ">
+          <td><%= f.label :名前 %></td>
+              <td>(性)<%= f.text_field :last_name %></td>
+              <td>(名)<%= f.text_field :first_name %></td>
+        </tr>
+        <tr>
+          <td><%= f.label :フリガナ %></td>
+              <td>(セイ)<%= f.text_field :last_name_phonetic %></td>
+              <td>(メイ)<%= f.text_field :first_name_phonetic %>
+          </td>
+        </tr>
+        <tr>
+          <td><%= f.label :郵便番号 %></td>
+              <td>(ハイフンなし)<%= f.text_field :postcode %>
+          </td>
+        </tr>
+        <tr>
+          <td><%= f.label :住所 %></td>
+              <td><%= f.text_field :address %>
+          </td>
+        </tr>
+        <tr>
+          <td><%= f.label :電話番号 %></td>
+          <td>(ハイフンなし)<%= f.text_field :telephone_number %>
+          </td>
+        </tr>
+        <tr>
+          <td><%= f.label :メールアドレス %></td>
+              <td><%= f.email_field :email %></td>
+        </tr>
+      </div>
+      </table>
+          <%= f.submit "編集内容を保存する", class: "btn btn-primary" %>
+          <%= link_to "退会する", member_deactivate_member_path, class: "btn btn-danger" %>
+      <% end %>
+  </div>
+
+  </div>
+</div>
