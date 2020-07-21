@@ -1,7 +1,10 @@
 class Member::OrdersController < ApplicationController
 
 	def thanks
+<<<<<<< HEAD
 		
+=======
+>>>>>>> origin/develop
 	end
 	def index
 		@orders = current_member.orders
@@ -9,7 +12,7 @@ class Member::OrdersController < ApplicationController
 
 
 	def new
-		@order = Order.new(order_params)
+		@order = Order.new
 		@member = current_member
 		@shippings = Shipping.all
 	end
@@ -30,12 +33,21 @@ class Member::OrdersController < ApplicationController
 			@order.name = Shipping.find(params[:order][:shipping]).name
 
 		elsif params[:order][:address_number] ==  "2"
+<<<<<<< HEAD
 			@shipping = Shipping.new(shipping_params)
 			@shipping.postcode = params[:order][:postcode]
 			@shipping.address = params[:order][:address]
 			@shipping.name = params[:order][:name]
 			@shipping.member_id = current_member.id
 			
+=======
+			  @shipping = Shipping.new(shipping_params)
+			  @shipping.postcode = params[:order][:postcode]
+			  @shipping.address = params[:order][:address]
+			  @shipping.name = params[:order][:name]
+			  @shipping.member_id = current_member.id
+
+>>>>>>> origin/develop
 			if  @shipping.save
 				@order.postcode = @shipping.postcode
 				@order.address = @shipping.address
@@ -51,7 +63,6 @@ class Member::OrdersController < ApplicationController
 		redirect_to member_thanks_order_path(current_member.id)
 	end
 
-	
 
 	private
 
@@ -60,6 +71,6 @@ class Member::OrdersController < ApplicationController
 	end
 
 	def order_params
-		params.permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
+		params.require(:order).permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
 	end
 end
