@@ -70,6 +70,21 @@ ActiveRecord::Schema.define(version: 2020_07_20_053420) do
     t.index ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
 =======
 
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
+    t.string "first_name_phonetic"
+    t.string "last_name_phonetic"
+    t.string "telephone_number"
+    t.string "postcode"
+    t.string "address"
+    t.boolean "is_deleted", default: true
+    t.index ["email"], name: "index_members_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
+
+
 # Could not dump table "members" because of following StandardError
 #   Unknown type '' for column 'first_name'
 
