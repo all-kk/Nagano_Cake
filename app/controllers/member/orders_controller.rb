@@ -1,15 +1,18 @@
 class Member::OrdersController < ApplicationController
 
 	def thanks
-		@order = Order.find(params[:id])
 	end
 
 	def new
+<<<<<<< HEAD
 <<<<<<< HEAD
 		@order = Order.new
 		@member = current_member
 =======
 		@order = Order.new(order_params)
+=======
+		@order = Order.new
+>>>>>>> 1ba2a8ae4823020c6d458bd901801192e4e14715
 		@member = current_member
 		@shippings = Shipping.all
 	end
@@ -35,7 +38,7 @@ class Member::OrdersController < ApplicationController
 			  @shipping.address = params[:order][:address]
 			  @shipping.name = params[:order][:name]
 			  @shipping.member_id = current_member.id
-			
+
 			if  @shipping.save
 				@order.postcode = @shipping.postcode
 				@order.address = @shipping.address
@@ -51,7 +54,6 @@ class Member::OrdersController < ApplicationController
 	    redirect_to member_thanks_order_path(current_member.id)
 	end
 
-	
 
 	private
 
@@ -60,12 +62,16 @@ class Member::OrdersController < ApplicationController
 	end
 
 	def order_params
+<<<<<<< HEAD
 		params.permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
 >>>>>>> b699215168777ee931896479844f714efaacf714
 	end
 <<<<<<< HEAD
 
 	def confirm
+=======
+		params.require(:order).permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
+>>>>>>> 1ba2a8ae4823020c6d458bd901801192e4e14715
 	end
 
 
