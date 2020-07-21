@@ -9,16 +9,14 @@ namespace :member do
   resources :orders
   resources :shippings
   resources :cart_items
-<<<<<<< HEAD
-<<<<<<< HEAD
   get '/orders/confirm' => 'orders#confirm'
   post '/orders/confirm' => 'orders#confirm'
-=======
-=======
+  get '/orders/confirm' => 'orders#confirm'
+  post '/orders/confirm' => 'orders#confirm'
   get '/members/:id/deactivate' => 'members#deactivate', as:'deactivate_member'
->>>>>>> 7801fd4f4b4ccb99725d3c742f565ef5ed4522f4
   delete '/cart_items/destroy_all' => 'cart_items#destroy_all'
->>>>>>> 50ce59b2cadfcb2149ff640e1f0d0e6b2d68eb34
+
+  get '/orders/:id/thanks' => 'orders#thanks', as: 'thanks_order'
 end
 
   root 'homes#top'

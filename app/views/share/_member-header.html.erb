@@ -1,15 +1,17 @@
-<header class="navbar navbar-inverse">
-    <div class="container">
-      <nav class='nav navbar-nav navbar-left' >
-         <h2><span　class="title is-4" style="font-family: cursive;">Nagano Cake</span></h2>
-      </nav>
-          <nav style="margin-top: 50px;">
-            <ul class="nav navbar-nav navbar-right">
-			<il><%= link_to 'マイページ'  %></il>
-			<il><%= link_to '商品一覧', member_products_path %></il>
-			<il><%= link_to 'カート', member_cart_items_path %></il>
-			<il><%= link_to 'ログアウト', destroy_member_session_path, method: :delete %></il>
-			</ul>
-     	 </nav>
-  	 </div>
- </header>
+
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav class='nav navbar-nav navbar-left' >
+     <h2><span　class="title is-4" style="font-family: cursive;">Nagano Cake</span></h2>
+   </nav>
+   <nav style="margin-top: 50px;">
+    <ul class="nav navbar-nav navbar-right">
+     <il>ようこそ、<%= current_member.last_name %> さん</il>
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><il><%= link_to 'マイページ', member_member_path(current_member.id) %></il>
+      <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧', member_products_path %></il>
+      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><il><%= link_to 'カート', member_cart_items_path %></il>
+      <span class="glyphicon glyphicon-share" aria-hidden="true"></span><il><%= link_to 'ログアウト', destroy_member_session_path, method: :delete %></il>
+   </ul>
+ </nav>
+</div>
+</header>
