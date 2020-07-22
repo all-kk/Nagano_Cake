@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
 namespace :member do
   resources :members
-  resources :products
-  resources :orders
-  resources :shippings
+  resources :products, only:[:index, :show]
+  resources :orders, only:[:index, :show, :new, :create]
+  resources :shippings, only:[:index, :create, :edit, :update, :destroy]
   resources :cart_items
   get '/orders/confirm' => 'orders#confirm'
   post '/orders/confirm' => 'orders#confirm'
@@ -23,10 +23,10 @@ end
   get 'home/about' => 'homes#about'
     namespace :admins do
       get 'top' => 'top'
-    	resources :orders
-    	resources :order_details
-    	resources :genres
-    	resources :members
+    	resources :orders, only:[:index, :show, :update]
+    	resources :order_details, only:[:update]
+    	resources :genres, only:[:index, :create, :edit, :update]
+    	resources :members, only:[:index, :create, :edit, :show, :update]
     	resources :products
     end
 end
