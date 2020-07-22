@@ -1,7 +1,7 @@
 class Admins::OrderDetailsController < ApplicationController
 	def update
-		@order_detail = OrderDetail.find(params[:id])
-		@order.update(order_detail_params)
+		@order_detail = OrderDetail.where(params[:id])
+		@order_detail.update(order_detail_params)
 		redirect_to admins_orders_path
 	end
 	private
