@@ -43,6 +43,14 @@ class Member::OrdersController < ApplicationController
 		@order = Order.new(order_params)
 		@order.member_id = current_member.id
 		@order.save
+		current_member.cart_items.each do |cart_item|
+		@order_detail = OrderDetail.new
+		@order_detail.product_id = cart_item.product_id
+		@order_detail.number = cart_item.number
+		@order_detail.tax_price = (cart_item.product.price*1.1).round
+		@order_detail.order_id =  @order.id
+		@order_detail.save!
+		end
 	    redirect_to member_thanks_order_path(current_member.id)
 	end
 

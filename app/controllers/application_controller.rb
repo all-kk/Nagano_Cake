@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
   def after_sign_in_path_for(resource)
     if resource.instance_of?(Admin)
-      admin_top_path
+      admins_top_path
     elsif resource.instance_of?(Member)
       member_member_path(current_member.id)
     else
