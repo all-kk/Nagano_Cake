@@ -54,7 +54,6 @@ ActiveRecord::Schema.define(version: 2020_07_20_053420) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-<<<<<<< HEAD
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -68,7 +67,6 @@ ActiveRecord::Schema.define(version: 2020_07_20_053420) do
     t.boolean "is_deleted", default: true
     t.index ["email"], name: "index_members_on_email", unique: true
     t.index ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
-=======
 
     t.string "name"
     t.datetime "created_at", null: false
@@ -112,8 +110,6 @@ ActiveRecord::Schema.define(version: 2020_07_20_053420) do
     t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-
->>>>>>> 7801fd4f4b4ccb99725d3c742f565ef5ed4522f4
   end
 
   create_table "order_details", force: :cascade do |t|
