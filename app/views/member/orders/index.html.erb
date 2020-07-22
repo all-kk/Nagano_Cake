@@ -16,8 +16,5 @@
       <tr>
         <td><%= order.created_at.strftime('%Y/%m/%d') %></td>
         <td><%= order.address %></td>
-        <td><%=  %></td>
-        <td></td>
-        <td></td>
         <td><div class="button_wrapper"><%= link_to "表示する", member_order_path(order), class: "btn btn-primary" %></td>
         <%end%>

@@ -1,10 +1,7 @@
 class Member::OrdersController < ApplicationController
 
 	def thanks
-<<<<<<< HEAD
-		
-=======
->>>>>>> origin/develop
+
 	end
 	def index
 		@orders = current_member.orders
@@ -33,21 +30,13 @@ class Member::OrdersController < ApplicationController
 			@order.name = Shipping.find(params[:order][:shipping]).name
 
 		elsif params[:order][:address_number] ==  "2"
-<<<<<<< HEAD
+
 			@shipping = Shipping.new(shipping_params)
 			@shipping.postcode = params[:order][:postcode]
 			@shipping.address = params[:order][:address]
 			@shipping.name = params[:order][:name]
 			@shipping.member_id = current_member.id
-			
-=======
-			  @shipping = Shipping.new(shipping_params)
-			  @shipping.postcode = params[:order][:postcode]
-			  @shipping.address = params[:order][:address]
-			  @shipping.name = params[:order][:name]
-			  @shipping.member_id = current_member.id
 
->>>>>>> origin/develop
 			if  @shipping.save
 				@order.postcode = @shipping.postcode
 				@order.address = @shipping.address
