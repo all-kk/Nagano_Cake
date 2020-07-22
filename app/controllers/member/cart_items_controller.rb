@@ -24,9 +24,7 @@ class Member::CartItemsController < ApplicationController
 		@cart_items.destroy_all
 		redirect_to member_cart_items_path
 	end
-	
 	private
-	
 	def cart_item_params
 		params.require(:cart_item).permit(:product_id, :number, :member_id)
 	end
