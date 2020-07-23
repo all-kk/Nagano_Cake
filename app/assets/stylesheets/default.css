@@ -55,7 +55,12 @@ p.img_center{
   background-position: bottom;
   background-size: cover;
 }
-
+.search-tag{
+  color: black;
+}
+.search-form{
+  left: 30px;
+}
 
 
 

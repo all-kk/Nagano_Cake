@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="row">
+		<% if @model=='member' %>
+		<h2>会員検索結果</h2>
+		<table class="table table-inverse">
+			<thead>
+				<tr>
+					<th>会員ID</th>
+					<th>氏名</th>
+					<th>メールアドレス</th>
+					<th>ステータス</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @datas.each do |member| %>
+				<tr>
+					<td><%= member.id %></td>
+					<td><%= link_to ("#{member.first_name}"),admins_member_path(member) %></td>
+					<td><%= member.email %></td>
+					<td><%= member.is_deleted %></td>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<% end %>
+		<% if @model=='product' %>
+		<h2>商品検索結果</h2>
+		<table class="table table-inverse">
+			<thead>
+				<tr class="active">
+					<th class="col-xs-2">商品id</th>
+					<th class="col-xs-3">商品名</th>
+					<th class="col-xs-2">税抜き価格</th>
+					<th class="col-xs-3">ジャンル</th>
+					<th class="col-xs-2">ステータス</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @datas.each do |product| %>
+				<tr>
+					<td><%= product.id %></td>
+					<td><%= link_to product.name, admins_product_path(product) %></td>
+					<td><%= product.price %></td>
+					<td><%= product.genre_id %></td>
+					<td><%= product.is_capable %></td>
+				</tr>
+				<% end %>
+			</tbody>
+			<% end %>
+		</table>
+	</div>
+</div>
+

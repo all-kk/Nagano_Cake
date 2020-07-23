@@ -1,16 +1,22 @@
 <header class="navbar navbar-inverse">
 	<div class="container">
 		<nav class='nav navbar-nav navbar-left' >
-            <h2>Nagano Cake</h2>
-        </nav>
-        <nav style="margin-top: 50px;">
-          <ul class="nav navbar-nav navbar-right">
-          <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧',  admins_products_path %></il>
-          <span class="glyphicon glyphicon-user" aria-hidden="true"></span><il><%= link_to '会員一覧',  admins_members_path %></il>
-          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><il><%= link_to '注文履歴一覧', admins_orders_path %></il>
-          <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><il><%= link_to 'ジャンル一覧', admins_genres_path %></il>
+      <h1>Nagano Cake</h1>
+    </nav>
+    <nav style="margin-top: 50px;">
+      <ul class="nav navbar-nav navbar-right">
+        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧',  admins_products_path %></il>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span><il><%= link_to '会員一覧',  admins_members_path %></il>
+        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><il><%= link_to '注文履歴一覧', admins_orders_path %></il>
+        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span><il><%= link_to 'ジャンル一覧', admins_genres_path %></il>
         <span class="glyphicon glyphicon-share" aria-hidden="true"></span><il><%= link_to 'ログアウト', destroy_admin_session_path, method: :delete %></il>
-           </ul>
-       </nav>
-   </div>
+        <div><%= form_tag(admins_search_search_path,:method => 'get') do %>
+        <%= text_field_tag 'search[content]',"", class: "search-tag" %>
+        <%= select_tag 'search[model]', options_for_select({ "Member" => "member", "Product" => "product" }), class: "search-tag" %>
+      <%= submit_tag '検索', class: "btn btn-primary" %>
+      <% end %>
+      </div>
+      </ul>
+    </nav>
+  </div>
 </header>
