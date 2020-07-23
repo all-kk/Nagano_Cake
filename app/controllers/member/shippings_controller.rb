@@ -1,7 +1,7 @@
 class Member::ShippingsController < ApplicationController
 	def index
 		@shipping = Shipping.new
-		@shippings = Shipping.all
+		@shippings = current_member.shippings
 	end
 
 	def create

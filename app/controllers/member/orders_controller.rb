@@ -19,10 +19,8 @@ class Member::OrdersController < ApplicationController
 	end
 
 	def new
-		@order = Order.new
 		@member = current_member
 		@order = Order.new(order_params)
-		@order = Order.new
 		@member = current_member
 		@shippings = Shipping.all
 	end
