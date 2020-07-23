@@ -1,10 +1,15 @@
 class Member::OrdersController < ApplicationController
 
 	def thanks
-
+	end
+	def show
+		@order = Order.find(params[:id])
+		@order_details = @order.order_details
+		@total = 0
 	end
 	def index
 		@orders = current_member.orders
+		
 	end
 
 
@@ -49,9 +54,6 @@ class Member::OrdersController < ApplicationController
 		@order = Order.new(order_params)
 		@order.member_id = current_member.id
 		@order.save
-<<<<<<< HEAD
-		redirect_to member_thanks_order_path(current_member.id)
-=======
 		current_member.cart_items.each do |cart_item|
 		@order_detail = OrderDetail.new
 		@order_detail.product_id = cart_item.product_id
@@ -61,7 +63,7 @@ class Member::OrdersController < ApplicationController
 		@order_detail.save!
 		end
 	    redirect_to member_thanks_order_path(current_member.id)
->>>>>>> origin/develop
+
 	end
 
 
