@@ -1,34 +1,49 @@
-<div class="shipping_area" style="margin-top: 100px;">
-<h2>配送先登録/一覧</h2>
+<div class="container">
+    <div class="shipping_area" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-xs-8">
+              <strong style="font-size: 30px;">配送先登録/一覧</strong>
+                <table class="table table-bordered">
+                            <%= form_for @shipping, url:member_shippings_path, method: :post do |f| %>
+                        <tr>
+                            <th><%= f.label :郵便番号 %></th>
+                            <th><%= f.text_field :postcode, autofocus: true, autocomplete: "postal_code" %></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th><%= f.label :住所 %></th>
+                            <th><%= f.text_field :address, autofocus: true, autocomplete: "address" %></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th><%= f.label :宛名 %></th>
+                            <th><%= f.text_field :name, autofocus: true, autocomplete: "name" %></th>
+                            <th><%= f.submit "登録する", class:"btn btn-primary" %></th>
+                        </tr>
+                         <% end %>
+                 <table class="table table-bordered">
+            </div>
+        </div>
 
-<%= form_for @shipping, url:member_shippings_path, method: :post do |f| %>
-        <%= f.label :郵便番号 %>
-        <%= f.text_field :postcode, autofocus: true, autocomplete: "postal_code" %><br>
-        <%= f.label :住所 %>
-        <%= f.text_field :address, autofocus: true, autocomplete: "address" %><br>
-        <%= f.label :宛名 %>
-        <%= f.text_field :name, autofocus: true, autocomplete: "name" %><br>
-      <%= f.submit "登録する", class:"btn btn-primary" %>
- <% end %>
-
- <table>
-     <tr>
-         <th>郵便番号</th>
-         <th>住所</th>
-         <th>宛名</th>
-         <th></th>
-     </tr>
-        <% @shippings.each do |shipping| %>
-     <tr>
-         <td><%= shipping.postcode %></td>
-         <td><%= shipping.address %></td>
-         <td><%= shipping.name %></td>
-         <td>
-          <%= link_to "編集する", edit_member_shipping_path(shipping), method: :get %>
-          <%= link_to "削除する", member_shipping_path(shipping), method: :delete %>
-         </td>
-     </tr>
-        <% end %>
- </table>
+         <table class="table table-bordered">
+             <tr>
+                 <th>郵便番号</th>
+                 <th>住所</th>
+                 <th>宛名</th>
+                 <th></th>
+             </tr>
+                <% @shippings.each do |shipping| %>
+             <tr>
+                 <td>〒<%= shipping.postcode %></td>
+                 <td><%= shipping.address %></td>
+                 <td><%= shipping.name %></td>
+                 <td>
+                  <%= link_to "編集する", edit_member_shipping_path(shipping), method: :get, class: "btn btn-primary"%>
+                  <%= link_to "削除する", member_shipping_path(shipping), method: :delete, class: "btn btn-danger" %>
+                 </td>
+             </tr>
+                <% end %>
+         </table>
+    </div>
 </div>
 
