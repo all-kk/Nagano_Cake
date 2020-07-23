@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div class="new_order_area" style="margin-top: 100px;">
 	<h2>注文情報入力</h2>
 
@@ -10,8 +9,7 @@
 	<%= f.radio_button :address_number, 1, checked: true %><h4>ご自身の住所</h4>
 	<%= current_member.postcode %><%= current_member.address %><%= current_member.last_name %><%= current_member.first_name %>
 	<%= f.radio_button :address_number, 2 %><h4>登録済み住所から選択</h4>
-	
-=======
+    <% end %>
 <div class="new_order_area" style="margin: 100px 0px 0px 100px;">
 	<h2>注文情報入力</h2>
 
@@ -37,6 +35,5 @@
 	<%= f.label :name, '宛名' %><br>
 	<%= f.text_field :name, autocomplete: 'name' %>
 	<%= f.submit '確認画面へ進む' %>
->>>>>>> b699215168777ee931896479844f714efaacf714
 	<% end %>
 </div>

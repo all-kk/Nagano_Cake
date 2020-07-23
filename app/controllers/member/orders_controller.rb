@@ -2,27 +2,23 @@ class Member::OrdersController < ApplicationController
 
 	def thanks
 	end
+	
 	def show
 		@order = Order.find(params[:id])
 		@order_details = @order.order_details
 		@total = 0
 	end
+	
 	def index
 		@orders = current_member.orders
-		
 	end
 
 
 	def new
-<<<<<<< HEAD
-<<<<<<< HEAD
 		@order = Order.new
 		@member = current_member
-=======
 		@order = Order.new(order_params)
-=======
 		@order = Order.new
->>>>>>> 1ba2a8ae4823020c6d458bd901801192e4e14715
 		@member = current_member
 		@shippings = Shipping.all
 	end
@@ -43,8 +39,7 @@ class Member::OrdersController < ApplicationController
 			@order.name = Shipping.find(params[:order][:shipping]).name
 
 		elsif params[:order][:address_number] ==  "2"
-
-			@shipping = Shipping.new(shipping_params)
+            @shipping = Shipping.new(shipping_params)
 			@shipping.postcode = params[:order][:postcode]
 			@shipping.address = params[:order][:address]
 			@shipping.name = params[:order][:name]
@@ -71,8 +66,7 @@ class Member::OrdersController < ApplicationController
 		@order_detail.save!
 		end
 	    redirect_to member_thanks_order_path(current_member.id)
-
-	end
+    end
 
 
 	private
@@ -82,19 +76,12 @@ class Member::OrdersController < ApplicationController
 	end
 
 	def order_params
-<<<<<<< HEAD
 		params.permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
->>>>>>> b699215168777ee931896479844f714efaacf714
 	end
-<<<<<<< HEAD
+
 
 	def confirm
-=======
 		params.require(:order).permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
->>>>>>> 1ba2a8ae4823020c6d458bd901801192e4e14715
 	end
 
-
-=======
->>>>>>> 50ce59b2cadfcb2149ff640e1f0d0e6b2d68eb34
 end
