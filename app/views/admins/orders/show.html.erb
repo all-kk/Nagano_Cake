@@ -29,10 +29,10 @@
 					<% @order_details.each do |order_detail| %>
 					<tr>
 						<td><%= order_detail.product.name %></td>
-						<td><%= order_detail.tax_price %></td>
+						<td><%= order_detail.tax_price %>円</td>
 						<td><%= order_detail.number %></td>
-						<td><%= order_detail.product.price %></td>
-						<%= form_for order_detail, url: admins_order_detail_path do |f| %>
+						<td><%= (order_detail.tax_price)*(order_detail.number) %>円</td>
+						<%= form_for order_detail, url: admins_order_detail_path(order_detail) do |f| %>
 						<td><%= f.select :work_status,["着手不可","制作待ち","制作中","制作完了"] %>
 						</td>
 						<td><%= f.submit "更新" ,class:"btn btn-primary btn-xs" %></td>
@@ -43,9 +43,9 @@
 			</table>
 		</div>
 		<div class="col-xs-3">
-			<h4>商品合計：<%= @order.total_products_cost %></h4>
-			<h4>送料：<%= @order.postage %></h4>
-			<h4>請求金額合計：<%=(@order.total_products_cost)+(@order.postage) %></h4>
+			<h4>商品合計：<%= @order.total_products_cost %>円</h4>
+			<h4>送料：<%= @order.postage %>円</h4>
+			<h4>請求金額合計：<%=(@order.total_products_cost)+(@order.postage) %>円</h4>
 		</div>
 	</div>
 </div>
