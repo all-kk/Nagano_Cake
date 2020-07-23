@@ -5,16 +5,16 @@
  		<tr class="active">
  			 <th>購入日時</th>
  			 <th>購入者</th>
- 			 <th>注文個数</th>
+ 			 <th>個数</th>
  			 <th>注文ステータス</th>
  		</tr>
  	</thead>
  	<tbody>
  		 <% @orders.each do |order| %>
  		<tr>
- 			 <td><%= link_to order.create_at, admins_order_path(order) %></td>
+ 			 <td><%= link_to order.created_at, admins_order_path(order) %></td>
  			 <td><%= order.member.last_name %></td>
- 			 <td><%= order.order_details.number %></td>
+ 			 <td><%= order.order_details.sum(:number) %></td>
  			 <td><%= order.status %></td>
  		</tr>
  		<% end %>

@@ -7,29 +7,28 @@
 			  <%= f.attachment_field :image, placeholder: "商品画像" %>
 		</div>
 			<div class="col-xs-8">
-				<div>
+				<div class="col-xs-12">
 				<%= f.label :商品名,class: "col-xs-3" %>
 				<%= f.text_field :name,class: "col-xs-8" %>
 				</div>
-				<div>
+				<div class="col-xs-12">
 				<%= f.label :商品説明,class: "col-xs-3" %>
 				<%= f.text_area :explanatory,class: "col-xs-8" %>
 				</div>
-				<div>
+				<div class="col-xs-12">
 				<%= f.label :ジャンル,class: "col-xs-3 fix"  %>
 				<%= f.collection_select :genre_id, Genre.all, :id, :name %>
 				</div>
-				<div>
+				<div class="col-xs-12">
 				<%= f.label :税抜き価格,class: "col-xs-3" %>
-				<%= f.text_field :price,class: "col-xs-6" %>
+				<%= f.text_field :price,class: "col-xs-8" %>
 				</div>
-				<div>
+				<div class="col-xs-12">
 				<%= f.label :販売ステータス,class: "col-xs-3 fix" %>
 				<%= f.select :is_capable ,["販売中","販売停止中"] %>
 				</div>
-				<div>
+				<div class="col-xs-10"></div>
 				<%= f.submit "商品登録" %>
-				</div>
 			</div>
 		<% end %>
 	</div>
