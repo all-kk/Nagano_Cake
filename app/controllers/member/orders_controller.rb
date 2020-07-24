@@ -17,7 +17,7 @@ class Member::OrdersController < ApplicationController
 	def new
 		@order = Order.new
 		@member = current_member
-		@shippings = Shipping.all
+		@shippings = current_member.shippings
 	end
 
 	def confirm
