@@ -6,7 +6,7 @@
 	 	 	<%= f.text_field :name %>
 	 	 	<label><%= f.radio_button :is_enabled, "有効" ,checked: "checked"%> 有効 </label>
 	 	 	<label><%= f.radio_button :is_enabled, "無効" %> 無効</label>
-	 	 	<%= f.submit "変更を保存する" %>
+	 	 	<%= f.submit "変更を保存する", class: "btn btn-primary" %>
 	 	<% end %>
 	</div>
 </div>
