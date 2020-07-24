@@ -9,12 +9,6 @@ class Member::OrdersController < ApplicationController
 	end
 	def index
 		@orders = current_member.orders
-		
-	end
-
-
-	def index
-		@orders = current_member.orders
 	end
 
 	def new
