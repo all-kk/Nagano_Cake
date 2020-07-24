@@ -11,11 +11,14 @@ class Member::OrdersController < ApplicationController
 	
 	def index
 		@orders = current_member.orders
+<<<<<<< HEAD
 	end
 
 
 	def index
 		@orders = current_member.orders
+=======
+>>>>>>> c1f427e40dd8970fb47d40b7fa85338ec8d77d7c
 	end
 
 	def new

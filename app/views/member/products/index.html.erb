@@ -1,8 +1,9 @@
-
+<div class="row">
 <h2><%= @title %>一覧</h2>
-
-<%= render "share/sidebar"%>
-
+<div class="col-xs-3">
+<%= render "share/sidebar", genres: @genres %>
+</div>
+<div class="col-xs-9">
 <% @products.each do |product| %>
 
 <%= link_to member_product_path(product) do %>
@@ -13,3 +14,5 @@
 
 <% end %>
 <% end %>
+</div>
+</div>
