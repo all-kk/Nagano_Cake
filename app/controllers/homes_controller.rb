@@ -1,6 +1,6 @@
 class HomesController < ApplicationController
 	def top
-		@genres = Genre.all
+		@genres = Genre.where(is_enabled: true)
 
 	end
 	def about

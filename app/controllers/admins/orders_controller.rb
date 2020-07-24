@@ -1,6 +1,11 @@
 class Admins::OrdersController < ApplicationController
 	def index
-		@orders = Order.all
+		if request.referer.include?('/admins/top')
+			range = Date.today.beginning_of_day..Date.today.end_of_day
+			@orders = Order.where(created_at: range)
+		else
+			@orders = Order.all
+		end
 	end
 	def show
 		@order = Order.find(params[:id])
