@@ -14,6 +14,7 @@ namespace :member do
   post '/orders/confirm' => 'orders#confirm'
   get '/members/:id/deactivate' => 'members#deactivate', as:'deactivate_member'
   get '/orders/:id/thanks' => 'orders#thanks', as: 'thanks_order'
+  put "/members/:id/hide" => "members#hide", as: 'members_hide'
 end
 
   root 'homes#top'
