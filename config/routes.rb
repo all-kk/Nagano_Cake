@@ -13,6 +13,7 @@ namespace :member do
   get '/orders/confirm' => 'orders#confirm'
   post '/orders/confirm' => 'orders#confirm'
   get '/members/:id/deactivate' => 'members#deactivate', as:'deactivate_member'
+  delete '/cart_items/destroy_all' => 'cart_items#destroy_all'
   get '/orders/:id/thanks' => 'orders#thanks', as: 'thanks_order'
 end
 
