@@ -1,11 +1,11 @@
-<div class="new_order_area" style="margin: 100px 0px 0px 100px;">
+<div class="new_order_area" style="margin-left: 100px;">
   <div class="container">
   	<div class="row">
-    	<strong style="font-size: 40px;">注文情報入力</strong>
+    	<strong style="font-size: 40px; font-family: HiraMinPro-W6;">注文情報入力</strong>
 
     	<%= form_with(model: @order, local: true, url: member_orders_confirm_path, method: :post) do |f| %>
     	<div class="col-xs-6">
-    	  <h2>支払い方法</h2>
+    	  <h2 style="font-family: HiraMinPro-W6;">支払い方法</h2>
         	<table class="table table-bordered">
             	 <tr>
             	 	<th><%= f.radio_button :payment_method, 0, checked: "checked" %><span>クレジットカード</span></th>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="col-xs-8">
-          <h2>お届け先</h2>
+          <h2 style="font-family: HiraMinPro-W6;">お届け先</h2>
             <table class="table table-bordered">
             	<tr>
             		<th><%= f.radio_button :address_number, 0, checked:true %><span>ご自身の住所</span></th>

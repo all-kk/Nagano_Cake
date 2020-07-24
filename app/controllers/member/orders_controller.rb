@@ -2,7 +2,7 @@ class Member::OrdersController < ApplicationController
 
 	def thanks
 	end
-	
+
 	def show
 		@order = Order.find(params[:id])
 		@order_details = @order.order_details
@@ -11,21 +11,20 @@ class Member::OrdersController < ApplicationController
 	
 	def index
 		@orders = current_member.orders
-<<<<<<< HEAD
 	end
 
 
 	def index
 		@orders = current_member.orders
-=======
->>>>>>> c1f427e40dd8970fb47d40b7fa85338ec8d77d7c
 	end
+
 
 	def new
 		@member = current_member
 		@order = Order.new(order_params)
 		@member = current_member
 		@shippings = Shipping.all
+		@shippings = current_member.shippings
 	end
 
 	def confirm
@@ -81,11 +80,6 @@ class Member::OrdersController < ApplicationController
 	end
 
 	def order_params
-		params.permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
-	end
-
-
-	def confirm
 		params.require(:order).permit(:payment_method, :address, :postcode, :name, :total_products_cost, :postage)
 	end
 
