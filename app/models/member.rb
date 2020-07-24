@@ -7,4 +7,15 @@ class Member < ApplicationRecord
   has_many :orders, dependent: :destroy
   has_many :cart_items, dependent: :destroy
   enum is_deleted: { 有効: true, 退会済み: false}
+
+  include JpPrefecture
+  jp_prefecture :prefecture_code
+
+  def prefecture_name
+    JpPrefecture::Prefecture.find(code: prefecture_code).try(:name)
+  end
+
+  def prefecture_name=(prefecture_name)
+	  self.prefecture_code = JpPrefecture::Prefecture.find(name: prefecture_name).code
+  end
 end

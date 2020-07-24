@@ -2,7 +2,7 @@
     <div class="shipping_area" style="margin-top: 100px;">
         <div class="row">
             <div class="col-xs-8">
-              <strong style="font-size: 30px;">配送先登録/一覧</strong>
+              <strong style="font-family: HiraMinPro-W6; font-size: 30px;">配送先登録/一覧</strong>
                 <table class="table table-bordered">
                             <%= form_for @shipping, url:member_shippings_path, method: :post do |f| %>
                         <tr>
@@ -39,7 +39,7 @@
                  <td><%= shipping.name %></td>
                  <td>
                   <%= link_to "編集する", edit_member_shipping_path(shipping), method: :get, class: "btn btn-primary"%>
-                  <%= link_to "削除する", member_shipping_path(shipping), method: :delete, class: "btn btn-danger" %>
+                  <%= link_to "削除する", member_shipping_path(shipping), method: :delete, "data-confirm" => "本当に消しますか？", class: "btn btn-danger" %>
                  </td>
              </tr>
                 <% end %>
