@@ -12,7 +12,7 @@ class Member::ProductsController < ApplicationController
     	@title = genre.name
     	@products = Product.where(genre_id: params[:genre_id])
     	else
-    	@products = Product.all
+    	@products = Product.page(params[:page]).reverse_order
     	@title = "商品"
     end
     end
