@@ -62,6 +62,7 @@ class Member::OrdersController < ApplicationController
 		@order_detail.order_id =  @order.id
 		@order_detail.save!
 		end
+		current_member.cart_items.destroy_all
 	    redirect_to member_thanks_order_path(current_member.id)
     end
 
