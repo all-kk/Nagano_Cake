@@ -5,22 +5,15 @@
 		<%= attachment_image_tag @product, :image, size: "200x200", fallback: "no_image.jpg"%>
 	</div>
 	<div class="col-xs-8">
-		<dix>
-		<h3>商品名：<%= @product.name %></h3>
-		</dix>
-		<dix>
-		<h3>商品説明：<%= @product.explanatory %></h3>
-		</dix>
-		<dix>
-		<h3>ジャンル：<%= @product.genre.name %></h3>
-		</dix>
-		<dix>
-		<h3>税抜き価格：<%= @product.price %></h3>
-		</dix>
-		<div>
-		<h3>販売ステータス：<%= @product.is_capable %></h3>
-		</div>
+		<h4 style="margin-bottom: 30px;">商品名：<%= @product.name %></h4>
+		<h4 style="margin-bottom: 30px;">商品説明：<%= @product.explanatory %></h4>
+		<h4 style="margin-bottom: 30px;">ジャンル：<%= @product.genre.name %></h4>
+		<h4 style="margin-bottom: 30px;">税込価格(税抜価格）：<%= (@product.price*1.1).round %>（<%= @product.price %>）円</h4>
+		<h4 style="margin-bottom: 30px;">販売ステータス：<%= @product.is_capable %></h4>
 	</div>
-	<%= link_to "編集する", edit_admins_product_path(@product) %>
+	</div>
+	<div class="row">
+		<div class="col-xs-10"></div>
+			<%= link_to "編集する", edit_admins_product_path(@product), class: "btn btn-primary" %>
 	</div>
 </div>

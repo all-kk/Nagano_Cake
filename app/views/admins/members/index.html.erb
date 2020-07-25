@@ -15,10 +15,15 @@
 		   <% @members.each do |member| %>
 		  	  <tr>
 		  	    <td><%= member.id %></td>
-		  	    <td><%= link_to ("#{member.first_name}"),admins_member_path(member) %></td>
+		  	    <td><%= link_to ("#{member.first_name}"),admins_member_path(member), :style=>"color:black;" %></td>
 		  	    <td><%= member.email %></td>
-		  	    <td><%= member.is_deleted %></td>
-		      </tr>
+		  	    <td><% if member.is_deleted %>
+                <%= "有効" %>
+                <% else %>
+                <%= "退会済み" %>
+                <% end %>
+                </td>
+		    </tr>
 		      <% end %>
 		      <%= paginate @members %>
 		    </tbody>

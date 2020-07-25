@@ -12,7 +12,7 @@
  	<tbody>
  		 <% @orders.each do |order| %>
  		<tr>
- 			 <td><%= link_to order.created_at, admins_order_path(order) %></td>
+ 			 <td><%= link_to order.created_at, admins_order_path(order), :style=>"color:black;" %></td>
  			 <td><%= order.member.last_name %></td>
  			 <td><%= order.order_details.sum(:number) %></td>
  			 <td><%= order.status %></td>
