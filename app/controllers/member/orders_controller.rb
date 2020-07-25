@@ -13,10 +13,14 @@ class Member::OrdersController < ApplicationController
 		@orders = current_member.orders
 	end
 
+	def index
+		@orders = current_member.orders
+	end
+
 
 	def new
-		@order = Order.new
 		@member = current_member
+		@order = Order.new
 		@shippings = current_member.shippings
 	end
 
