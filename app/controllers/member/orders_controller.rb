@@ -9,7 +9,6 @@ class Member::OrdersController < ApplicationController
 		@total = 0
 	end
 
-
 	def index
 		@orders = current_member.orders
 	end
