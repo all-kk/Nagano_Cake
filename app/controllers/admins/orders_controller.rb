@@ -1,4 +1,5 @@
 class Admins::OrdersController < ApplicationController
+		before_action :authenticate_admin!
 	def index
 		if request.referer.include?('/admins/top')
 			range = Date.today.beginning_of_day..Date.today.end_of_day
