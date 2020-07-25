@@ -8,12 +8,17 @@ class Member::OrdersController < ApplicationController
 		@order_details = @order.order_details
 		@total = 0
 	end
+<<<<<<< HEAD
 	
 	def index
 		@orders = current_member.orders
 	end
 
 
+=======
+
+
+>>>>>>> 7b76a6ce53eab55843309e7a9b0c04d2eac50817
 	def index
 		@orders = current_member.orders
 	end
@@ -69,6 +74,7 @@ class Member::OrdersController < ApplicationController
 		@order_detail.order_id =  @order.id
 		@order_detail.save!
 		end
+		current_member.cart_items.destroy_all
 	    redirect_to member_thanks_order_path(current_member.id)
     end
 
