@@ -20,7 +20,7 @@ class Member::OrdersController < ApplicationController
 
 	def new
 		@member = current_member
-		@order = Order.new(order_params)
+		@order = Order.new
 		@shippings = current_member.shippings
 	end
 
