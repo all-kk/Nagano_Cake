@@ -17,7 +17,7 @@
 		  	    <td><%= member.id %></td>
 		  	    <td><%= link_to ("#{member.first_name}"),admins_member_path(member), :style=>"color:black;" %></td>
 		  	    <td><%= member.email %></td>
-		  	    <td><% if member.is_deleted %>
+		  	    <td><% if member.is_deleted =="有効" %>
                 <%= "有効" %>
                 <% else %>
                 <%= "退会済み" %>

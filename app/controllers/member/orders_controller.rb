@@ -1,5 +1,5 @@
 class Member::OrdersController < ApplicationController
-
+	before_action :authenticate_member!
 	def thanks
 	end
 
@@ -8,20 +8,16 @@ class Member::OrdersController < ApplicationController
 		@order_details = @order.order_details
 		@total = 0
 	end
-<<<<<<< HEAD
-	
+
 	def index
 		@orders = current_member.orders
 	end
 
 
-<<<<<<< HEAD
-=======
+	def index
+		@orders = current_member.orders
+	end
 
-
->>>>>>> 7b76a6ce53eab55843309e7a9b0c04d2eac50817
-=======
->>>>>>> 86e3ece52ccb421321ef0ebdd6dba6b17e94e50a
 	def index
 		@orders = current_member.orders
 	end
@@ -29,9 +25,7 @@ class Member::OrdersController < ApplicationController
 
 	def new
 		@member = current_member
-		@order = Order.new(order_params)
-		@member = current_member
-		@shippings = Shipping.all
+		@order = Order.new
 		@shippings = current_member.shippings
 	end
 
