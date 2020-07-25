@@ -1,4 +1,5 @@
 class Member::ShippingsController < ApplicationController
+	before_action :authenticate_member!
 	def index
 		@shipping = Shipping.new
 		@shippings = current_member.shippings
