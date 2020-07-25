@@ -2,7 +2,7 @@ class Admins::OrdersController < ApplicationController
 	def index
 		if request.referer.include?('/admins/top')
 			range = Date.today.beginning_of_day..Date.today.end_of_day
-			@orders = Order.where(created_at: range)
+			@orders = Order.where(created_at: range).page(params[:page]).reverse_order
 		else
 			@orders = Order.page(params[:page]).reverse_order
 		end
