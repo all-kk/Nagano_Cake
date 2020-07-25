@@ -9,6 +9,10 @@ class Member < ApplicationRecord
   enum is_deleted: { 有効: true, 退会済み: false}
   validates :last_name, :first_name, :last_name_phonetic, :first_name_phonetic, :postcode, :address, :telephone_number, presence: true
 
+  def active_for_authentication?
+    super && self.is_deleted?
+  end
+
   include JpPrefecture
   jp_prefecture :prefecture_code
 

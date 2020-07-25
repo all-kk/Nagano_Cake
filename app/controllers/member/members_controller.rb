@@ -18,6 +18,13 @@ class Member::MembersController < ApplicationController
     def deactivate
     	@member = Member.find(params[:id])
     end
+    def hide
+        @member = Member.find(params[:id])
+        @member.update(is_deleted: false)
+        reset_session
+        flash[:notice] = "ありがとうございました。またのご利用を心よりお待ちしております。"
+        redirect_to root_path
+    end
 	private
     def member_params
       params.require(:member).permit(:first_name, :last_name, :first_name_phonetic, :last_name_phonetic, :telephone_number, :postcode, :address, :is_deleted)
