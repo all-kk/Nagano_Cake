@@ -19,9 +19,10 @@
 		<h3>¥<%= (@product.price* 1.1).round %>(税込み) </h3>
 		</dix>
 	</div>
+	<strong><%= notice %></strong>
 	<%= form_for(@cart_item, url: member_cart_items_path(@cart_item)) do |f| %>
 	<%= f.hidden_field :product_id, :value => @product.id %>
-	 <%= f.number_field :number , placeholder: "個数選択" %>
+	 <%= f.number_field :number , placeholder: "個数選択", min: 1, max: 20 %>
 	 <%= f.submit "カートに入れる" ,class: 'btn btn-primary' %>
 	 <% end %>
 	</div>
