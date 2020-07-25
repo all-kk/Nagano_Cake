@@ -16,27 +16,8 @@
 	 <%= form_for(@cart_item, url: member_cart_items_path(@cart_item)) do |f| %>
 	 <%= f.hidden_field :product_id, :value => @product.id %>
 	 <th><%= f.number_field :number , placeholder: "個数選択" %>  <%= f.submit "カートに入れる" ,class: 'btn btn-primary' %></th>
-	<div class="col-xs-3">
-		<%= attachment_image_tag @product, :image, size: "200x200", fallback: "no_image.jpg"%>
-	</div>
-	<div class="col-xs-6">
-		<dix>
-		<h3><%= @product.name %></h3>
-		</dix>
-		<dix>
-		<p><%= @product.explanatory %></p>
-		</dix>
-		<dix>
-
-		<h3>¥<%= (@product.price* 1.1).round %>(税込み) </h3>
-		</dix>
-	</div>
-	<%= form_for(@cart_item, url: member_cart_items_path(@cart_item)) do |f| %>
-	<%= f.hidden_field :product_id, :value => @product.id %>
-	 <%= f.number_field :number , placeholder: "個数選択", min: 1, max: 20 %>
-	 <%= f.submit "カートに入れる" ,class: 'btn btn-primary' %>
-	 <% end %>
 	</tr>
+	<% end %>
 </table>
 </div>
 	</div>

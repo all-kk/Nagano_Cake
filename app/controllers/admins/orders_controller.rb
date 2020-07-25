@@ -4,7 +4,7 @@ class Admins::OrdersController < ApplicationController
 			range = Date.today.beginning_of_day..Date.today.end_of_day
 			@orders = Order.where(created_at: range)
 		else
-			@orders = Order.all
+			@orders = Order.page(params[:page]).reverse_order
 		end
 	end
 	def show
