@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col-md-7 col-md-offset-3">
       <h2>マイページ</h2>
-      <h3>登録情報<%= link_to "編集する", edit_member_member_path, class: "btn btn-primary" %><%= link_to "パスワードを変更する", edit_member_password_path, class: "btn btn-primary" %></h3>
+      <h3>登録情報<%= link_to "編集する", edit_member_member_path, data: {"turbolinks" => false}, class: "btn btn-primary" %><%= link_to "パスワードを変更する", edit_member_password_path, class: "btn btn-primary" %></h3>
       <table class="table table-bordered ">
         <tr>
           <td class="active">氏名</td>
