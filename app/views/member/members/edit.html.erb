@@ -6,13 +6,13 @@
       <%= form_for(@member, url:member_member_path) do |f| %>
       <table class="table table-bordered ">
           <td><%= f.label :名前 %></td>
-              <td>(性)<%= f.text_field :last_name %></td>
-              <td>(名)<%= f.text_field :first_name %></td>
+              <td>(性)<%= f.text_field :first_name %></td>
+              <td>(名)<%= f.text_field :last_name %></td>
         </tr>
         <tr>
           <td><%= f.label :フリガナ %></td>
-              <td>(セイ)<%= f.text_field :last_name_phonetic %></td>
-              <td>(メイ)<%= f.text_field :first_name_phonetic %>
+              <td>(セイ)<%= f.text_field :first_name_phonetic %></td>
+              <td>(メイ)<%= f.text_field :last_name_phonetic %>
           </td>
         </tr>
         <tr>
