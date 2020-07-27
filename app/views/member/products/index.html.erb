@@ -4,7 +4,7 @@
 		       <%= render "share/sidebar", genres: @genres %>
 		    </div>
 		<div class="col-xs-10">
-		    <h2><%= @title %>一覧</h2>
+		    <h2 style="font-family: HiraMinPro-W6;"><%= @title %>一覧</h2>
 				<% @products.each do |product| %>
 				<div class="col-xs-3">
                 <%= link_to member_product_path(product) do %>
