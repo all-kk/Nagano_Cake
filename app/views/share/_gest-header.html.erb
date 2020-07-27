@@ -7,7 +7,7 @@
    <ul class="nav navbar-nav navbar-right">
     <span class="glyphicon glyphicon-tag" aria-hidden="true"></span><il><%= link_to 'about', home_about_path %></il>
     <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧', member_products_path %></il>
-    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span><il><%= link_to '新規登録', new_member_registration_path %></il>
+    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span><il><%= link_to '新規登録', new_member_registration_path, data: {"turbolinks" => false} %></il>
     <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span><il><%= link_to 'ログイン', member_session_path %></il>
   </ul>
 </nav>

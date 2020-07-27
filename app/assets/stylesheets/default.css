@@ -31,7 +31,7 @@ p.img_center{
   background: #585858;
   box-shadow: 0px 0px 0px 5px #151515;
   padding: 0.2em 0.5em;
-  margin-left: 720px;
+  margin-left: 120px;
   color: #FFFFFF;
   text-align: center;
   font-family: cursive;
@@ -40,9 +40,9 @@ p.img_center{
 
 .step-box {
   float: left;
-  margin-right: 30px;
-  width: 300px;
-  margin-left: 200px;
+  margin-right: 20px;
+  width: 200px;
+  margin-left: 10px;
   margin-top: 40px;
   padding: 10px;
   position: relative;
@@ -60,5 +60,15 @@ p.img_center{
 }
 .product_form{
   margin: 30px;
+}
+
+.top_text {
+  font-family: HiraMinPro-W6;
+  font-size: 15px;
+}
+
+.backcround {
+  background-color: #ffefd5;
+  height: 100%;
 }
 

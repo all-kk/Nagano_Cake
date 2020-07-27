@@ -9,7 +9,8 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="backcround">
+    <header>
     <!-- menberログイン時 -->
     <% if member_signed_in? %>
       <%= render 'share/member-header' %>
@@ -20,9 +21,9 @@
     <% else %>
       <%= render'share/gest-header' %>
     <% end %>
+  </header>
+    <div>
     <%= yield %>
-    <footer class="navbar navbar-fixed-bottom navbar-inverse">
-
-  </footer>
+  </div>
   </body>
 </html>
