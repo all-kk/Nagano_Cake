@@ -1,7 +1,7 @@
 class Admins::MembersController < ApplicationController
   before_action :authenticate_admin!
 	def index
-	  @members = Member.page(params[:page]).reverse_order
+	  @members = Member.page(params[:page])
 	end
 	def show
 	  @member = Member.find(params[:id])
@@ -19,8 +19,17 @@ class Admins::MembersController < ApplicationController
       render :edit
       end
     end
+
     private
     def member_params
-      params.require(:member).permit(:first_name, :last_name, :first_name_phonetic, :last_name_phonetic, :telephone_number, :postcode, :address, :is_deleted)
+      params.require(:member).permit(
+                                    :first_name,
+                                    :last_name,
+                                    :first_name_phonetic,
+                                    :last_name_phonetic,
+                                    :telephone_number,
+                                    :postcode,
+                                    :address,
+                                    :is_deleted)
     end
 end

@@ -55,6 +55,27 @@ p.img_center{
   background-position: bottom;
   background-size: cover;
 }
+
+.top-img2 {
+  height: 150px;
+  background-image: url(_1203-3459.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.top-img3 {
+  height: 150px;
+  background-image: url(fot0015-013.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.top-img4 {
+  height: 150px;
+  background-image: url(makaron_img.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
 .search-tag{
   color: black;
 }
