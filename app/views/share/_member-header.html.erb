@@ -7,10 +7,11 @@
    <nav style="margin-top: 50px;">
     <ul class="nav navbar-nav navbar-right">
      <il>ようこそ、<%= current_member.last_name %> さん</il>
-      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><il><%= link_to 'マイページ', member_member_path(current_member.id) %></il>
-      <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧', member_products_path %></il>
-      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><il><%= link_to 'カート', member_cart_items_path %></il>
-      <span class="glyphicon glyphicon-share" aria-hidden="true"></span><il><%= link_to 'ログアウト', destroy_member_session_path, method: :delete %></il>
+      <span class="glyphicon glyphicon-user" aria-hidden="true"></span><il><%= link_to 'マイページ', member_member_path(current_member.id), :style=>"color:white;" %></il>
+      <span class="glyphicon glyphicon-gift" aria-hidden="true"></span><il><%= link_to '商品一覧', member_products_path, :style=>"color:white;" %></il>
+      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><il><%= link_to 'カート', member_cart_items_path, :style=>"color:white;" %></il>
+      <span class="glyphicon glyphicon-share" aria-hidden="true"></span><il><%= link_to 'ログアウト', destroy_member_session_path, :style=>"color:white;", method: :delete %></il>
+      <span class="glyphicon glyphicon-home" aria-hidden="true"></span><il><%= link_to 'TOP', root_path, :style=>"color:white;" %></il>
    </ul>
  </nav>
 </div>

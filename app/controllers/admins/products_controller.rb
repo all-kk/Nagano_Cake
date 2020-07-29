@@ -13,7 +13,7 @@ class Admins::ProductsController < ApplicationController
 		end
 	end
 	def index
-		@products = Product.page(params[:page]).reverse_order
+		@products = Product.page(params[:page])
 	end
 	def show
 		@product = Product.find(params[:id])

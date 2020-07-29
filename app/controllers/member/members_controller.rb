@@ -28,6 +28,13 @@ class Member::MembersController < ApplicationController
     end
 	private
     def member_params
-      params.require(:member).permit(:first_name, :last_name, :first_name_phonetic, :last_name_phonetic, :telephone_number, :postcode, :address, :is_deleted)
+      params.require(:member).permit(
+                                    :first_name,
+                                    :last_name, :first_name_phonetic,
+                                    :last_name_phonetic,
+                                    :telephone_number,
+                                    :postcode,
+                                    :address,
+                                    :is_deleted)
     end
 end

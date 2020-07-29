@@ -39,7 +39,7 @@
                  <td><%= shipping.name %></td>
                  <td>
                   <%= link_to "編集する", edit_member_shipping_path(shipping), method: :get, class: "btn btn-primary"%>
-                  <%= link_to "削除する", member_shipping_path(shipping), method: :delete, "data-confirm" => "本当に消しますか？", class: "btn btn-danger" %>
+                  <%= link_to "削除する", member_shipping_path(shipping), method: :delete, "data-confirm" => "本当に削除しますか？", class: "btn btn-danger" %>
                  </td>
              </tr>
                 <% end %>
